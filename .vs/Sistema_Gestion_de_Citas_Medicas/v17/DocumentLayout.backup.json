@@ -1,0 +1,223 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmgestionpacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmgestionpacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmgestionpacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmgestionpacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmregistrocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmregistrocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmregistrocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmregistrocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmgestionmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmgestionmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\sesionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|c:\\users\\bonil\\onedrive\\proyecto_de_catedra_poo\\sistema_gestion_de_citas_medicas\\sistema_gestion_de_citas_medicas\\frmgestionmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5783AAE8-2DC3-4CE8-A388-2FFDA5C32E25}|Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas.csproj|solutionrelative:sistema_gestion_de_citas_medicas\\frmgestionmedico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T22:45:44.457Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmLogin.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAIAwwE0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T23:00:16.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmRegistrocs.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T01:33:47.832Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmGestionPacientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T23:38:53.66Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmGestionPacientes.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionPacientes.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T23:43:44.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\Form1.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\Form1.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\Form1.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\Form1.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvysAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T21:51:42.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\Program.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\Program.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\Program.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T01:15:02.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\Form1.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\Form1.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T21:50:01.388Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmRegistrocs.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmRegistrocs.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAhwGYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T01:47:59.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmGestionMedico.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T00:23:43.813Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SesionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\SesionUsuario.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\SesionUsuario.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\SesionUsuario.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\SesionUsuario.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T00:59:39.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmGestionMedico.cs",
+              "DocumentMoniker": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs",
+              "RelativeDocumentMoniker": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs",
+              "ToolTip": "C:\\Users\\bonil\\OneDrive\\Proyecto_de_Catedra_POO\\Sistema_Gestion_de_Citas_Medicas\\Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs",
+              "RelativeToolTip": "Sistema_Gestion_de_Citas_Medicas\\FrmGestionMedico.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-22T00:24:05.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
