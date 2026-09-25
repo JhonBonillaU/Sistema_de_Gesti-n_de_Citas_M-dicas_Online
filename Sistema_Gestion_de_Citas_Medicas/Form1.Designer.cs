@@ -50,18 +50,18 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.btnDetallesCitas = new System.Windows.Forms.Button();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.btnDetallesPendientes = new System.Windows.Forms.Button();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
 			this.panel6 = new System.Windows.Forms.Panel();
 			this.btnDetallesRecetas = new System.Windows.Forms.Button();
-			this.label8 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label11 = new System.Windows.Forms.Label();
 			this.menuStrip1.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,38 +84,38 @@
             this.ayudaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+			this.menuStrip1.Size = new System.Drawing.Size(800, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// archivoToolStripMenuItem
 			// 
 			this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
 			this.archivoToolStripMenuItem.Text = "Archivo";
 			// 
 			// ediciónToolStripMenuItem
 			// 
 			this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
-			this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(72, 26);
+			this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
 			this.ediciónToolStripMenuItem.Text = "Edición";
 			// 
 			// herraminetasToolStripMenuItem
 			// 
 			this.herraminetasToolStripMenuItem.Name = "herraminetasToolStripMenuItem";
-			this.herraminetasToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
+			this.herraminetasToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
 			this.herraminetasToolStripMenuItem.Text = "Herraminetas";
 			// 
 			// baseDeDatosToolStripMenuItem
 			// 
 			this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-			this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
+			this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
 			this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
 			// 
 			// ayudaToolStripMenuItem
 			// 
 			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
+			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
 			this.ayudaToolStripMenuItem.Text = "Ayuda";
 			// 
 			// panel1
@@ -222,7 +222,7 @@
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
 			this.panel2.Controls.Add(this.lblTitulo);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 30);
+			this.panel2.Location = new System.Drawing.Point(0, 28);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(800, 90);
 			this.panel2.TabIndex = 4;
@@ -277,9 +277,9 @@
 			// panel4
 			// 
 			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(132)))), ((int)(((byte)(216)))));
+			this.panel4.Controls.Add(this.label9);
+			this.panel4.Controls.Add(this.label8);
 			this.panel4.Controls.Add(this.btnDetallesCitas);
-			this.panel4.Controls.Add(this.label4);
-			this.panel4.Controls.Add(this.label3);
 			this.panel4.Location = new System.Drawing.Point(537, 191);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(231, 161);
@@ -298,34 +298,12 @@
 			this.btnDetallesCitas.Text = "Ver Detalles";
 			this.btnDetallesCitas.UseVisualStyleBackColor = false;
 			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(15, 62);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(24, 25);
-			this.label4.TabIndex = 1;
-			this.label4.Text = "#\r\n";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(3, 9);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(106, 25);
-			this.label3.TabIndex = 0;
-			this.label3.Text = "Citas Hoy";
-			// 
 			// panel5
 			// 
 			this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(197)))), ((int)(((byte)(31)))));
-			this.panel5.Controls.Add(this.btnDetallesPendientes);
 			this.panel5.Controls.Add(this.label6);
-			this.panel5.Controls.Add(this.label5);
+			this.panel5.Controls.Add(this.label4);
+			this.panel5.Controls.Add(this.btnDetallesPendientes);
 			this.panel5.Location = new System.Drawing.Point(27, 232);
 			this.panel5.Name = "panel5";
 			this.panel5.Size = new System.Drawing.Size(231, 161);
@@ -344,34 +322,12 @@
 			this.btnDetallesPendientes.Text = "Ver Detalles";
 			this.btnDetallesPendientes.UseVisualStyleBackColor = false;
 			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(15, 62);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(24, 25);
-			this.label6.TabIndex = 1;
-			this.label6.Text = "#\r\n";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(3, 9);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(182, 25);
-			this.label5.TabIndex = 0;
-			this.label5.Text = "Citas Registradas";
-			// 
 			// panel6
 			// 
 			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(43)))), ((int)(((byte)(165)))));
+			this.panel6.Controls.Add(this.label11);
+			this.panel6.Controls.Add(this.label10);
 			this.panel6.Controls.Add(this.btnDetallesRecetas);
-			this.panel6.Controls.Add(this.label8);
-			this.panel6.Controls.Add(this.label7);
 			this.panel6.Location = new System.Drawing.Point(316, 232);
 			this.panel6.Name = "panel6";
 			this.panel6.Size = new System.Drawing.Size(231, 161);
@@ -389,28 +345,6 @@
 			this.btnDetallesRecetas.TabIndex = 9;
 			this.btnDetallesRecetas.Text = "Ver Detalles";
 			this.btnDetallesRecetas.UseVisualStyleBackColor = false;
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label8.ForeColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(15, 62);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(24, 25);
-			this.label8.TabIndex = 1;
-			this.label8.Text = "#\r\n";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(3, 9);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(178, 25);
-			this.label7.TabIndex = 0;
-			this.label7.Text = "Recetas Emitidas";
 			// 
 			// statusStrip1
 			// 
@@ -433,6 +367,72 @@
 			this.groupBox1.TabIndex = 12;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Resumen del Sistema";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.ForeColor = System.Drawing.Color.Black;
+			this.label4.Location = new System.Drawing.Point(3, 15);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(176, 25);
+			this.label4.TabIndex = 10;
+			this.label4.Text = "Citas Pendientes";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(15, 59);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(24, 25);
+			this.label6.TabIndex = 10;
+			this.label6.Text = "#\r\n";
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label8.ForeColor = System.Drawing.Color.White;
+			this.label8.Location = new System.Drawing.Point(24, 62);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(24, 25);
+			this.label8.TabIndex = 11;
+			this.label8.Text = "#\r\n";
+			// 
+			// label9
+			// 
+			this.label9.AutoSize = true;
+			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label9.ForeColor = System.Drawing.Color.White;
+			this.label9.Location = new System.Drawing.Point(4, 9);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(106, 25);
+			this.label9.TabIndex = 11;
+			this.label9.Text = "Citas Hoy";
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.ForeColor = System.Drawing.Color.White;
+			this.label10.Location = new System.Drawing.Point(4, 15);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(178, 25);
+			this.label10.TabIndex = 11;
+			this.label10.Text = "Recetas Emitidas";
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label11.ForeColor = System.Drawing.Color.White;
+			this.label11.Location = new System.Drawing.Point(24, 59);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(24, 25);
+			this.label11.TabIndex = 11;
+			this.label11.Text = "#\r\n";
 			// 
 			// FrmMenuPrincipal
 			// 
@@ -495,17 +495,20 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnDetallesCitas;
         private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnDetallesPendientes;
         private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnDetallesRecetas;
         private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.GroupBox groupBox1;
-    }
+		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Label label10;
+	}
 }
 
