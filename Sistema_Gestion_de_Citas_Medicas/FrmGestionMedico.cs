@@ -26,7 +26,5 @@ namespace Sistema_Gestion_de_Citas_Medicas
         {
 
         }
-
-       
-    }
+	}
 }
