@@ -34,8 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -48,89 +49,114 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CapaDatos\CitaDAL.cs" />
+    <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaDatos\MedicoDAL.cs" />
+    <Compile Include="CapaDatos\PacienteDAL.cs" />
+    <Compile Include="CapaDatos\RecetaDAL.cs" />
+    <Compile Include="CapaDatos\UsuarioDAL.cs" />
+    <Compile Include="CapaLogica\Cita.cs" />
+    <Compile Include="CapaLogica\Especialidad.cs" />
+    <Compile Include="CapaLogica\Medico.cs" />
+    <Compile Include="CapaLogica\Paciente.cs" />
+    <Compile Include="CapaLogica\Receta.cs" />
+    <Compile Include="CapaLogica\Usuario.cs" />
+    <Compile Include="CapaPresentacion\FrmGestionEspecialidades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CapaPresentacion\FrmGestionEspecialidades.Designer.cs">
+      <DependentUpon>FrmGestionEspecialidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEmitirRecetas.cs">
+    <Compile Include="CapaPresentacion\FrmGestionUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEmitirRecetas.Designer.cs">
+    <Compile Include="CapaPresentacion\FrmGestionUsuarios.Designer.cs">
+      <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmEmitirRecetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPresentacion\FrmEmitirRecetas.Designer.cs">
       <DependentUpon>FrmEmitirRecetas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultarRecetas.cs">
+    <Compile Include="CapaPresentacion\FrmConsultarRecetas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultarRecetas.Designer.cs">
+    <Compile Include="CapaPresentacion\FrmConsultarRecetas.Designer.cs">
       <DependentUpon>FrmConsultarRecetas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAgendarCitas.cs">
+    <Compile Include="CapaPresentacion\FrmAgendarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAgendarCitas.Designer.cs">
+    <Compile Include="CapaPresentacion\FrmAgendarCitas.Designer.cs">
       <DependentUpon>FrmAgendarCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionMedico.cs">
+    <Compile Include="CapaPresentacion\FrmGestionMedicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionMedico.Designer.cs">
-      <DependentUpon>FrmGestionMedico.cs</DependentUpon>
+    <Compile Include="CapaPresentacion\FrmGestionMedicos.Designer.cs">
+      <DependentUpon>FrmGestionMedicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGestionPacientes.cs">
+    <Compile Include="CapaPresentacion\FrmGestionPacientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGestionPacientes.Designer.cs">
+    <Compile Include="CapaPresentacion\FrmGestionPacientes.Designer.cs">
       <DependentUpon>FrmGestionPacientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultarCitas.cs">
+    <Compile Include="CapaPresentacion\FrmConsultarCitas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultarCitas.Designer.cs">
+    <Compile Include="CapaPresentacion\FrmConsultarCitas.Designer.cs">
       <DependentUpon>FrmConsultarCitas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLogin.cs">
+    <Compile Include="CapaPresentacion\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin.Designer.cs">
+    <Compile Include="CapaPresentacion\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegistrocs.cs">
+    <Compile Include="CapaPresentacion\FrmRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegistrocs.Designer.cs">
-      <DependentUpon>FrmRegistrocs.cs</DependentUpon>
+    <Compile Include="CapaPresentacion\FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Indicaciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SesionUsuario.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CapaPresentacion\FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultarRecetas.resx">
+    <EmbeddedResource Include="CapaPresentacion\FrmConsultarRecetas.resx">
       <DependentUpon>FrmConsultarRecetas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAgendarCitas.resx">
+    <EmbeddedResource Include="CapaPresentacion\FrmAgendarCitas.resx">
       <DependentUpon>FrmAgendarCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEmitirRecetas.resx">
+    <EmbeddedResource Include="CapaPresentacion\FrmEmitirRecetas.resx">
       <DependentUpon>FrmEmitirRecetas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionMedico.resx">
-      <DependentUpon>FrmGestionMedico.cs</DependentUpon>
+    <EmbeddedResource Include="CapaPresentacion\FrmGestionMedicos.resx">
+      <DependentUpon>FrmGestionMedicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGestionPacientes.resx">
+    <EmbeddedResource Include="CapaPresentacion\FrmGestionPacientes.resx">
       <DependentUpon>FrmGestionPacientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultarCitas.resx">
+    <EmbeddedResource Include="CapaPresentacion\FrmConsultarCitas.resx">
       <DependentUpon>FrmConsultarCitas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLogin.resx">
+    <EmbeddedResource Include="CapaPresentacion\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegistrocs.resx">
-      <DependentUpon>FrmRegistrocs.cs</DependentUpon>
+    <EmbeddedResource Include="CapaPresentacion\FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,5 +180,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

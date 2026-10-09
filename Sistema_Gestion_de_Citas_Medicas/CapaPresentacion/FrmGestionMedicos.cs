@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Gestion_de_Citas_Medicas
 {
-    public partial class FrmGestionMedico : Form
+    public partial class FrmGestionMedicos : Form
     {
-        public FrmGestionMedico()
+        public FrmGestionMedicos()
         {
             InitializeComponent();
         }

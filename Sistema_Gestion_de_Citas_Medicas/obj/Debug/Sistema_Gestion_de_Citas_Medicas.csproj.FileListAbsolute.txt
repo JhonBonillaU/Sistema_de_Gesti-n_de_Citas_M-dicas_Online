@@ -26,3 +26,21 @@ C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_C
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.Properties.Resources.resources
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.GenerateResource.cache
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.CoreCompileInputs.cache
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.exe.config
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.exe
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.pdb
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.AssemblyReference.cache
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmMenuPrincipal.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmConsultarRecetas.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmAgendarCitas.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmEmitirRecetas.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmGestionPacientes.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmConsultarCitas.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmLogin.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.Properties.Resources.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.GenerateResource.cache
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.CoreCompileInputs.cache
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.exe
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.pdb
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmGestionMedicos.resources
+C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.FrmRegistro.resources

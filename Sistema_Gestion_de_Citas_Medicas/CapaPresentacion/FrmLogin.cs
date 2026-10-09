@@ -73,7 +73,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 
         private void lnkRegistratrse_Click(object sender, EventArgs e)
         {
-            FrmRegistrocs frmRegistro = new FrmRegistrocs();
+            FrmRegistro frmRegistro = new FrmRegistro();
             frmRegistro.Show();
             this.Hide();
         }

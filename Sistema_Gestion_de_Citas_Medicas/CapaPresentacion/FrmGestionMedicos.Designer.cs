@@ -1,6 +1,6 @@
 ﻿namespace Sistema_Gestion_de_Citas_Medicas
 {
-    partial class FrmGestionMedico
+    partial class FrmGestionMedicos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionMedico));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionMedicos));
 			this.grpDatosMedico = new System.Windows.Forms.GroupBox();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.lblTotalMedicos = new System.Windows.Forms.ToolStripStatusLabel();

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Sistema_Gestion_de_Citas_Medicas
 {
-    public partial class FrmRegistrocs : Form
+    public partial class FrmRegistro : Form
     {
-        public FrmRegistrocs()
+        public FrmRegistro()
         {
             InitializeComponent();
         }
