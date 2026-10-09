@@ -11,7 +11,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 
         public static int IdUsuario { get; set; }
         public static string Username { get; set; }
-        public static string Rol { get; set; } // "Admin", "Medico", "Paciente"
+        public static string Rol { get; set; } // roles de "Admin", "Medico", "Paciente"
         public static int? IdPaciente { get; set; }
         public static int? IdMedico { get; set; }
 

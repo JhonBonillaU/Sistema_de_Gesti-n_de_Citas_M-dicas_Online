@@ -8,7 +8,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 {
     public class PacienteDAL
     {
-        // Registrar Paciente usando Transacción SQL y Manejo de Excepciones
+        // Registramos Paciente usando Transacción SQL y Manejo de Excepciones
         public bool RegistrarPaciente(Paciente paciente, string username, string password)
         {
             // Bloque using para liberar conexiones automáticamente con IDisposable
@@ -19,7 +19,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
                 try
                 {
-                    // 1. Insertar Paciente usando Parámetros @ para evitar inyección SQL
+                    // 1. Insertar Paciente usando @ para evitar inyección SQL
                     string queryPaciente = @"INSERT INTO Paciente (Nombre, Apellido, FechaNacimiento, Telefono, Correo) 
                                             VALUES (@Nombre, @Apellido, @FechaNacimiento, @Telefono, @Correo);
                                             SELECT SCOPE_IDENTITY();";
@@ -53,8 +53,8 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
                 }
                 catch (SqlException ex)
                 {
-                    tx.Rollback(); // Deshacer cambios en la BD ante error de SQL
-                    // Manejo de excepción específica de SQL
+                    tx.Rollback(); // Deshacer cambios en la BD ante error de SQL con Rollback
+                    // Manejo de excepción
                     throw new Exception($"Error en SQL Server al registrar el paciente: {ex.Message}");
                 }
                 catch (Exception ex)

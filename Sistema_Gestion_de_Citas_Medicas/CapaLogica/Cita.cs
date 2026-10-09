@@ -8,10 +8,10 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 {
     public class Cita
     {
-        // Atributos privados / protegidos
+        // Atributos privados y protegidos
         protected int idCita;
         protected DateTime fechaHora;
-        protected string estado; // 'Pendiente', 'Atendida', 'Cancelada'
+        protected string estado; // Pendiente, Atendida, Cancelada
         protected int idPaciente;
         protected int idMedico;
 

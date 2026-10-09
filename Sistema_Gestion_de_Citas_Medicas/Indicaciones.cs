@@ -1,6 +1,6 @@
 ﻿/* 
 ==================================================================================
- Guia de uso (FrmLogin.cs)
+ Guia para (FrmLogin.cs)
 ==================================================================================
  Para autenticar al usuario al presionar "Iniciar Sesión":
 

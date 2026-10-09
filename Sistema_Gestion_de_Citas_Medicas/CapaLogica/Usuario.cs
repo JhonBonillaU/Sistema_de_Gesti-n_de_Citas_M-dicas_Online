@@ -9,7 +9,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
     //Clase Base con miembros protected y propiedades públicas
     public class Usuario
     {
-        // Campos 'protected' Visibles para clases derivadas (Paciente/Medico), invisibles afuera
+        // Campos "protected" visibles para clases derivadas (Paciente/Medico), invisibles afuera
         protected int idUsuario;
         protected string username;
         protected string password;
@@ -44,7 +44,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
             this.correo = correo;
         }
 
-        // Método 'virtual': Permite que las clases hijas redefinan el comportamiento polimórfico
+        // Método que permite que las clases hijas redefinan el comportamiento polimórfico
         public virtual string ObtenerPerfil()
         {
             return $"USUARIO: {username} | Rol: {rol} | Nombre: {nombre} {apellido}";

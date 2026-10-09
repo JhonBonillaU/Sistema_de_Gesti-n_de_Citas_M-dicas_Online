@@ -22,5 +22,5 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 }
 
 //Solucion de error en libreria configuracion: Referencias/agregar referencia 
-//Marca la casilla al lado de System.Configuration. Haz clic en Aceptar.
+//Marca la casilla al lado de System.Configuration, clic en Aceptar.
 

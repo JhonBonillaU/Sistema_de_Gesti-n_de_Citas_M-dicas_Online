@@ -6,7 +6,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 {
     public class RecetaDAL
     {
-        // Emitir receta y marcar la cita como 'Atendida' en una sola transacción SQL
+        // Emitir receta y marcar la cita como "Atendida" en una sola transacción SQL
         public bool EmitirReceta(Receta receta)
         {
             using (SqlConnection con = Conexion.ObtenerConexion())
@@ -27,7 +27,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
                         cmdR.ExecuteNonQuery();
                     }
 
-                    // 2. Actualizar estado de la Cita a 'Atendida'
+                    // 2. Actualizar estado de la Cita a "Atendida"
                     string queryCita = "UPDATE Cita SET Estado = 'Atendida' WHERE ID_Cita = @ID_Cita;";
                     using (SqlCommand cmdC = new SqlCommand(queryCita, con, tx))
                     {

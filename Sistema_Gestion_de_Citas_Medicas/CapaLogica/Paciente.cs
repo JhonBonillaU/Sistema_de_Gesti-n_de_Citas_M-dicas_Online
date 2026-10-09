@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 {
-    // Herencia
+    // Heredamos
     public class Paciente : Usuario
     {
-        private int idPaciente;
+        //agregamos los atributos de la clase Paciente
+        private int idPaciente; 
         private DateTime fechaNacimiento;
 
         public int IdPaciente { get => idPaciente; set => idPaciente = value; }
@@ -17,7 +18,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 
         public Paciente() : base() { }
 
-        // Invocación al constructor padre mediante base(...) 
+        // Invocación al constructor padre mediante base
         public Paciente(int idPaciente, DateTime fechaNacimiento, int idUsuario, string username, string password, string nombre, string apellido, string telefono, string correo)
             : base(idUsuario, username, password, "Paciente", nombre, apellido, telefono, correo)
         {
@@ -25,7 +26,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
             this.fechaNacimiento = fechaNacimiento;
         }
 
-        // Polimorfismo con 'override': Sobrescribe el método virtual de Usuario
+        // Polimorfismo con override: Sobrescribe el método virtual de Usuario
         public override string ObtenerPerfil()
         {
             return $"PACIENTE: {nombre} {apellido} | Teléfono: {telefono} | Fecha Nac: {fechaNacimiento.ToShortDateString()}";

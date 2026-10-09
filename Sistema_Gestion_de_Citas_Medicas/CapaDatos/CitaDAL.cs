@@ -8,7 +8,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 {
     public class CitaDAL
     {
-        // 1. Validar choque de horarios (Requisito técnico: evita citas duplicadas al mismo médico en la misma FechaHora)
+        // 1. Validar horarios para evitar duplicidad de citas
         public bool ExisteChoqueHorario(int idMedico, DateTime fechaHora)
         {
             using (SqlConnection con = Conexion.ObtenerConexion())
