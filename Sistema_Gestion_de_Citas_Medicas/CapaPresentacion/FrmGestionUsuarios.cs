@@ -16,5 +16,10 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void FrmGestionUsuarios_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
