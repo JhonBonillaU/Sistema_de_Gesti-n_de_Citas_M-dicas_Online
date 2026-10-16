@@ -83,6 +83,11 @@ namespace Sistema_Gestion_de_Citas_Medicas
             MessageBox.Show("Datos del paciente validados y listos para registrar en SQL Server.",
                             "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void FrmGestionPacientes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
  }
 

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sistema_Gestion_de_Citas_Medicas.CapaDatos;
+using Sistema_Gestion_de_Citas_Medicas.CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,26 +56,60 @@ namespace Sistema_Gestion_de_Citas_Medicas
                 esValido = false;
             }
 
-            if (!esValido) return;
+            string usuarioIngresado = txtUsuario.Text.Trim();
+            string passwordIngresada = txtContraseña.Text.Trim();
 
-            // FASE 2: Aquí llamarás a la capa de datos de Ana para validar la clave en SQL
-            // Ejemplo de asignación de sesión según el rol devuelto:
-            SesionUsuario.Username = txtUsuario.Text.Trim();
+            try
+            {
+                UsuarioDAL usuarioDal = new UsuarioDAL();
 
-            // FrmMenuPrincipal cargará la vista según este rol
-            FrmMenuPrincipal menu = new FrmMenuPrincipal();
-            menu.Show();
-            this.Hide();
+
+                Usuario usuarioEncontrado = usuarioDal.ValidarLogin(usuarioIngresado, passwordIngresada);
+
+                // Si el objeto NO es nulo, significa que el usuario y la contraseña son correctos
+                if (usuarioEncontrado != null)
+                {
+                    // Guardamos los datos en la sesión global para usarlos en el menú principal
+                    SesionUsuario.Username = usuarioEncontrado.Username; 
+                    SesionUsuario.Rol = usuarioEncontrado.Rol;               // ¡Guardamos el rol real desde la BD!
+
+                    MessageBox.Show("¡Inicio de sesión exitoso!", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    FrmMenuPrincipal menu = new FrmMenuPrincipal();
+                    menu.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    // Si devuelve null, las credenciales son incorrectas
+                    MessageBox.Show("Usuario o contraseña incorrectos. Verifique sus datos.", "Acceso Denegado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al conectar con la base de datos: " + ex.Message, "Error de Conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            /* if (!esValido) return;
+
+             // FASE 2: Aquí llamarás a la capa de datos de Ana para validar la clave en SQL
+             // Ejemplo de asignación de sesión según el rol devuelto:
+             SesionUsuario.Username = txtUsuario.Text.Trim();
+
+             // FrmMenuPrincipal cargará la vista según este rol
+             FrmMenuPrincipal menu = new FrmMenuPrincipal();
+             menu.Show();
+             this.Hide();*/
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Exit(); 
         }
 
         private void lnkRegistratrse_Click(object sender, EventArgs e)
         {
-            FrmRegistro frmRegistro = new FrmRegistro();
+            FrmRegistro frmRegistro = new FrmRegistro(this);
             frmRegistro.Show();
             this.Hide();
         }

@@ -13,9 +13,23 @@ namespace Sistema_Gestion_de_Citas_Medicas
 {
     public partial class FrmRegistro : Form
     {
-        public FrmRegistro()
+
+        private Form frmLoginOriginal;
+
+        public FrmRegistro(Form login)
         {
             InitializeComponent();
+            this.frmLoginOriginal = login;
+        }
+
+        private void VolverLogin()
+        {
+            if (frmLoginOriginal != null)
+            {
+                frmLoginOriginal.Show();    
+            }
+
+            this.Close();
         }
 
         // Restringir ingreso en el teléfono a solo números y guion
@@ -92,12 +106,12 @@ namespace Sistema_Gestion_de_Citas_Medicas
             MessageBox.Show($"¡Registro completado exitosamente!\n\nBienvenido/a {txtNombreRegistro.Text}. Ya puedes iniciar sesión con tu usuario.",
                             "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            this.Close(); // Regresa al Login
+            VolverLogin(); // Regresa al Login
         }
 
         private void btnCancelarRegistrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            VolverLogin();
         }
     }
 }
