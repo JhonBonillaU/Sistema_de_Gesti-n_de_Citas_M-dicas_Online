@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
 
 namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 {
     public class Conexion
     {
-        // Obtiene la cadena de conexión definida en App.config
         private static string cadenaConexion = ConfigurationManager.ConnectionStrings["cnSQL"]?.ConnectionString
-            ?? "Server=.;Database=GestionCitasMedicas;Integrated Security=True;";
+            ?? "Server=3375898HP;Database=GestionCitasMedicas;Integrated Security=True;TrustServerCertificate=True;";
 
         public static SqlConnection ObtenerConexion()
         {

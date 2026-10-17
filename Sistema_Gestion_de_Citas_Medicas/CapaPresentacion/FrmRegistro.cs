@@ -8,6 +8,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema_Gestion_de_Citas_Medicas.CapaLogica;
+using Sistema_Gestion_de_Citas_Medicas.CapaDatos;
 
 namespace Sistema_Gestion_de_Citas_Medicas
 {
@@ -98,15 +100,42 @@ namespace Sistema_Gestion_de_Citas_Medicas
 
             if (!esValido) return;
 
-            // --- ASIGNACIÓN AUTOMÁTICA DE ROL ---
-            // Como este formulario es exclusivo de pacientes, asignamos el rol directamente sin darle opción al usuario
-            string rolAsignado = "Paciente";
+            try
+            {
+                // 1. Crear la entidad Paciente con los datos del formulario
+                Paciente nuevoPaciente = new Paciente
+                {
+                    Nombre = txtNombreRegistro.Text.Trim(),
+                    Apellido = txtApellidoRegistro.Text.Trim(),
+                    FechaNacimiento = dtpFechaNacimientoRegistro.Value, 
+                    Telefono = mtxtTelefonoRegistro.Text.Trim(),
+                    Correo = txtCorreoRegistro.Text.Trim()
+                };
 
-            // FASE 2: Aquí llamarás a la capa de datos de Ana para insertar en la tabla Paciente/Usuario en SQL
-            MessageBox.Show($"¡Registro completado exitosamente!\n\nBienvenido/a {txtNombreRegistro.Text}. Ya puedes iniciar sesión con tu usuario.",
-                            "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // 2. Instanciar la Capa de Datos 
+                PacienteDAL pacienteDAL = new PacienteDAL();
 
-            VolverLogin(); // Regresa al Login
+                // 3. Ejecutar el método de registro (Inserta en Paciente y Usuario usando Transacción SQL)
+                bool resultado = pacienteDAL.RegistrarPaciente(
+                    nuevoPaciente,
+                    txtNombreUsuarioRegistro.Text.Trim(),
+                    txtContraseñaRegistro.Text.Trim()
+                );
+
+                if (resultado)
+                {
+                    MessageBox.Show($"¡Registro completado exitosamente y guardado en la Base de Datos!\n\nBienvenido/a {txtNombreRegistro.Text}.",
+                                    "Registro de Paciente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    VolverLogin(); // Regresa al Login
+                }
+            }
+            catch (Exception ex)
+            {
+                
+                MessageBox.Show("Error al registrar el usuario en la base de datos: " + ex.Message,
+                                "Error de Registro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnCancelarRegistrar_Click(object sender, EventArgs e)

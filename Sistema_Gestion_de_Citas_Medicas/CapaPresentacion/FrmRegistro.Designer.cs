@@ -35,8 +35,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grpDatosRegistro = new System.Windows.Forms.GroupBox();
-            this.cmbGeneroRegistro = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.dtpFechaNacimientoRegistro = new System.Windows.Forms.DateTimePicker();
             this.mtxtTelefonoRegistro = new System.Windows.Forms.MaskedTextBox();
             this.txtCorreoRegistro = new System.Windows.Forms.TextBox();
@@ -114,8 +112,6 @@
             // grpDatosRegistro
             // 
             this.grpDatosRegistro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.grpDatosRegistro.Controls.Add(this.cmbGeneroRegistro);
-            this.grpDatosRegistro.Controls.Add(this.label8);
             this.grpDatosRegistro.Controls.Add(this.dtpFechaNacimientoRegistro);
             this.grpDatosRegistro.Controls.Add(this.mtxtTelefonoRegistro);
             this.grpDatosRegistro.Controls.Add(this.txtCorreoRegistro);
@@ -134,37 +130,17 @@
             this.grpDatosRegistro.TabStop = false;
             this.grpDatosRegistro.Text = "Datos del Paciente";
             // 
-            // cmbGeneroRegistro
-            // 
-            this.cmbGeneroRegistro.FormattingEnabled = true;
-            this.cmbGeneroRegistro.Location = new System.Drawing.Point(40, 387);
-            this.cmbGeneroRegistro.Name = "cmbGeneroRegistro";
-            this.cmbGeneroRegistro.Size = new System.Drawing.Size(373, 30);
-            this.cmbGeneroRegistro.TabIndex = 26;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(35, 359);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 25);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Género:";
-            // 
             // dtpFechaNacimientoRegistro
             // 
             this.dtpFechaNacimientoRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaNacimientoRegistro.Location = new System.Drawing.Point(266, 186);
+            this.dtpFechaNacimientoRegistro.Location = new System.Drawing.Point(266, 206);
             this.dtpFechaNacimientoRegistro.Name = "dtpFechaNacimientoRegistro";
             this.dtpFechaNacimientoRegistro.Size = new System.Drawing.Size(147, 28);
             this.dtpFechaNacimientoRegistro.TabIndex = 24;
             // 
             // mtxtTelefonoRegistro
             // 
-            this.mtxtTelefonoRegistro.Location = new System.Drawing.Point(180, 233);
+            this.mtxtTelefonoRegistro.Location = new System.Drawing.Point(169, 263);
             this.mtxtTelefonoRegistro.Mask = "0000-0000";
             this.mtxtTelefonoRegistro.Name = "mtxtTelefonoRegistro";
             this.mtxtTelefonoRegistro.Size = new System.Drawing.Size(109, 28);
@@ -173,7 +149,7 @@
             // txtCorreoRegistro
             // 
             this.txtCorreoRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreoRegistro.Location = new System.Drawing.Point(40, 305);
+            this.txtCorreoRegistro.Location = new System.Drawing.Point(41, 337);
             this.txtCorreoRegistro.Name = "txtCorreoRegistro";
             this.txtCorreoRegistro.Size = new System.Drawing.Size(373, 28);
             this.txtCorreoRegistro.TabIndex = 22;
@@ -224,7 +200,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(35, 189);
+            this.label5.Location = new System.Drawing.Point(35, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(222, 25);
             this.label5.TabIndex = 14;
@@ -236,7 +212,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(35, 234);
+            this.label6.Location = new System.Drawing.Point(36, 266);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 25);
             this.label6.TabIndex = 13;
@@ -248,7 +224,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(35, 277);
+            this.label7.Location = new System.Drawing.Point(36, 309);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 25);
             this.label7.TabIndex = 12;
@@ -405,9 +381,7 @@
         private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cmbGeneroRegistro;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtConfirmarContraseñaRegistro;
