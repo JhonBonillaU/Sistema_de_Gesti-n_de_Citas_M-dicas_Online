@@ -15,6 +15,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
     }
 }
 
+//NOTA: Cambiar la cadena de conexión en el archivo App.config si se desea conectar a otra base de datos.
+
 //Solucion de error en libreria configuracion: Referencias/agregar referencia 
 //Marca la casilla al lado de System.Configuration, clic en Aceptar.
-
