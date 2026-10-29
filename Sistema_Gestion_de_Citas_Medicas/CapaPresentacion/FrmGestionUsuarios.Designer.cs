@@ -36,22 +36,21 @@
 			this.btnLimpiarUsuario = new System.Windows.Forms.Button();
 			this.btnEliminarUsuario = new System.Windows.Forms.Button();
 			this.btnModificarUsuario = new System.Windows.Forms.Button();
-			this.btnGuardarUsuario = new System.Windows.Forms.Button();
-			this.cmbRolUsuario = new System.Windows.Forms.ComboBox();
-			this.txtContraseñaUsuario = new System.Windows.Forms.TextBox();
-			this.txtNombreUsuario = new System.Windows.Forms.TextBox();
+			this.cmbRol = new System.Windows.Forms.ComboBox();
+			this.txtPassword = new System.Windows.Forms.TextBox();
+			this.txtUsername = new System.Windows.Forms.TextBox();
 			this.txtIdUsuario = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.dgvUsuario = new System.Windows.Forms.DataGridView();
+			this.dgvUsuarios = new System.Windows.Forms.DataGridView();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel2.SuspendLayout();
 			this.grpDatosPacientes.SuspendLayout();
 			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -94,10 +93,9 @@
 			this.grpDatosPacientes.Controls.Add(this.btnLimpiarUsuario);
 			this.grpDatosPacientes.Controls.Add(this.btnEliminarUsuario);
 			this.grpDatosPacientes.Controls.Add(this.btnModificarUsuario);
-			this.grpDatosPacientes.Controls.Add(this.btnGuardarUsuario);
-			this.grpDatosPacientes.Controls.Add(this.cmbRolUsuario);
-			this.grpDatosPacientes.Controls.Add(this.txtContraseñaUsuario);
-			this.grpDatosPacientes.Controls.Add(this.txtNombreUsuario);
+			this.grpDatosPacientes.Controls.Add(this.cmbRol);
+			this.grpDatosPacientes.Controls.Add(this.txtPassword);
+			this.grpDatosPacientes.Controls.Add(this.txtUsername);
 			this.grpDatosPacientes.Controls.Add(this.txtIdUsuario);
 			this.grpDatosPacientes.Controls.Add(this.label1);
 			this.grpDatosPacientes.Controls.Add(this.label2);
@@ -117,12 +115,13 @@
 			this.btnLimpiarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnLimpiarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnLimpiarUsuario.ForeColor = System.Drawing.Color.Black;
-			this.btnLimpiarUsuario.Location = new System.Drawing.Point(333, 371);
+			this.btnLimpiarUsuario.Location = new System.Drawing.Point(219, 307);
 			this.btnLimpiarUsuario.Name = "btnLimpiarUsuario";
 			this.btnLimpiarUsuario.Size = new System.Drawing.Size(164, 40);
 			this.btnLimpiarUsuario.TabIndex = 28;
 			this.btnLimpiarUsuario.Text = "Limpiar";
 			this.btnLimpiarUsuario.UseVisualStyleBackColor = false;
+			this.btnLimpiarUsuario.Click += new System.EventHandler(this.btnLimpiarUsuario_Click);
 			// 
 			// btnEliminarUsuario
 			// 
@@ -130,12 +129,13 @@
 			this.btnEliminarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnEliminarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEliminarUsuario.ForeColor = System.Drawing.Color.Black;
-			this.btnEliminarUsuario.Location = new System.Drawing.Point(88, 371);
+			this.btnEliminarUsuario.Location = new System.Drawing.Point(403, 307);
 			this.btnEliminarUsuario.Name = "btnEliminarUsuario";
 			this.btnEliminarUsuario.Size = new System.Drawing.Size(142, 40);
 			this.btnEliminarUsuario.TabIndex = 27;
 			this.btnEliminarUsuario.Text = "Eliminar";
 			this.btnEliminarUsuario.UseVisualStyleBackColor = false;
+			this.btnEliminarUsuario.Click += new System.EventHandler(this.btnEliminarUsuario_Click);
 			// 
 			// btnModificarUsuario
 			// 
@@ -143,49 +143,37 @@
 			this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnModificarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnModificarUsuario.ForeColor = System.Drawing.Color.Black;
-			this.btnModificarUsuario.Location = new System.Drawing.Point(333, 287);
+			this.btnModificarUsuario.Location = new System.Drawing.Point(28, 307);
 			this.btnModificarUsuario.Name = "btnModificarUsuario";
 			this.btnModificarUsuario.Size = new System.Drawing.Size(164, 40);
 			this.btnModificarUsuario.TabIndex = 26;
 			this.btnModificarUsuario.Text = "Modificar";
 			this.btnModificarUsuario.UseVisualStyleBackColor = false;
+			this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
 			// 
-			// btnGuardarUsuario
+			// cmbRol
 			// 
-			this.btnGuardarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
-			this.btnGuardarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnGuardarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnGuardarUsuario.ForeColor = System.Drawing.Color.Black;
-			this.btnGuardarUsuario.Location = new System.Drawing.Point(88, 287);
-			this.btnGuardarUsuario.Name = "btnGuardarUsuario";
-			this.btnGuardarUsuario.Size = new System.Drawing.Size(142, 40);
-			this.btnGuardarUsuario.TabIndex = 25;
-			this.btnGuardarUsuario.Text = "Guardar";
-			this.btnGuardarUsuario.UseVisualStyleBackColor = false;
+			this.cmbRol.FormattingEnabled = true;
+			this.cmbRol.Location = new System.Drawing.Point(236, 194);
+			this.cmbRol.Name = "cmbRol";
+			this.cmbRol.Size = new System.Drawing.Size(309, 30);
+			this.cmbRol.TabIndex = 22;
 			// 
-			// cmbRolUsuario
+			// txtPassword
 			// 
-			this.cmbRolUsuario.FormattingEnabled = true;
-			this.cmbRolUsuario.Location = new System.Drawing.Point(236, 194);
-			this.cmbRolUsuario.Name = "cmbRolUsuario";
-			this.cmbRolUsuario.Size = new System.Drawing.Size(309, 30);
-			this.cmbRolUsuario.TabIndex = 22;
+			this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPassword.Location = new System.Drawing.Point(236, 142);
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.Size = new System.Drawing.Size(309, 28);
+			this.txtPassword.TabIndex = 21;
 			// 
-			// txtContraseñaUsuario
+			// txtUsername
 			// 
-			this.txtContraseñaUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtContraseñaUsuario.Location = new System.Drawing.Point(236, 142);
-			this.txtContraseñaUsuario.Name = "txtContraseñaUsuario";
-			this.txtContraseñaUsuario.Size = new System.Drawing.Size(309, 28);
-			this.txtContraseñaUsuario.TabIndex = 21;
-			// 
-			// txtNombreUsuario
-			// 
-			this.txtNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtNombreUsuario.Location = new System.Drawing.Point(236, 91);
-			this.txtNombreUsuario.Name = "txtNombreUsuario";
-			this.txtNombreUsuario.Size = new System.Drawing.Size(309, 28);
-			this.txtNombreUsuario.TabIndex = 20;
+			this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtUsername.Location = new System.Drawing.Point(236, 91);
+			this.txtUsername.Name = "txtUsername";
+			this.txtUsername.Size = new System.Drawing.Size(309, 28);
+			this.txtUsername.TabIndex = 20;
 			// 
 			// txtIdUsuario
 			// 
@@ -248,7 +236,7 @@
 			// groupBox1
 			// 
 			this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-			this.groupBox1.Controls.Add(this.dgvUsuario);
+			this.groupBox1.Controls.Add(this.dgvUsuarios);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.Location = new System.Drawing.Point(627, 117);
 			this.groupBox1.Name = "groupBox1";
@@ -257,18 +245,19 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Usuario Registradas";
 			// 
-			// dgvUsuario
+			// dgvUsuarios
 			// 
-			this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dgvUsuario.Location = new System.Drawing.Point(3, 24);
-			this.dgvUsuario.Name = "dgvUsuario";
-			this.dgvUsuario.ReadOnly = true;
-			this.dgvUsuario.RowHeadersWidth = 51;
-			this.dgvUsuario.RowTemplate.Height = 24;
-			this.dgvUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgvUsuario.Size = new System.Drawing.Size(626, 424);
-			this.dgvUsuario.TabIndex = 1;
+			this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvUsuarios.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dgvUsuarios.Location = new System.Drawing.Point(3, 24);
+			this.dgvUsuarios.Name = "dgvUsuarios";
+			this.dgvUsuarios.ReadOnly = true;
+			this.dgvUsuarios.RowHeadersWidth = 51;
+			this.dgvUsuarios.RowTemplate.Height = 24;
+			this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dgvUsuarios.Size = new System.Drawing.Size(626, 424);
+			this.dgvUsuarios.TabIndex = 1;
+			this.dgvUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellClick);
 			// 
 			// FrmGestionUsuarios
 			// 
@@ -287,7 +276,7 @@
 			this.grpDatosPacientes.ResumeLayout(false);
 			this.grpDatosPacientes.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -298,10 +287,10 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.GroupBox grpDatosPacientes;
-        private System.Windows.Forms.ComboBox cmbRolUsuario;
-        private System.Windows.Forms.TextBox txtContraseñaUsuario;
-        private System.Windows.Forms.TextBox txtNombreUsuario;
-        private System.Windows.Forms.TextBox txtIdUsuario;
+        private System.Windows.Forms.ComboBox cmbRol;
+		private System.Windows.Forms.TextBox txtPassword;
+		private System.Windows.Forms.TextBox txtUsername;
+		private System.Windows.Forms.TextBox txtIdUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -309,8 +298,7 @@
         private System.Windows.Forms.Button btnLimpiarUsuario;
         private System.Windows.Forms.Button btnEliminarUsuario;
         private System.Windows.Forms.Button btnModificarUsuario;
-        private System.Windows.Forms.Button btnGuardarUsuario;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dgvUsuario;
+        private System.Windows.Forms.DataGridView dgvUsuarios;
     }
 }

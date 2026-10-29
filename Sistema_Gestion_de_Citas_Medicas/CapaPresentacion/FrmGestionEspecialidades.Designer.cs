@@ -42,12 +42,12 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.dgvEspecialidad = new System.Windows.Forms.DataGridView();
+			this.dgvEspecialidades = new System.Windows.Forms.DataGridView();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel2.SuspendLayout();
 			this.grpDatosPacientes.SuspendLayout();
 			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidad)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidades)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -115,6 +115,7 @@
 			this.btnLimpiarEspecialidad.TabIndex = 24;
 			this.btnLimpiarEspecialidad.Text = "Limpiar";
 			this.btnLimpiarEspecialidad.UseVisualStyleBackColor = false;
+			this.btnLimpiarEspecialidad.Click += new System.EventHandler(this.btnLimpiarEspecialidad_Click);
 			// 
 			// btnEliminarEspecialidad
 			// 
@@ -128,6 +129,7 @@
 			this.btnEliminarEspecialidad.TabIndex = 23;
 			this.btnEliminarEspecialidad.Text = "Eliminar";
 			this.btnEliminarEspecialidad.UseVisualStyleBackColor = false;
+			this.btnEliminarEspecialidad.Click += new System.EventHandler(this.btnEliminarEspecialidad_Click);
 			// 
 			// btnModificarEspecialidad
 			// 
@@ -141,6 +143,7 @@
 			this.btnModificarEspecialidad.TabIndex = 22;
 			this.btnModificarEspecialidad.Text = "Modificar";
 			this.btnModificarEspecialidad.UseVisualStyleBackColor = false;
+			this.btnModificarEspecialidad.Click += new System.EventHandler(this.btnModificarEspecialidad_Click);
 			// 
 			// btnGuardarEspecialidad
 			// 
@@ -154,6 +157,7 @@
 			this.btnGuardarEspecialidad.TabIndex = 21;
 			this.btnGuardarEspecialidad.Text = "Guardar";
 			this.btnGuardarEspecialidad.UseVisualStyleBackColor = false;
+			this.btnGuardarEspecialidad.Click += new System.EventHandler(this.btnGuardarEspecialidad_Click);
 			// 
 			// txtNombreEspecialidad
 			// 
@@ -200,7 +204,7 @@
 			// groupBox1
 			// 
 			this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-			this.groupBox1.Controls.Add(this.dgvEspecialidad);
+			this.groupBox1.Controls.Add(this.dgvEspecialidades);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.Location = new System.Drawing.Point(476, 115);
 			this.groupBox1.Name = "groupBox1";
@@ -209,18 +213,19 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Especialidades Registradas";
 			// 
-			// dgvEspecialidad
+			// dgvEspecialidades
 			// 
-			this.dgvEspecialidad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvEspecialidad.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dgvEspecialidad.Location = new System.Drawing.Point(3, 24);
-			this.dgvEspecialidad.Name = "dgvEspecialidad";
-			this.dgvEspecialidad.ReadOnly = true;
-			this.dgvEspecialidad.RowHeadersWidth = 51;
-			this.dgvEspecialidad.RowTemplate.Height = 24;
-			this.dgvEspecialidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgvEspecialidad.Size = new System.Drawing.Size(512, 445);
-			this.dgvEspecialidad.TabIndex = 1;
+			this.dgvEspecialidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvEspecialidades.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dgvEspecialidades.Location = new System.Drawing.Point(3, 24);
+			this.dgvEspecialidades.Name = "dgvEspecialidades";
+			this.dgvEspecialidades.ReadOnly = true;
+			this.dgvEspecialidades.RowHeadersWidth = 51;
+			this.dgvEspecialidades.RowTemplate.Height = 24;
+			this.dgvEspecialidades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dgvEspecialidades.Size = new System.Drawing.Size(512, 445);
+			this.dgvEspecialidades.TabIndex = 1;
+			this.dgvEspecialidades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEspecialidad_CellContentClick);
 			// 
 			// FrmGestionEspecialidades
 			// 
@@ -232,13 +237,14 @@
 			this.Controls.Add(this.panel2);
 			this.Name = "FrmGestionEspecialidades";
 			this.Text = "Gestion Especialidades";
+			this.Load += new System.EventHandler(this.FrmGestionEspecialidades_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			this.grpDatosPacientes.ResumeLayout(false);
 			this.grpDatosPacientes.PerformLayout();
 			this.groupBox1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidad)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dgvEspecialidades)).EndInit();
 			this.ResumeLayout(false);
 
         }
@@ -258,6 +264,6 @@
         private System.Windows.Forms.Button btnLimpiarEspecialidad;
         private System.Windows.Forms.Button btnEliminarEspecialidad;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dgvEspecialidad;
+        private System.Windows.Forms.DataGridView dgvEspecialidades;
     }
 }
