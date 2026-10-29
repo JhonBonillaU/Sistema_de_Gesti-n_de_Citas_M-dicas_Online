@@ -35,12 +35,12 @@
 			this.grpListaCitas = new System.Windows.Forms.GroupBox();
 			this.dgvCitas = new System.Windows.Forms.DataGridView();
 			this.grpBuscarCita = new System.Windows.Forms.GroupBox();
+			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+			this.label1 = new System.Windows.Forms.Label();
 			this.dtpFecha = new System.Windows.Forms.DateTimePicker();
 			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.btnVolver = new System.Windows.Forms.Button();
 			this.btnEmitirReceta = new System.Windows.Forms.Button();
@@ -127,6 +127,26 @@
 			this.grpBuscarCita.TabStop = false;
 			this.grpBuscarCita.Text = "Indicaciones Médicas";
 			// 
+			// richTextBox1
+			// 
+			this.richTextBox1.Location = new System.Drawing.Point(24, 161);
+			this.richTextBox1.Name = "richTextBox1";
+			this.richTextBox1.Size = new System.Drawing.Size(618, 148);
+			this.richTextBox1.TabIndex = 26;
+			this.richTextBox1.Text = "";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Black;
+			this.label1.Location = new System.Drawing.Point(21, 133);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(86, 25);
+			this.label1.TabIndex = 25;
+			this.label1.Text = "Detalle:";
+			// 
 			// dtpFecha
 			// 
 			this.dtpFecha.Location = new System.Drawing.Point(130, 85);
@@ -166,26 +186,6 @@
 			this.label2.Size = new System.Drawing.Size(79, 25);
 			this.label2.TabIndex = 14;
 			this.label2.Text = "Fecha:";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(21, 133);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(86, 25);
-			this.label1.TabIndex = 25;
-			this.label1.Text = "Detalle:";
-			// 
-			// richTextBox1
-			// 
-			this.richTextBox1.Location = new System.Drawing.Point(24, 161);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(618, 148);
-			this.richTextBox1.TabIndex = 26;
-			this.richTextBox1.Text = "";
 			// 
 			// btnLimpiar
 			// 
@@ -238,7 +238,7 @@
 			this.Controls.Add(this.grpListaCitas);
 			this.Controls.Add(this.panel2);
 			this.Name = "FrmEmitirRecetas";
-			this.Text = "FrmEmitirRecetas";
+			this.Text = "Emitir Recetas";
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

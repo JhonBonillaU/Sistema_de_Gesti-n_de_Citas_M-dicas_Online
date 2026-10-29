@@ -336,7 +336,7 @@
 			this.label7.TabIndex = 28;
 			this.label7.Text = "Buscar:";
 			// 
-			// FrmGestionMedico
+			// FrmGestionMedicos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -348,8 +348,8 @@
 			this.Controls.Add(this.lblTitulo);
 			this.Controls.Add(this.grpDatosMedico);
 			this.Controls.Add(this.panel2);
-			this.Name = "FrmGestionMedico";
-			this.Text = "FrmGestionMedico";
+			this.Name = "FrmGestionMedicos";
+			this.Text = "Gestion Medico";
 			this.Load += new System.EventHandler(this.FrmGestionMedico_Load);
 			this.grpDatosMedico.ResumeLayout(false);
 			this.grpDatosMedico.PerformLayout();

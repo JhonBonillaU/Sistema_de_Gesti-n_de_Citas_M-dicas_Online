@@ -282,7 +282,7 @@
 			this.Controls.Add(this.grpAgendaCita);
 			this.Controls.Add(this.panel2);
 			this.Name = "FrmAgendarCitas";
-			this.Text = "FrmAgendarCitas";
+			this.Text = "Agendar Citas";
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

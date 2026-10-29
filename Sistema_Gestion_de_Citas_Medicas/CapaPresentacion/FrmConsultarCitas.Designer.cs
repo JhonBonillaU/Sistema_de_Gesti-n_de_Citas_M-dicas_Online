@@ -213,7 +213,7 @@
 			this.Controls.Add(this.grpBuscarCita);
 			this.Controls.Add(this.panel2);
 			this.Name = "FrmConsultarCitas";
-			this.Text = "FrmControlCitas";
+			this.Text = "Control Citas";
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
