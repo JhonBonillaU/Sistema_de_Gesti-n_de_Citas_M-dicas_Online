@@ -133,6 +133,7 @@
 			this.cmbEspecialidad.Name = "cmbEspecialidad";
 			this.cmbEspecialidad.Size = new System.Drawing.Size(578, 30);
 			this.cmbEspecialidad.TabIndex = 25;
+			this.cmbEspecialidad.SelectedIndexChanged += new System.EventHandler(this.cmbEspecialidad_SelectedIndexChanged);
 			// 
 			// dtpFecha
 			// 
@@ -244,6 +245,7 @@
 			this.btnAgendarCita.TabIndex = 26;
 			this.btnAgendarCita.Text = "Agendar Cita";
 			this.btnAgendarCita.UseVisualStyleBackColor = false;
+			this.btnAgendarCita.Click += new System.EventHandler(this.btnAgendarCita_Click);
 			// 
 			// btnVolver
 			// 
@@ -257,6 +259,7 @@
 			this.btnVolver.TabIndex = 28;
 			this.btnVolver.Text = "Volver";
 			this.btnVolver.UseVisualStyleBackColor = false;
+			this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
 			// 
 			// btnLimpiar
 			// 
@@ -270,6 +273,7 @@
 			this.btnLimpiar.TabIndex = 29;
 			this.btnLimpiar.Text = "Limpiar";
 			this.btnLimpiar.UseVisualStyleBackColor = false;
+			this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
 			// 
 			// FrmAgendarCitas
 			// 
@@ -283,6 +287,7 @@
 			this.Controls.Add(this.panel2);
 			this.Name = "FrmAgendarCitas";
 			this.Text = "Agendar Citas";
+			this.Load += new System.EventHandler(this.FrmAgendarCitas_Load);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

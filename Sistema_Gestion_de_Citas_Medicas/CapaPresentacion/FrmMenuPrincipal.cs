@@ -62,7 +62,8 @@ namespace Sistema_Gestion_de_Citas_Medicas
                 btnEmitirRecetas.Visible = true;
                 btnConsultarRecetas.Visible = true;
                 btnResumen.Visible = true;
-            }
+				btnSalir.Visible = true;
+			}
             else if (rol == "Medico")
             {
                 btnEmitirRecetas.Visible = true;
@@ -74,7 +75,8 @@ namespace Sistema_Gestion_de_Citas_Medicas
                 btnUsuarios.Visible = false;
                 btnEspecialidad.Visible = false;
                 btnResumen.Visible = false;
-            }
+				btnSalir.Visible = true;
+			}
             else if (rol == "Paciente")
             {
                 btnConsultarCitas.Visible = true;
@@ -86,7 +88,8 @@ namespace Sistema_Gestion_de_Citas_Medicas
                 btnEspecialidad.Visible = false;
                 btnEmitirRecetas.Visible = false;
                 btnResumen.Visible = false;
-            }
+                btnSalir.Visible = true;
+			}
         }
 
 
@@ -155,5 +158,10 @@ namespace Sistema_Gestion_de_Citas_Medicas
         {
             AbrirFormularioEnPanel(new FrmResumen());
         }
-    }
+
+		private void btnSalir_Click(object sender, EventArgs e)
+		{
+            Environment.Exit(0);
+		}
+	}
 }

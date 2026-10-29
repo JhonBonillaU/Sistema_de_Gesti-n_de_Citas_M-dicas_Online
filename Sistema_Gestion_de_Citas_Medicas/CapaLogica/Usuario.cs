@@ -14,7 +14,9 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
         protected string username;
         protected string password;
         protected string rol;
-        protected string nombre;
+        protected int idPaciente;
+		protected int idMedico;
+		protected string nombre;
         protected string apellido;
         protected string telefono;
         protected string correo;
@@ -24,7 +26,9 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
         public string Rol { get => rol; set => rol = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
+		public int ID_Paciente { get => idPaciente; set => idPaciente = value; }
+		public int ID_Medico { get => idMedico; set => idMedico = value; }
+		public string Nombre { get => nombre; set => nombre = value; }
         public string Apellido { get => apellido; set => apellido = value; }
         public string Telefono { get => telefono; set => telefono = value; }
         public string Correo { get => correo; set => correo = value; }

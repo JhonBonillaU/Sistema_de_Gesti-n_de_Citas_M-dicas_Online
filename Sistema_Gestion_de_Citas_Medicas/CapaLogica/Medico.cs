@@ -10,7 +10,6 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
     public class Medico : Usuario
     {
         //agregamos atributos propios de la clase Medico
-        private int idMedico;
         private int idEspecialidad;
         private string nombreEspecialidad;
 

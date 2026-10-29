@@ -30,36 +30,26 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
                         if (rol == "Paciente")
                         {
-                            Paciente p = new Paciente
-                            {
-                                IdUsuario = Convert.ToInt32(reader["ID_Usuario"]),
-                                Username = reader["Username"].ToString(),
-                                Rol = rol
-                            };
-
-                            if (reader["ID_Paciente"] != DBNull.Value)
-                            {
-                                p.IdPaciente = Convert.ToInt32(reader["ID_Paciente"]);
-                            }
-
-                            usuario = p;
-                        }
+							Paciente p = new Paciente
+							{
+								IdUsuario = Convert.ToInt32(reader["ID_Usuario"]),
+								Username = reader["Username"].ToString(),
+								Rol = rol,
+								ID_Paciente = reader["ID_Paciente"] != DBNull.Value ? Convert.ToInt32(reader["ID_Paciente"]) : 0
+							};
+							usuario = p;
+						}
                         else if (rol == "Medico")
                         {
-                            Medico m = new Medico
-                            {
-                                IdUsuario = Convert.ToInt32(reader["ID_Usuario"]),
-                                Username = reader["Username"].ToString(),
-                                Rol = rol
-                            };
-
-                            if (reader["ID_Medico"] != DBNull.Value)
-                            {
-                                m.IdMedico = Convert.ToInt32(reader["ID_Medico"]);
-                            }
-
-                            usuario = m;
-                        }
+							Medico m = new Medico
+							{
+								IdUsuario = Convert.ToInt32(reader["ID_Usuario"]),
+								Username = reader["Username"].ToString(),
+								Rol = rol,
+								ID_Medico = reader["ID_Medico"] != DBNull.Value ? Convert.ToInt32(reader["ID_Medico"]) : 0
+							};
+							usuario = m;
+						}
                         else // Administrador
                         {
                             usuario = new Usuario

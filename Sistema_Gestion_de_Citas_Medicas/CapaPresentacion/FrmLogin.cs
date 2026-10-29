@@ -19,26 +19,6 @@ namespace Sistema_Gestion_de_Citas_Medicas
             InitializeComponent();
         }
 
-        private void picLogoLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             errorProviderLogin.Clear();
@@ -55,8 +35,12 @@ namespace Sistema_Gestion_de_Citas_Medicas
                 errorProviderLogin.SetError(txtContraseña, "Ingrese su contraseña.");
                 esValido = false;
             }
+			if (!esValido)
+			{
+				return; // Detiene la ejecución si hay errores en los campos
+			}
 
-            string usuarioIngresado = txtUsuario.Text.Trim();
+			string usuarioIngresado = txtUsuario.Text.Trim();
             string passwordIngresada = txtContraseña.Text.Trim();
 
             try
@@ -73,7 +57,17 @@ namespace Sistema_Gestion_de_Citas_Medicas
                     SesionUsuario.Username = usuarioEncontrado.Username; 
                     SesionUsuario.Rol = usuarioEncontrado.Rol;               // ¡Guardamos el rol real desde la BD!
 
-                    MessageBox.Show("¡Inicio de sesión exitoso!", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+					// Verificamos si el usuario es un Paciente o un Médico para extraer su ID específico
+					if (usuarioEncontrado is Paciente paciente)
+					{
+						SesionUsuario.IdPaciente = paciente.ID_Paciente;
+					}
+					else if (usuarioEncontrado is Medico medico)
+					{
+						SesionUsuario.IdMedico = medico.ID_Medico;
+					}
+
+					MessageBox.Show("¡Inicio de sesión exitoso!", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     FrmMenuPrincipal menu = new FrmMenuPrincipal();
                     menu.Show();
