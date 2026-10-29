@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sistema_Gestion_de_Citas_Medicas.CapaDatos;
 
 namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 {
@@ -37,5 +39,5 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
         {
             return $"Dr. {nombre} {apellido} ({nombreEspecialidad})";
         }
-    }
+	}
 }

@@ -71,7 +71,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
                 btnPacientes.Visible = true;
                 btnAgendarCitas.Visible = true;
                 btnConsultarCitas.Visible = true;// Ver historial de pacientes
-                btnMedicos.Visible = false;      // No puede administrar médicos
+                btnMedicos.Visible = true;      // No puede administrar médicos
                 btnUsuarios.Visible = false;
                 btnEspecialidad.Visible = false;
                 btnResumen.Visible = false;

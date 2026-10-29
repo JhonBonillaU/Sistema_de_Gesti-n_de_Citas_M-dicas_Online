@@ -109,9 +109,9 @@
 			this.btnLimpiarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnLimpiarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnLimpiarEspecialidad.ForeColor = System.Drawing.Color.Black;
-			this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(241, 385);
+			this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(30, 378);
 			this.btnLimpiarEspecialidad.Name = "btnLimpiarEspecialidad";
-			this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(164, 40);
+			this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(142, 40);
 			this.btnLimpiarEspecialidad.TabIndex = 24;
 			this.btnLimpiarEspecialidad.Text = "Limpiar";
 			this.btnLimpiarEspecialidad.UseVisualStyleBackColor = false;
@@ -122,9 +122,9 @@
 			this.btnEliminarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnEliminarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEliminarEspecialidad.ForeColor = System.Drawing.Color.Black;
-			this.btnEliminarEspecialidad.Location = new System.Drawing.Point(30, 385);
+			this.btnEliminarEspecialidad.Location = new System.Drawing.Point(241, 378);
 			this.btnEliminarEspecialidad.Name = "btnEliminarEspecialidad";
-			this.btnEliminarEspecialidad.Size = new System.Drawing.Size(142, 40);
+			this.btnEliminarEspecialidad.Size = new System.Drawing.Size(164, 40);
 			this.btnEliminarEspecialidad.TabIndex = 23;
 			this.btnEliminarEspecialidad.Text = "Eliminar";
 			this.btnEliminarEspecialidad.UseVisualStyleBackColor = false;

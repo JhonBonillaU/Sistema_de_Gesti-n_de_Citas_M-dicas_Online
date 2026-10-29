@@ -38,10 +38,10 @@
 			this.btnGuardarMedico = new System.Windows.Forms.Button();
 			this.cmbEspecialidad = new System.Windows.Forms.ComboBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.mtxtTelefonoMedico = new System.Windows.Forms.MaskedTextBox();
-			this.txtCorreoMedico = new System.Windows.Forms.TextBox();
-			this.txtApellidoMedico = new System.Windows.Forms.TextBox();
-			this.txtNombreMedico = new System.Windows.Forms.TextBox();
+			this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
+			this.txtCorreo = new System.Windows.Forms.TextBox();
+			this.txtApellido = new System.Windows.Forms.TextBox();
+			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.txtIdMedico = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -52,8 +52,7 @@
 			this.lblTitulo = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.dgvMedicos = new System.Windows.Forms.DataGridView();
-			this.txtBuscar = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
+			this.btnLimpiarEspecialidad = new System.Windows.Forms.Button();
 			this.grpDatosMedico.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,16 +61,17 @@
 			// 
 			// grpDatosMedico
 			// 
+			this.grpDatosMedico.Controls.Add(this.btnLimpiarEspecialidad);
 			this.grpDatosMedico.Controls.Add(this.statusStrip1);
 			this.grpDatosMedico.Controls.Add(this.btnEliminarMedico);
 			this.grpDatosMedico.Controls.Add(this.btnModificarMedico);
 			this.grpDatosMedico.Controls.Add(this.btnGuardarMedico);
 			this.grpDatosMedico.Controls.Add(this.cmbEspecialidad);
 			this.grpDatosMedico.Controls.Add(this.label6);
-			this.grpDatosMedico.Controls.Add(this.mtxtTelefonoMedico);
-			this.grpDatosMedico.Controls.Add(this.txtCorreoMedico);
-			this.grpDatosMedico.Controls.Add(this.txtApellidoMedico);
-			this.grpDatosMedico.Controls.Add(this.txtNombreMedico);
+			this.grpDatosMedico.Controls.Add(this.txtTelefono);
+			this.grpDatosMedico.Controls.Add(this.txtCorreo);
+			this.grpDatosMedico.Controls.Add(this.txtApellido);
+			this.grpDatosMedico.Controls.Add(this.txtNombre);
 			this.grpDatosMedico.Controls.Add(this.txtIdMedico);
 			this.grpDatosMedico.Controls.Add(this.label1);
 			this.grpDatosMedico.Controls.Add(this.label2);
@@ -116,12 +116,13 @@
 			this.btnEliminarMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnEliminarMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEliminarMedico.ForeColor = System.Drawing.Color.Black;
-			this.btnEliminarMedico.Location = new System.Drawing.Point(148, 473);
+			this.btnEliminarMedico.Location = new System.Drawing.Point(246, 478);
 			this.btnEliminarMedico.Name = "btnEliminarMedico";
-			this.btnEliminarMedico.Size = new System.Drawing.Size(142, 40);
+			this.btnEliminarMedico.Size = new System.Drawing.Size(164, 40);
 			this.btnEliminarMedico.TabIndex = 27;
 			this.btnEliminarMedico.Text = "Eliminar";
 			this.btnEliminarMedico.UseVisualStyleBackColor = false;
+			this.btnEliminarMedico.Click += new System.EventHandler(this.btnEliminarMedico_Click);
 			// 
 			// btnModificarMedico
 			// 
@@ -135,6 +136,7 @@
 			this.btnModificarMedico.TabIndex = 26;
 			this.btnModificarMedico.Text = "Modificar";
 			this.btnModificarMedico.UseVisualStyleBackColor = false;
+			this.btnModificarMedico.Click += new System.EventHandler(this.btnModificarMedico_Click);
 			// 
 			// btnGuardarMedico
 			// 
@@ -148,6 +150,7 @@
 			this.btnGuardarMedico.TabIndex = 25;
 			this.btnGuardarMedico.Text = "Guardar";
 			this.btnGuardarMedico.UseVisualStyleBackColor = false;
+			this.btnGuardarMedico.Click += new System.EventHandler(this.btnGuardarMedico_Click);
 			// 
 			// cmbEspecialidad
 			// 
@@ -171,37 +174,37 @@
 			this.label6.TabIndex = 24;
 			this.label6.Text = "Especialidad:";
 			// 
-			// mtxtTelefonoMedico
+			// txtTelefono
 			// 
-			this.mtxtTelefonoMedico.Location = new System.Drawing.Point(181, 187);
-			this.mtxtTelefonoMedico.Mask = "0000-0000";
-			this.mtxtTelefonoMedico.Name = "mtxtTelefonoMedico";
-			this.mtxtTelefonoMedico.Size = new System.Drawing.Size(109, 28);
-			this.mtxtTelefonoMedico.TabIndex = 23;
+			this.txtTelefono.Location = new System.Drawing.Point(181, 187);
+			this.txtTelefono.Mask = "0000-0000";
+			this.txtTelefono.Name = "txtTelefono";
+			this.txtTelefono.Size = new System.Drawing.Size(109, 28);
+			this.txtTelefono.TabIndex = 23;
 			// 
-			// txtCorreoMedico
+			// txtCorreo
 			// 
-			this.txtCorreoMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCorreoMedico.Location = new System.Drawing.Point(181, 228);
-			this.txtCorreoMedico.Name = "txtCorreoMedico";
-			this.txtCorreoMedico.Size = new System.Drawing.Size(259, 28);
-			this.txtCorreoMedico.TabIndex = 22;
+			this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCorreo.Location = new System.Drawing.Point(181, 228);
+			this.txtCorreo.Name = "txtCorreo";
+			this.txtCorreo.Size = new System.Drawing.Size(259, 28);
+			this.txtCorreo.TabIndex = 22;
 			// 
-			// txtApellidoMedico
+			// txtApellido
 			// 
-			this.txtApellidoMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtApellidoMedico.Location = new System.Drawing.Point(180, 142);
-			this.txtApellidoMedico.Name = "txtApellidoMedico";
-			this.txtApellidoMedico.Size = new System.Drawing.Size(260, 28);
-			this.txtApellidoMedico.TabIndex = 21;
+			this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtApellido.Location = new System.Drawing.Point(180, 142);
+			this.txtApellido.Name = "txtApellido";
+			this.txtApellido.Size = new System.Drawing.Size(260, 28);
+			this.txtApellido.TabIndex = 21;
 			// 
-			// txtNombreMedico
+			// txtNombre
 			// 
-			this.txtNombreMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtNombreMedico.Location = new System.Drawing.Point(180, 94);
-			this.txtNombreMedico.Name = "txtNombreMedico";
-			this.txtNombreMedico.Size = new System.Drawing.Size(260, 28);
-			this.txtNombreMedico.TabIndex = 20;
+			this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNombre.Location = new System.Drawing.Point(180, 94);
+			this.txtNombre.Name = "txtNombre";
+			this.txtNombre.Size = new System.Drawing.Size(260, 28);
+			this.txtNombre.TabIndex = 20;
 			// 
 			// txtIdMedico
 			// 
@@ -272,7 +275,6 @@
 			this.label5.Size = new System.Drawing.Size(85, 25);
 			this.label5.TabIndex = 12;
 			this.label5.Text = "Correo:";
-			this.label5.Click += new System.EventHandler(this.label4_Click);
 			// 
 			// pictureBox1
 			// 
@@ -309,40 +311,33 @@
 			// dgvMedicos
 			// 
 			this.dgvMedicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvMedicos.Location = new System.Drawing.Point(538, 157);
+			this.dgvMedicos.Location = new System.Drawing.Point(538, 107);
 			this.dgvMedicos.Name = "dgvMedicos";
 			this.dgvMedicos.RowHeadersWidth = 51;
 			this.dgvMedicos.RowTemplate.Height = 24;
-			this.dgvMedicos.Size = new System.Drawing.Size(751, 534);
+			this.dgvMedicos.Size = new System.Drawing.Size(751, 584);
 			this.dgvMedicos.TabIndex = 13;
+			this.dgvMedicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMedicos_CellContentClick);
 			// 
-			// txtBuscar
+			// btnLimpiarEspecialidad
 			// 
-			this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtBuscar.Location = new System.Drawing.Point(624, 123);
-			this.txtBuscar.Name = "txtBuscar";
-			this.txtBuscar.Size = new System.Drawing.Size(406, 28);
-			this.txtBuscar.TabIndex = 28;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.BackColor = System.Drawing.Color.Transparent;
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.ForeColor = System.Drawing.Color.Black;
-			this.label7.Location = new System.Drawing.Point(543, 124);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(86, 25);
-			this.label7.TabIndex = 28;
-			this.label7.Text = "Buscar:";
+			this.btnLimpiarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+			this.btnLimpiarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnLimpiarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnLimpiarEspecialidad.ForeColor = System.Drawing.Color.Black;
+			this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(55, 478);
+			this.btnLimpiarEspecialidad.Name = "btnLimpiarEspecialidad";
+			this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(142, 40);
+			this.btnLimpiarEspecialidad.TabIndex = 29;
+			this.btnLimpiarEspecialidad.Text = "Limpiar";
+			this.btnLimpiarEspecialidad.UseVisualStyleBackColor = false;
+			this.btnLimpiarEspecialidad.Click += new System.EventHandler(this.btnLimpiarEspecialidad_Click);
 			// 
 			// FrmGestionMedicos
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1301, 703);
-			this.Controls.Add(this.label7);
-			this.Controls.Add(this.txtBuscar);
 			this.Controls.Add(this.dgvMedicos);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.lblTitulo);
@@ -365,16 +360,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox grpDatosMedico;
-		private System.Windows.Forms.MaskedTextBox mtxtTelefonoMedico;
-        private System.Windows.Forms.TextBox txtCorreoMedico;
-        private System.Windows.Forms.TextBox txtApellidoMedico;
-        private System.Windows.Forms.TextBox txtNombreMedico;
-        private System.Windows.Forms.TextBox txtIdMedico;
+		private System.Windows.Forms.MaskedTextBox txtTelefono;
+		private System.Windows.Forms.TextBox txtCorreo;
+		private System.Windows.Forms.TextBox txtApellido;
+		private System.Windows.Forms.TextBox txtNombre;
+		private System.Windows.Forms.TextBox txtIdMedico;
         private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label label2;
@@ -384,10 +378,10 @@
         private System.Windows.Forms.Button btnModificarMedico;
         private System.Windows.Forms.Button btnEliminarMedico;
         private System.Windows.Forms.DataGridView dgvMedicos;
-        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblTotalMedicos;
         private System.Windows.Forms.ToolStripStatusLabel lblEstadoConexion;
-    }
+		private System.Windows.Forms.Button btnLimpiarEspecialidad;
+	}
 }

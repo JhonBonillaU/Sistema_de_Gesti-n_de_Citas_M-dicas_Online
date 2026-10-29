@@ -74,38 +74,38 @@
             this.ayudaToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(1756, 30);
+			this.menuStrip1.Size = new System.Drawing.Size(1756, 28);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// archivoToolStripMenuItem
 			// 
 			this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+			this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
 			this.archivoToolStripMenuItem.Text = "Archivo";
 			// 
 			// ediciónToolStripMenuItem
 			// 
 			this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
-			this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(72, 26);
+			this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
 			this.ediciónToolStripMenuItem.Text = "Edición";
 			// 
 			// herraminetasToolStripMenuItem
 			// 
 			this.herraminetasToolStripMenuItem.Name = "herraminetasToolStripMenuItem";
-			this.herraminetasToolStripMenuItem.Size = new System.Drawing.Size(112, 26);
+			this.herraminetasToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
 			this.herraminetasToolStripMenuItem.Text = "Herraminetas";
 			// 
 			// baseDeDatosToolStripMenuItem
 			// 
 			this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-			this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
+			this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
 			this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
 			// 
 			// ayudaToolStripMenuItem
 			// 
 			this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 26);
+			this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
 			this.ayudaToolStripMenuItem.Text = "Ayuda";
 			// 
 			// pictureBox1
@@ -139,7 +139,7 @@
 			this.panel2.Controls.Add(this.panel7);
 			this.panel2.Controls.Add(this.lblTitulo);
 			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 30);
+			this.panel2.Location = new System.Drawing.Point(0, 28);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(1756, 90);
 			this.panel2.TabIndex = 4;
@@ -210,7 +210,7 @@
 			this.btnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnPacientes.ForeColor = System.Drawing.Color.White;
-			this.btnPacientes.Location = new System.Drawing.Point(12, 27);
+			this.btnPacientes.Location = new System.Drawing.Point(12, 139);
 			this.btnPacientes.Name = "btnPacientes";
 			this.btnPacientes.Size = new System.Drawing.Size(175, 50);
 			this.btnPacientes.TabIndex = 5;
@@ -236,7 +236,7 @@
 			this.btnAgendarCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnAgendarCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnAgendarCitas.ForeColor = System.Drawing.Color.White;
-			this.btnAgendarCitas.Location = new System.Drawing.Point(12, 139);
+			this.btnAgendarCitas.Location = new System.Drawing.Point(12, 195);
 			this.btnAgendarCitas.Name = "btnAgendarCitas";
 			this.btnAgendarCitas.Size = new System.Drawing.Size(175, 70);
 			this.btnAgendarCitas.TabIndex = 8;
@@ -249,7 +249,7 @@
 			this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-			this.btnUsuarios.Location = new System.Drawing.Point(12, 443);
+			this.btnUsuarios.Location = new System.Drawing.Point(12, 499);
 			this.btnUsuarios.Name = "btnUsuarios";
 			this.btnUsuarios.Size = new System.Drawing.Size(175, 50);
 			this.btnUsuarios.TabIndex = 6;
@@ -262,7 +262,7 @@
 			this.btnEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEspecialidad.ForeColor = System.Drawing.Color.White;
-			this.btnEspecialidad.Location = new System.Drawing.Point(12, 499);
+			this.btnEspecialidad.Location = new System.Drawing.Point(12, 27);
 			this.btnEspecialidad.Name = "btnEspecialidad";
 			this.btnEspecialidad.Size = new System.Drawing.Size(175, 50);
 			this.btnEspecialidad.TabIndex = 9;
@@ -275,7 +275,7 @@
 			this.btnEmitirRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnEmitirRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnEmitirRecetas.ForeColor = System.Drawing.Color.White;
-			this.btnEmitirRecetas.Location = new System.Drawing.Point(12, 367);
+			this.btnEmitirRecetas.Location = new System.Drawing.Point(12, 423);
 			this.btnEmitirRecetas.Name = "btnEmitirRecetas";
 			this.btnEmitirRecetas.Size = new System.Drawing.Size(175, 70);
 			this.btnEmitirRecetas.TabIndex = 10;
@@ -288,7 +288,7 @@
 			this.btnConsultarRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnConsultarRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnConsultarRecetas.ForeColor = System.Drawing.Color.White;
-			this.btnConsultarRecetas.Location = new System.Drawing.Point(12, 291);
+			this.btnConsultarRecetas.Location = new System.Drawing.Point(12, 347);
 			this.btnConsultarRecetas.Name = "btnConsultarRecetas";
 			this.btnConsultarRecetas.Size = new System.Drawing.Size(175, 70);
 			this.btnConsultarRecetas.TabIndex = 7;
@@ -301,7 +301,7 @@
 			this.btnConsultarCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnConsultarCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnConsultarCitas.ForeColor = System.Drawing.Color.White;
-			this.btnConsultarCitas.Location = new System.Drawing.Point(12, 215);
+			this.btnConsultarCitas.Location = new System.Drawing.Point(12, 271);
 			this.btnConsultarCitas.Name = "btnConsultarCitas";
 			this.btnConsultarCitas.Size = new System.Drawing.Size(175, 70);
 			this.btnConsultarCitas.TabIndex = 11;
@@ -340,12 +340,12 @@
 			// 
 			this.panel1.AutoScroll = true;
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
+			this.panel1.Controls.Add(this.btnEspecialidad);
 			this.panel1.Controls.Add(this.btnSalir);
 			this.panel1.Controls.Add(this.btnResumen);
 			this.panel1.Controls.Add(this.btnConsultarCitas);
 			this.panel1.Controls.Add(this.btnConsultarRecetas);
 			this.panel1.Controls.Add(this.btnEmitirRecetas);
-			this.panel1.Controls.Add(this.btnEspecialidad);
 			this.panel1.Controls.Add(this.btnUsuarios);
 			this.panel1.Controls.Add(this.btnAgendarCitas);
 			this.panel1.Controls.Add(this.btnMedicos);

@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="CapaDatos\CitaDAL.cs" />
     <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaDatos\EspecialidadDAL.cs" />
     <Compile Include="CapaDatos\MedicoDAL.cs" />
     <Compile Include="CapaDatos\PacienteDAL.cs" />
     <Compile Include="CapaDatos\RecetaDAL.cs" />
