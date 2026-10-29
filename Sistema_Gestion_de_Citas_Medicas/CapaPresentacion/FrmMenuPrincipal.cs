@@ -51,7 +51,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
         {
             string rol = SesionUsuario.Rol;
 
-            if (rol == "Admin")
+            if (rol == "Administrador")
             {
                 btnPacientes.Visible = true;
                 btnMedicos.Visible = true;
