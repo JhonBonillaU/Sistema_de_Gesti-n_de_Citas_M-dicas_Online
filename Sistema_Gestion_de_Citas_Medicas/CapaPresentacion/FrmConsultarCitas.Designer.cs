@@ -34,10 +34,10 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.grpBuscarCita = new System.Windows.Forms.GroupBox();
 			this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-			this.txtNombre = new System.Windows.Forms.TextBox();
+			this.txtPacienteMedico = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.btnNuevaCita = new System.Windows.Forms.Button();
+			this.btnAtenderCita = new System.Windows.Forms.Button();
 			this.btnCancelarCita = new System.Windows.Forms.Button();
 			this.btnVolver = new System.Windows.Forms.Button();
 			this.grpListaCitas = new System.Windows.Forms.GroupBox();
@@ -87,7 +87,7 @@
 			// 
 			this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
 			this.grpBuscarCita.Controls.Add(this.dtpFecha);
-			this.grpBuscarCita.Controls.Add(this.txtNombre);
+			this.grpBuscarCita.Controls.Add(this.txtPacienteMedico);
 			this.grpBuscarCita.Controls.Add(this.label6);
 			this.grpBuscarCita.Controls.Add(this.label2);
 			this.grpBuscarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,15 +104,16 @@
 			this.dtpFecha.Name = "dtpFecha";
 			this.dtpFecha.Size = new System.Drawing.Size(387, 28);
 			this.dtpFecha.TabIndex = 24;
+			this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
 			// 
-			// txtNombre
+			// txtPacienteMedico
 			// 
-			this.txtNombre.Enabled = false;
-			this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtNombre.Location = new System.Drawing.Point(219, 32);
-			this.txtNombre.Name = "txtNombre";
-			this.txtNombre.Size = new System.Drawing.Size(578, 28);
-			this.txtNombre.TabIndex = 19;
+			this.txtPacienteMedico.Enabled = false;
+			this.txtPacienteMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPacienteMedico.Location = new System.Drawing.Point(219, 32);
+			this.txtPacienteMedico.Name = "txtPacienteMedico";
+			this.txtPacienteMedico.Size = new System.Drawing.Size(578, 28);
+			this.txtPacienteMedico.TabIndex = 19;
 			// 
 			// label6
 			// 
@@ -138,18 +139,19 @@
 			this.label2.TabIndex = 14;
 			this.label2.Text = "Fecha:";
 			// 
-			// btnNuevaCita
+			// btnAtenderCita
 			// 
-			this.btnNuevaCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
-			this.btnNuevaCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnNuevaCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnNuevaCita.ForeColor = System.Drawing.Color.Black;
-			this.btnNuevaCita.Location = new System.Drawing.Point(831, 105);
-			this.btnNuevaCita.Name = "btnNuevaCita";
-			this.btnNuevaCita.Size = new System.Drawing.Size(209, 50);
-			this.btnNuevaCita.TabIndex = 27;
-			this.btnNuevaCita.Text = "Nueva Cita";
-			this.btnNuevaCita.UseVisualStyleBackColor = false;
+			this.btnAtenderCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
+			this.btnAtenderCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAtenderCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAtenderCita.ForeColor = System.Drawing.Color.Black;
+			this.btnAtenderCita.Location = new System.Drawing.Point(831, 105);
+			this.btnAtenderCita.Name = "btnAtenderCita";
+			this.btnAtenderCita.Size = new System.Drawing.Size(209, 50);
+			this.btnAtenderCita.TabIndex = 27;
+			this.btnAtenderCita.Text = "Atender Cita";
+			this.btnAtenderCita.UseVisualStyleBackColor = false;
+			this.btnAtenderCita.Click += new System.EventHandler(this.btnAtenderCita_Click);
 			// 
 			// btnCancelarCita
 			// 
@@ -163,6 +165,7 @@
 			this.btnCancelarCita.TabIndex = 29;
 			this.btnCancelarCita.Text = "Cancelar Cita";
 			this.btnCancelarCita.UseVisualStyleBackColor = false;
+			this.btnCancelarCita.Click += new System.EventHandler(this.btnCancelarCita_Click);
 			// 
 			// btnVolver
 			// 
@@ -176,6 +179,7 @@
 			this.btnVolver.TabIndex = 30;
 			this.btnVolver.Text = "Volver";
 			this.btnVolver.UseVisualStyleBackColor = false;
+			this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
 			// 
 			// grpListaCitas
 			// 
@@ -208,12 +212,13 @@
 			this.ClientSize = new System.Drawing.Size(1281, 562);
 			this.Controls.Add(this.grpListaCitas);
 			this.Controls.Add(this.btnVolver);
-			this.Controls.Add(this.btnNuevaCita);
+			this.Controls.Add(this.btnAtenderCita);
 			this.Controls.Add(this.btnCancelarCita);
 			this.Controls.Add(this.grpBuscarCita);
 			this.Controls.Add(this.panel2);
 			this.Name = "FrmConsultarCitas";
 			this.Text = "Control Citas";
+			this.Load += new System.EventHandler(this.FrmConsultarCitas_Load);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -232,10 +237,10 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.GroupBox grpBuscarCita;
 		private System.Windows.Forms.DateTimePicker dtpFecha;
-		private System.Windows.Forms.TextBox txtNombre;
+		private System.Windows.Forms.TextBox txtPacienteMedico;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Button btnNuevaCita;
+		private System.Windows.Forms.Button btnAtenderCita;
 		private System.Windows.Forms.Button btnCancelarCita;
 		private System.Windows.Forms.Button btnVolver;
 		private System.Windows.Forms.GroupBox grpListaCitas;
