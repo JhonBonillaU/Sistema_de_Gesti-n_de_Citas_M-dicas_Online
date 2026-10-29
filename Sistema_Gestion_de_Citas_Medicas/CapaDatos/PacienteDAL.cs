@@ -104,5 +104,70 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
             }
             return lista;
         }
-    }
+
+		// Actualizar información del Paciente
+		public bool ActualizarPaciente(Paciente paciente)
+		{
+			using (SqlConnection con = Conexion.ObtenerConexion())
+			{
+				string query = @"UPDATE Paciente 
+                         SET Nombre = @Nombre, 
+                             Apellido = @Apellido, 
+                             FechaNacimiento = @FechaNacimiento, 
+                             Telefono = @Telefono, 
+                             Correo = @Correo 
+                         WHERE ID_Paciente = @ID_Paciente";
+
+				using (SqlCommand cmd = new SqlCommand(query, con))
+				{
+					cmd.Parameters.AddWithValue("@Nombre", paciente.Nombre);
+					cmd.Parameters.AddWithValue("@Apellido", paciente.Apellido);
+					cmd.Parameters.AddWithValue("@FechaNacimiento", paciente.FechaNacimiento);
+					cmd.Parameters.AddWithValue("@Telefono", paciente.Telefono);
+					cmd.Parameters.AddWithValue("@Correo", paciente.Correo);
+					cmd.Parameters.AddWithValue("@ID_Paciente", paciente.IdPaciente);
+
+					con.Open();
+					return cmd.ExecuteNonQuery() > 0;
+				}
+			}
+		}
+
+		// Eliminar Paciente y su cuenta de Usuario asociada
+		public bool EliminarPaciente(int idPaciente)
+		{
+			using (SqlConnection con = Conexion.ObtenerConexion())
+			{
+				con.Open();
+				SqlTransaction tx = con.BeginTransaction();
+
+				try
+				{
+					// 1. Primero eliminamos el registro dependiente en Usuario por la llave foránea
+					string queryUsuario = "DELETE FROM Usuario WHERE ID_Paciente = @ID_Paciente";
+					using (SqlCommand cmdU = new SqlCommand(queryUsuario, con, tx))
+					{
+						cmdU.Parameters.AddWithValue("@ID_Paciente", idPaciente);
+						cmdU.ExecuteNonQuery();
+					}
+
+					// 2. Luego eliminamos el registro en la tabla Paciente
+					string queryPaciente = "DELETE FROM Paciente WHERE ID_Paciente = @ID_Paciente";
+					using (SqlCommand cmdP = new SqlCommand(queryPaciente, con, tx))
+					{
+						cmdP.Parameters.AddWithValue("@ID_Paciente", idPaciente);
+						cmdP.ExecuteNonQuery();
+					}
+
+					tx.Commit();
+					return true;
+				}
+				catch (SqlException ex)
+				{
+					tx.Rollback();
+					throw new Exception($"Error al eliminar el paciente: {ex.Message}");
+				}
+			}
+		}
+	}
 }

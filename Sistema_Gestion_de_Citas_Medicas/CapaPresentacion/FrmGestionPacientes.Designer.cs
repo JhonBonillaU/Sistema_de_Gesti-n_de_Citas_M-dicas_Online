@@ -34,7 +34,7 @@
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.grpDatosPacientes = new System.Windows.Forms.GroupBox();
 			this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-			this.mtxtTelefono = new System.Windows.Forms.MaskedTextBox();
+			this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
 			this.txtCorreo = new System.Windows.Forms.TextBox();
 			this.txtApellido = new System.Windows.Forms.TextBox();
 			this.txtNombre = new System.Windows.Forms.TextBox();
@@ -87,7 +87,7 @@
 			// 
 			this.grpDatosPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
 			this.grpDatosPacientes.Controls.Add(this.dtpFechaNacimiento);
-			this.grpDatosPacientes.Controls.Add(this.mtxtTelefono);
+			this.grpDatosPacientes.Controls.Add(this.txtTelefono);
 			this.grpDatosPacientes.Controls.Add(this.txtCorreo);
 			this.grpDatosPacientes.Controls.Add(this.txtApellido);
 			this.grpDatosPacientes.Controls.Add(this.txtNombre);
@@ -114,13 +114,14 @@
 			this.dtpFechaNacimiento.Size = new System.Drawing.Size(147, 28);
 			this.dtpFechaNacimiento.TabIndex = 24;
 			// 
-			// mtxtTelefono
+			// txtTelefono
 			// 
-			this.mtxtTelefono.Location = new System.Drawing.Point(180, 233);
-			this.mtxtTelefono.Mask = "0000-0000";
-			this.mtxtTelefono.Name = "mtxtTelefono";
-			this.mtxtTelefono.Size = new System.Drawing.Size(109, 28);
-			this.mtxtTelefono.TabIndex = 23;
+			this.txtTelefono.Location = new System.Drawing.Point(180, 233);
+			this.txtTelefono.Mask = "0000-0000";
+			this.txtTelefono.Name = "txtTelefono";
+			this.txtTelefono.Size = new System.Drawing.Size(109, 28);
+			this.txtTelefono.TabIndex = 23;
+			this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
 			// 
 			// txtCorreo
 			// 
@@ -191,7 +192,6 @@
 			this.label3.Size = new System.Drawing.Size(97, 25);
 			this.label3.TabIndex = 15;
 			this.label3.Text = "Apellido:";
-			this.label3.Click += new System.EventHandler(this.label3_Click);
 			// 
 			// label4
 			// 
@@ -216,7 +216,6 @@
 			this.label5.Size = new System.Drawing.Size(104, 25);
 			this.label5.TabIndex = 13;
 			this.label5.Text = "Teléfono:";
-			this.label5.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// label6
 			// 
@@ -256,6 +255,7 @@
 			this.btnEliminar.TabIndex = 17;
 			this.btnEliminar.Text = "Eliminar";
 			this.btnEliminar.UseVisualStyleBackColor = false;
+			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
 			// btnModificar
 			// 
@@ -269,6 +269,7 @@
 			this.btnModificar.TabIndex = 18;
 			this.btnModificar.Text = "Modificar";
 			this.btnModificar.UseVisualStyleBackColor = false;
+			this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
 			// 
 			// btnLimpiar
 			// 
@@ -282,6 +283,7 @@
 			this.btnLimpiar.TabIndex = 19;
 			this.btnLimpiar.Text = "Limpiar";
 			this.btnLimpiar.UseVisualStyleBackColor = false;
+			this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
 			// 
 			// grpListaPacientes
 			// 
@@ -306,6 +308,7 @@
 			this.dgvPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dgvPacientes.Size = new System.Drawing.Size(706, 492);
 			this.dgvPacientes.TabIndex = 0;
+			this.dgvPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellContentClick);
 			// 
 			// panel2
 			// 
@@ -364,8 +367,8 @@
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
-        private System.Windows.Forms.MaskedTextBox mtxtTelefono;
-        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.MaskedTextBox txtTelefono;
+		private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnLimpiar;
