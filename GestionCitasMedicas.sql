@@ -93,7 +93,7 @@ GO
 CREATE TABLE Usuario
 (ID_Usuario INT IDENTITY(1,1) PRIMARY KEY,
 Username NVARCHAR(50) NOT NULL,
-Password NVARCHAR(250) NOT NULL, -- guardar hash y no la contraseña en texto plano
+Password NVARCHAR(250) NOT NULL, 
 Rol NVARCHAR(20) NOT NULL,
 ID_Paciente INT  NULL,
 ID_Medico INT NULL,
