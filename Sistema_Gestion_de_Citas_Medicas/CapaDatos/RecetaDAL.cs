@@ -115,5 +115,33 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 				}
 			}
 		}
+
+		// Obtener la receta específica asociada a una cita
+		public Receta ObtenerRecetaPorCita(int idCita)
+		{
+			Receta r = null;
+			using (SqlConnection con = Conexion.ObtenerConexion())
+			{
+				string query = "SELECT ID_Receta, Descripcion, ID_Cita FROM Receta WHERE ID_Cita = @ID_Cita";
+				using (SqlCommand cmd = new SqlCommand(query, con))
+				{
+					cmd.Parameters.AddWithValue("@ID_Cita", idCita);
+					con.Open();
+					using (SqlDataReader reader = cmd.ExecuteReader())
+					{
+						if (reader.Read())
+						{
+							r = new Receta
+							{
+								IdReceta = Convert.ToInt32(reader["ID_Receta"]),
+								Descripcion = reader["Descripcion"].ToString(),
+								IdCita = Convert.ToInt32(reader["ID_Cita"])
+							};
+						}
+					}
+				}
+			}
+			return r;
+		}
 	}
 }

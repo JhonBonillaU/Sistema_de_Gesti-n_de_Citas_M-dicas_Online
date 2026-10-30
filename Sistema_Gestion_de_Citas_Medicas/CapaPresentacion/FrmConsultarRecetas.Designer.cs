@@ -35,10 +35,10 @@
             this.btnImprimirReceta = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.grpBuscarCita = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtDetalle = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grpListaCitas = new System.Windows.Forms.GroupBox();
@@ -112,10 +112,10 @@
             // grpBuscarCita
             // 
             this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.grpBuscarCita.Controls.Add(this.richTextBox1);
+            this.grpBuscarCita.Controls.Add(this.txtDetalle);
             this.grpBuscarCita.Controls.Add(this.label1);
             this.grpBuscarCita.Controls.Add(this.dtpFecha);
-            this.grpBuscarCita.Controls.Add(this.txtNombre);
+            this.grpBuscarCita.Controls.Add(this.txtPaciente);
             this.grpBuscarCita.Controls.Add(this.label6);
             this.grpBuscarCita.Controls.Add(this.label2);
             this.grpBuscarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -126,14 +126,14 @@
             this.grpBuscarCita.TabStop = false;
             this.grpBuscarCita.Text = "Indicaciones Médicas";
             // 
-            // richTextBox1
+            // txtDetalle
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(24, 161);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(618, 148);
-            this.richTextBox1.TabIndex = 26;
-            this.richTextBox1.Text = "";
+            this.txtDetalle.Location = new System.Drawing.Point(24, 161);
+            this.txtDetalle.Name = "txtDetalle";
+            this.txtDetalle.ReadOnly = true;
+            this.txtDetalle.Size = new System.Drawing.Size(618, 148);
+            this.txtDetalle.TabIndex = 26;
+            this.txtDetalle.Text = "";
             // 
             // label1
             // 
@@ -154,15 +154,15 @@
             this.dtpFecha.Size = new System.Drawing.Size(387, 28);
             this.dtpFecha.TabIndex = 24;
             // 
-            // txtNombre
+            // txtPaciente
             // 
-            this.txtNombre.Enabled = false;
-            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(130, 35);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.ReadOnly = true;
-            this.txtNombre.Size = new System.Drawing.Size(512, 28);
-            this.txtNombre.TabIndex = 19;
+            this.txtPaciente.Enabled = false;
+            this.txtPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPaciente.Location = new System.Drawing.Point(130, 35);
+            this.txtPaciente.Name = "txtPaciente";
+            this.txtPaciente.ReadOnly = true;
+            this.txtPaciente.Size = new System.Drawing.Size(512, 28);
+            this.txtPaciente.TabIndex = 19;
             // 
             // label6
             // 
@@ -244,13 +244,15 @@
 		private System.Windows.Forms.Button btnImprimirReceta;
 		private System.Windows.Forms.Button btnVolver;
 		private System.Windows.Forms.GroupBox grpBuscarCita;
-		private System.Windows.Forms.RichTextBox richTextBox1;
+		private System.Windows.Forms.RichTextBox txtDetalle;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.DateTimePicker dtpFecha;
-		private System.Windows.Forms.TextBox txtNombre;
+		private System.Windows.Forms.TextBox txtPaciente;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.GroupBox grpListaCitas;
 		private System.Windows.Forms.DataGridView dgvCitas;
+		private System.Windows.Forms.TextBox txtIdCita;
+		private System.Windows.Forms.Label label3;
 	}
 }
