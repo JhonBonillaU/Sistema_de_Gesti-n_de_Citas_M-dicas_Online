@@ -75,7 +75,7 @@
             this.ayudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(450, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(448, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -114,9 +114,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(219, 60);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -172,7 +172,7 @@
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
             this.label13.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(151, 23);
+            this.label13.Location = new System.Drawing.Point(249, 23);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(637, 42);
             this.label13.TabIndex = 3;
@@ -215,7 +215,7 @@
             this.btnPacientes.ForeColor = System.Drawing.Color.White;
             this.btnPacientes.Location = new System.Drawing.Point(12, 139);
             this.btnPacientes.Name = "btnPacientes";
-            this.btnPacientes.Size = new System.Drawing.Size(175, 50);
+            this.btnPacientes.Size = new System.Drawing.Size(193, 50);
             this.btnPacientes.TabIndex = 5;
             this.btnPacientes.Text = "Pacientes";
             this.btnPacientes.UseVisualStyleBackColor = true;
@@ -228,7 +228,7 @@
             this.btnMedicos.ForeColor = System.Drawing.Color.White;
             this.btnMedicos.Location = new System.Drawing.Point(12, 83);
             this.btnMedicos.Name = "btnMedicos";
-            this.btnMedicos.Size = new System.Drawing.Size(175, 50);
+            this.btnMedicos.Size = new System.Drawing.Size(193, 50);
             this.btnMedicos.TabIndex = 6;
             this.btnMedicos.Text = "Medicos";
             this.btnMedicos.UseVisualStyleBackColor = true;
@@ -241,7 +241,7 @@
             this.btnAgendarCitas.ForeColor = System.Drawing.Color.White;
             this.btnAgendarCitas.Location = new System.Drawing.Point(12, 195);
             this.btnAgendarCitas.Name = "btnAgendarCitas";
-            this.btnAgendarCitas.Size = new System.Drawing.Size(175, 70);
+            this.btnAgendarCitas.Size = new System.Drawing.Size(193, 70);
             this.btnAgendarCitas.TabIndex = 8;
             this.btnAgendarCitas.Text = "Agendar \r\nCitas";
             this.btnAgendarCitas.UseVisualStyleBackColor = true;
@@ -254,7 +254,7 @@
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
             this.btnUsuarios.Location = new System.Drawing.Point(12, 499);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(175, 50);
+            this.btnUsuarios.Size = new System.Drawing.Size(193, 50);
             this.btnUsuarios.TabIndex = 6;
             this.btnUsuarios.Text = "Usuario";
             this.btnUsuarios.UseVisualStyleBackColor = true;
@@ -267,7 +267,7 @@
             this.btnEspecialidad.ForeColor = System.Drawing.Color.White;
             this.btnEspecialidad.Location = new System.Drawing.Point(12, 27);
             this.btnEspecialidad.Name = "btnEspecialidad";
-            this.btnEspecialidad.Size = new System.Drawing.Size(175, 50);
+            this.btnEspecialidad.Size = new System.Drawing.Size(193, 50);
             this.btnEspecialidad.TabIndex = 9;
             this.btnEspecialidad.Text = "Especialidad";
             this.btnEspecialidad.UseVisualStyleBackColor = true;
@@ -280,7 +280,7 @@
             this.btnEmitirRecetas.ForeColor = System.Drawing.Color.White;
             this.btnEmitirRecetas.Location = new System.Drawing.Point(12, 423);
             this.btnEmitirRecetas.Name = "btnEmitirRecetas";
-            this.btnEmitirRecetas.Size = new System.Drawing.Size(175, 70);
+            this.btnEmitirRecetas.Size = new System.Drawing.Size(193, 70);
             this.btnEmitirRecetas.TabIndex = 10;
             this.btnEmitirRecetas.Text = "Emitir \r\nRecetas";
             this.btnEmitirRecetas.UseVisualStyleBackColor = true;
@@ -293,7 +293,7 @@
             this.btnConsultarRecetas.ForeColor = System.Drawing.Color.White;
             this.btnConsultarRecetas.Location = new System.Drawing.Point(12, 347);
             this.btnConsultarRecetas.Name = "btnConsultarRecetas";
-            this.btnConsultarRecetas.Size = new System.Drawing.Size(175, 70);
+            this.btnConsultarRecetas.Size = new System.Drawing.Size(193, 70);
             this.btnConsultarRecetas.TabIndex = 7;
             this.btnConsultarRecetas.Text = "Consultar \r\nRecetas";
             this.btnConsultarRecetas.UseVisualStyleBackColor = true;
@@ -306,7 +306,7 @@
             this.btnConsultarCitas.ForeColor = System.Drawing.Color.White;
             this.btnConsultarCitas.Location = new System.Drawing.Point(12, 271);
             this.btnConsultarCitas.Name = "btnConsultarCitas";
-            this.btnConsultarCitas.Size = new System.Drawing.Size(175, 70);
+            this.btnConsultarCitas.Size = new System.Drawing.Size(193, 70);
             this.btnConsultarCitas.TabIndex = 11;
             this.btnConsultarCitas.Text = "Consultar \r\nCitas";
             this.btnConsultarCitas.UseVisualStyleBackColor = true;
@@ -319,7 +319,7 @@
             this.btnResumen.ForeColor = System.Drawing.Color.White;
             this.btnResumen.Location = new System.Drawing.Point(12, 555);
             this.btnResumen.Name = "btnResumen";
-            this.btnResumen.Size = new System.Drawing.Size(175, 50);
+            this.btnResumen.Size = new System.Drawing.Size(193, 50);
             this.btnResumen.TabIndex = 12;
             this.btnResumen.Text = "Resumen";
             this.btnResumen.UseVisualStyleBackColor = true;
@@ -333,7 +333,7 @@
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Location = new System.Drawing.Point(12, 611);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(175, 50);
+            this.btnSalir.Size = new System.Drawing.Size(193, 50);
             this.btnSalir.TabIndex = 13;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -342,7 +342,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
             this.panel1.Controls.Add(this.btnEspecialidad);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnResumen);
@@ -356,7 +356,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 90);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 943);
+            this.panel1.Size = new System.Drawing.Size(231, 943);
             this.panel1.TabIndex = 1;
             // 
             // FrmMenuPrincipal

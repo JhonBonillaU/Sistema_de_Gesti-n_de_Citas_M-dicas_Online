@@ -154,5 +154,10 @@ namespace Sistema_Gestion_de_Citas_Medicas
         {
 
         }
+
+        private void grpBuscarCita_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

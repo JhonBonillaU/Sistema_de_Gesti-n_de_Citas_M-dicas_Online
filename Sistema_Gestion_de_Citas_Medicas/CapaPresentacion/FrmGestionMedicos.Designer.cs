@@ -57,6 +57,7 @@
             // 
             // grpDatosMedico
             // 
+            this.grpDatosMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.grpDatosMedico.Controls.Add(this.btnLimpiarEspecialidad);
             this.grpDatosMedico.Controls.Add(this.statusStrip1);
             this.grpDatosMedico.Controls.Add(this.btnEliminarMedico);
@@ -84,13 +85,13 @@
             // 
             // btnLimpiarEspecialidad
             // 
-            this.btnLimpiarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLimpiarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
             this.btnLimpiarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarEspecialidad.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(55, 478);
+            this.btnLimpiarEspecialidad.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(44, 448);
             this.btnLimpiarEspecialidad.Name = "btnLimpiarEspecialidad";
-            this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(142, 40);
+            this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(162, 62);
             this.btnLimpiarEspecialidad.TabIndex = 29;
             this.btnLimpiarEspecialidad.Text = "Limpiar";
             this.btnLimpiarEspecialidad.UseVisualStyleBackColor = false;
@@ -126,9 +127,9 @@
             this.btnEliminarMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarMedico.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarMedico.Location = new System.Drawing.Point(246, 478);
+            this.btnEliminarMedico.Location = new System.Drawing.Point(247, 448);
             this.btnEliminarMedico.Name = "btnEliminarMedico";
-            this.btnEliminarMedico.Size = new System.Drawing.Size(164, 40);
+            this.btnEliminarMedico.Size = new System.Drawing.Size(164, 62);
             this.btnEliminarMedico.TabIndex = 27;
             this.btnEliminarMedico.Text = "Eliminar";
             this.btnEliminarMedico.UseVisualStyleBackColor = false;
@@ -136,13 +137,13 @@
             // 
             // btnModificarMedico
             // 
-            this.btnModificarMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(197)))), ((int)(((byte)(224)))));
+            this.btnModificarMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
             this.btnModificarMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarMedico.ForeColor = System.Drawing.Color.Black;
-            this.btnModificarMedico.Location = new System.Drawing.Point(246, 414);
+            this.btnModificarMedico.ForeColor = System.Drawing.Color.White;
+            this.btnModificarMedico.Location = new System.Drawing.Point(247, 379);
             this.btnModificarMedico.Name = "btnModificarMedico";
-            this.btnModificarMedico.Size = new System.Drawing.Size(164, 40);
+            this.btnModificarMedico.Size = new System.Drawing.Size(164, 58);
             this.btnModificarMedico.TabIndex = 26;
             this.btnModificarMedico.Text = "Modificar";
             this.btnModificarMedico.UseVisualStyleBackColor = false;
@@ -150,13 +151,13 @@
             // 
             // btnGuardarMedico
             // 
-            this.btnGuardarMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
+            this.btnGuardarMedico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
             this.btnGuardarMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarMedico.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardarMedico.Location = new System.Drawing.Point(55, 414);
+            this.btnGuardarMedico.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarMedico.Location = new System.Drawing.Point(44, 379);
             this.btnGuardarMedico.Name = "btnGuardarMedico";
-            this.btnGuardarMedico.Size = new System.Drawing.Size(142, 40);
+            this.btnGuardarMedico.Size = new System.Drawing.Size(162, 58);
             this.btnGuardarMedico.TabIndex = 25;
             this.btnGuardarMedico.Text = "Guardar";
             this.btnGuardarMedico.UseVisualStyleBackColor = false;
@@ -291,7 +292,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
             this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(836, 139);
+            this.lblTitulo.Location = new System.Drawing.Point(334, 149);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(333, 42);
             this.lblTitulo.TabIndex = 10;
@@ -299,12 +300,16 @@
             // 
             // dgvMedicos
             // 
+            this.dgvMedicos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvMedicos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMedicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMedicos.Location = new System.Drawing.Point(843, 221);
             this.dgvMedicos.Name = "dgvMedicos";
             this.dgvMedicos.RowHeadersWidth = 51;
             this.dgvMedicos.RowTemplate.Height = 24;
-            this.dgvMedicos.Size = new System.Drawing.Size(1056, 584);
+            this.dgvMedicos.Size = new System.Drawing.Size(639, 489);
             this.dgvMedicos.TabIndex = 13;
             this.dgvMedicos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMedicos_CellContentClick);
             // 

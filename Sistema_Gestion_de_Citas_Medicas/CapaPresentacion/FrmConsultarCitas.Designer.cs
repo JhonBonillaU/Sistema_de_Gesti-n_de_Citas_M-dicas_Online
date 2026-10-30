@@ -30,8 +30,8 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarCitas));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.grpBuscarCita = new System.Windows.Forms.GroupBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtPacienteMedico = new System.Windows.Forms.TextBox();
@@ -56,19 +56,8 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1626, 90);
+            this.panel2.Size = new System.Drawing.Size(1628, 90);
             this.panel2.TabIndex = 14;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
-            this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(846, 141);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(281, 42);
-            this.lblTitulo.TabIndex = 13;
-            this.lblTitulo.Text = "Control de Citas";
             // 
             // pictureBox1
             // 
@@ -82,9 +71,20 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+            this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(291, 146);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(281, 42);
+            this.lblTitulo.TabIndex = 13;
+            this.lblTitulo.Text = "Control de Citas";
+            // 
             // grpBuscarCita
             // 
-            this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.grpBuscarCita.Controls.Add(this.dtpFecha);
             this.grpBuscarCita.Controls.Add(this.txtPacienteMedico);
             this.grpBuscarCita.Controls.Add(this.label6);
@@ -140,13 +140,13 @@
             // 
             // btnAtenderCita
             // 
-            this.btnAtenderCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
+            this.btnAtenderCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
             this.btnAtenderCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtenderCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtenderCita.ForeColor = System.Drawing.Color.Black;
-            this.btnAtenderCita.Location = new System.Drawing.Point(1117, 216);
+            this.btnAtenderCita.ForeColor = System.Drawing.Color.White;
+            this.btnAtenderCita.Location = new System.Drawing.Point(1334, 236);
             this.btnAtenderCita.Name = "btnAtenderCita";
-            this.btnAtenderCita.Size = new System.Drawing.Size(209, 50);
+            this.btnAtenderCita.Size = new System.Drawing.Size(218, 50);
             this.btnAtenderCita.TabIndex = 27;
             this.btnAtenderCita.Text = "Atender Cita";
             this.btnAtenderCita.UseVisualStyleBackColor = false;
@@ -154,13 +154,13 @@
             // 
             // btnCancelarCita
             // 
-            this.btnCancelarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnCancelarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
             this.btnCancelarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarCita.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarCita.Location = new System.Drawing.Point(1346, 216);
+            this.btnCancelarCita.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarCita.Location = new System.Drawing.Point(1334, 302);
             this.btnCancelarCita.Name = "btnCancelarCita";
-            this.btnCancelarCita.Size = new System.Drawing.Size(209, 50);
+            this.btnCancelarCita.Size = new System.Drawing.Size(215, 50);
             this.btnCancelarCita.TabIndex = 29;
             this.btnCancelarCita.Text = "Cancelar Cita";
             this.btnCancelarCita.UseVisualStyleBackColor = false;
@@ -172,7 +172,7 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(1343, 288);
+            this.btnVolver.Location = new System.Drawing.Point(1346, 706);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(209, 50);
             this.btnVolver.TabIndex = 30;
@@ -184,7 +184,7 @@
             // 
             this.grpListaCitas.Controls.Add(this.dgvCitas);
             this.grpListaCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpListaCitas.Location = new System.Drawing.Point(298, 358);
+            this.grpListaCitas.Location = new System.Drawing.Point(298, 377);
             this.grpListaCitas.Name = "grpListaCitas";
             this.grpListaCitas.Size = new System.Drawing.Size(1257, 303);
             this.grpListaCitas.TabIndex = 31;
@@ -193,9 +193,11 @@
             // 
             // dgvCitas
             // 
+            this.dgvCitas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCitas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCitas.Location = new System.Drawing.Point(3, 24);
             this.dgvCitas.Name = "dgvCitas";
             this.dgvCitas.ReadOnly = true;
@@ -209,11 +211,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1626, 727);
+            this.ClientSize = new System.Drawing.Size(1628, 768);
+            this.Controls.Add(this.btnAtenderCita);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.grpListaCitas);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnAtenderCita);
             this.Controls.Add(this.btnCancelarCita);
             this.Controls.Add(this.grpBuscarCita);
             this.Controls.Add(this.panel2);

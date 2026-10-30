@@ -51,7 +51,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
             this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(542, 140);
+            this.lblTitulo.Location = new System.Drawing.Point(270, 140);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(414, 42);
             this.lblTitulo.TabIndex = 13;
@@ -63,13 +63,13 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1302, 90);
+            this.panel2.Size = new System.Drawing.Size(1456, 90);
             this.panel2.TabIndex = 15;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // grpDatosPacientes
             // 
-            this.grpDatosPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.grpDatosPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.grpDatosPacientes.Controls.Add(this.btnLimpiarEspecialidad);
             this.grpDatosPacientes.Controls.Add(this.btnEliminarEspecialidad);
             this.grpDatosPacientes.Controls.Add(this.btnModificarEspecialidad);
@@ -88,13 +88,13 @@
             // 
             // btnLimpiarEspecialidad
             // 
-            this.btnLimpiarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLimpiarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
             this.btnLimpiarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarEspecialidad.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(30, 378);
+            this.btnLimpiarEspecialidad.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiarEspecialidad.Location = new System.Drawing.Point(35, 378);
             this.btnLimpiarEspecialidad.Name = "btnLimpiarEspecialidad";
-            this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(142, 40);
+            this.btnLimpiarEspecialidad.Size = new System.Drawing.Size(159, 50);
             this.btnLimpiarEspecialidad.TabIndex = 24;
             this.btnLimpiarEspecialidad.Text = "Limpiar";
             this.btnLimpiarEspecialidad.UseVisualStyleBackColor = false;
@@ -106,9 +106,9 @@
             this.btnEliminarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarEspecialidad.ForeColor = System.Drawing.Color.Black;
-            this.btnEliminarEspecialidad.Location = new System.Drawing.Point(241, 378);
+            this.btnEliminarEspecialidad.Location = new System.Drawing.Point(225, 378);
             this.btnEliminarEspecialidad.Name = "btnEliminarEspecialidad";
-            this.btnEliminarEspecialidad.Size = new System.Drawing.Size(164, 40);
+            this.btnEliminarEspecialidad.Size = new System.Drawing.Size(180, 50);
             this.btnEliminarEspecialidad.TabIndex = 23;
             this.btnEliminarEspecialidad.Text = "Eliminar";
             this.btnEliminarEspecialidad.UseVisualStyleBackColor = false;
@@ -116,13 +116,13 @@
             // 
             // btnModificarEspecialidad
             // 
-            this.btnModificarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(197)))), ((int)(((byte)(224)))));
+            this.btnModificarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
             this.btnModificarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificarEspecialidad.ForeColor = System.Drawing.Color.Black;
-            this.btnModificarEspecialidad.Location = new System.Drawing.Point(241, 301);
+            this.btnModificarEspecialidad.ForeColor = System.Drawing.Color.White;
+            this.btnModificarEspecialidad.Location = new System.Drawing.Point(225, 301);
             this.btnModificarEspecialidad.Name = "btnModificarEspecialidad";
-            this.btnModificarEspecialidad.Size = new System.Drawing.Size(164, 40);
+            this.btnModificarEspecialidad.Size = new System.Drawing.Size(180, 51);
             this.btnModificarEspecialidad.TabIndex = 22;
             this.btnModificarEspecialidad.Text = "Modificar";
             this.btnModificarEspecialidad.UseVisualStyleBackColor = false;
@@ -130,13 +130,13 @@
             // 
             // btnGuardarEspecialidad
             // 
-            this.btnGuardarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
+            this.btnGuardarEspecialidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
             this.btnGuardarEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarEspecialidad.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardarEspecialidad.Location = new System.Drawing.Point(30, 301);
+            this.btnGuardarEspecialidad.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarEspecialidad.Location = new System.Drawing.Point(35, 301);
             this.btnGuardarEspecialidad.Name = "btnGuardarEspecialidad";
-            this.btnGuardarEspecialidad.Size = new System.Drawing.Size(142, 40);
+            this.btnGuardarEspecialidad.Size = new System.Drawing.Size(159, 51);
             this.btnGuardarEspecialidad.TabIndex = 21;
             this.btnGuardarEspecialidad.Text = "Guardar";
             this.btnGuardarEspecialidad.UseVisualStyleBackColor = false;
@@ -189,24 +189,27 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
             this.groupBox1.Controls.Add(this.dgvEspecialidades);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(741, 206);
+            this.groupBox1.Location = new System.Drawing.Point(753, 206);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(518, 472);
+            this.groupBox1.Size = new System.Drawing.Size(614, 472);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Especialidades Registradas";
             // 
             // dgvEspecialidades
             // 
+            this.dgvEspecialidades.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEspecialidades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEspecialidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEspecialidades.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvEspecialidades.Location = new System.Drawing.Point(3, 24);
             this.dgvEspecialidades.Name = "dgvEspecialidades";
             this.dgvEspecialidades.ReadOnly = true;
             this.dgvEspecialidades.RowHeadersWidth = 51;
             this.dgvEspecialidades.RowTemplate.Height = 24;
             this.dgvEspecialidades.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEspecialidades.Size = new System.Drawing.Size(512, 445);
+            this.dgvEspecialidades.Size = new System.Drawing.Size(592, 445);
             this.dgvEspecialidades.TabIndex = 1;
             this.dgvEspecialidades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEspecialidad_CellContentClick);
             // 
@@ -214,7 +217,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 761);
+            this.ClientSize = new System.Drawing.Size(1456, 761);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpDatosPacientes);

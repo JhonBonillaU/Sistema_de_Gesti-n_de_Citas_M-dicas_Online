@@ -95,6 +95,11 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
                 menu.AbrirFormularioEnPanel(new FrmGestionMedicos());
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

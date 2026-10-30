@@ -30,8 +30,8 @@
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarRecetas));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnImprimirReceta = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.grpBuscarCita = new System.Windows.Forms.GroupBox();
@@ -60,17 +60,6 @@
             this.panel2.Size = new System.Drawing.Size(1264, 90);
             this.panel2.TabIndex = 15;
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
-            this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(604, 146);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(350, 42);
-            this.lblTitulo.TabIndex = 13;
-            this.lblTitulo.Text = "Historial de Recetas";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
@@ -83,15 +72,26 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+            this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(323, 158);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(350, 42);
+            this.lblTitulo.TabIndex = 13;
+            this.lblTitulo.Text = "Historial de Recetas";
+            // 
             // btnImprimirReceta
             // 
-            this.btnImprimirReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(203)))), ((int)(((byte)(109)))));
+            this.btnImprimirReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
             this.btnImprimirReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImprimirReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimirReceta.ForeColor = System.Drawing.Color.Black;
-            this.btnImprimirReceta.Location = new System.Drawing.Point(1026, 367);
+            this.btnImprimirReceta.ForeColor = System.Drawing.Color.White;
+            this.btnImprimirReceta.Location = new System.Drawing.Point(1027, 520);
             this.btnImprimirReceta.Name = "btnImprimirReceta";
-            this.btnImprimirReceta.Size = new System.Drawing.Size(161, 75);
+            this.btnImprimirReceta.Size = new System.Drawing.Size(201, 87);
             this.btnImprimirReceta.TabIndex = 37;
             this.btnImprimirReceta.Text = "Imprimir Receta";
             this.btnImprimirReceta.UseVisualStyleBackColor = false;
@@ -102,16 +102,16 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(1027, 609);
+            this.btnVolver.Location = new System.Drawing.Point(1027, 627);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(160, 59);
+            this.btnVolver.Size = new System.Drawing.Size(201, 59);
             this.btnVolver.TabIndex = 36;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // grpBuscarCita
             // 
-            this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
+            this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.grpBuscarCita.Controls.Add(this.txtDetalle);
             this.grpBuscarCita.Controls.Add(this.label1);
             this.grpBuscarCita.Controls.Add(this.dtpFecha);
@@ -119,7 +119,7 @@
             this.grpBuscarCita.Controls.Add(this.label6);
             this.grpBuscarCita.Controls.Add(this.label2);
             this.grpBuscarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpBuscarCita.Location = new System.Drawing.Point(327, 359);
+            this.grpBuscarCita.Location = new System.Drawing.Point(327, 371);
             this.grpBuscarCita.Name = "grpBuscarCita";
             this.grpBuscarCita.Size = new System.Drawing.Size(690, 315);
             this.grpBuscarCita.TabIndex = 34;
@@ -195,13 +195,17 @@
             this.grpListaCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpListaCitas.Location = new System.Drawing.Point(327, 217);
             this.grpListaCitas.Name = "grpListaCitas";
-            this.grpListaCitas.Size = new System.Drawing.Size(859, 136);
+            this.grpListaCitas.Size = new System.Drawing.Size(901, 136);
             this.grpListaCitas.TabIndex = 33;
             this.grpListaCitas.TabStop = false;
             this.grpListaCitas.Text = "Seleccionar Cita";
             // 
             // dgvCitas
             // 
+            this.dgvCitas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCitas.Location = new System.Drawing.Point(3, 24);
             this.dgvCitas.Name = "dgvCitas";
@@ -209,7 +213,7 @@
             this.dgvCitas.RowHeadersWidth = 51;
             this.dgvCitas.RowTemplate.Height = 24;
             this.dgvCitas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCitas.Size = new System.Drawing.Size(853, 109);
+            this.dgvCitas.Size = new System.Drawing.Size(918, 109);
             this.dgvCitas.TabIndex = 1;
             // 
             // FrmConsultarRecetas
