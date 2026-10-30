@@ -99,7 +99,7 @@
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Location = new System.Drawing.Point(219, 85);
+            this.dtpFecha.Location = new System.Drawing.Point(260, 85);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(387, 28);
             this.dtpFecha.TabIndex = 24;
@@ -109,9 +109,9 @@
             // 
             this.txtPacienteMedico.Enabled = false;
             this.txtPacienteMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPacienteMedico.Location = new System.Drawing.Point(219, 32);
+            this.txtPacienteMedico.Location = new System.Drawing.Point(260, 32);
             this.txtPacienteMedico.Name = "txtPacienteMedico";
-            this.txtPacienteMedico.Size = new System.Drawing.Size(578, 28);
+            this.txtPacienteMedico.Size = new System.Drawing.Size(537, 28);
             this.txtPacienteMedico.TabIndex = 19;
             // 
             // label6
