@@ -19,9 +19,10 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
         public string NombrePaciente { get; set; }
         public string NombreMedico { get; set; }
         public string NombreEspecialidad { get; set; }
+		public string DescripcionReceta { get; set; }
 
-        // Encapsulamiento
-        public int IdCita { get => idCita; set => idCita = value; }
+		// Encapsulamiento
+		public int IdCita { get => idCita; set => idCita = value; }
         public DateTime FechaHora { get => fechaHora; set => fechaHora = value; }
         public string Estado { get => estado; set => estado = value; }
         public int IdPaciente { get => idPaciente; set => idPaciente = value; }
