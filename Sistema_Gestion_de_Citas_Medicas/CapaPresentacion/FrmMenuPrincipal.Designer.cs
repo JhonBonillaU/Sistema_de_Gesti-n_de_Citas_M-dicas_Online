@@ -213,7 +213,7 @@
             this.btnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPacientes.ForeColor = System.Drawing.Color.White;
-            this.btnPacientes.Location = new System.Drawing.Point(12, 139);
+            this.btnPacientes.Location = new System.Drawing.Point(12, 180);
             this.btnPacientes.Name = "btnPacientes";
             this.btnPacientes.Size = new System.Drawing.Size(193, 50);
             this.btnPacientes.TabIndex = 5;
@@ -226,7 +226,7 @@
             this.btnMedicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMedicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMedicos.ForeColor = System.Drawing.Color.White;
-            this.btnMedicos.Location = new System.Drawing.Point(12, 83);
+            this.btnMedicos.Location = new System.Drawing.Point(12, 104);
             this.btnMedicos.Name = "btnMedicos";
             this.btnMedicos.Size = new System.Drawing.Size(193, 50);
             this.btnMedicos.TabIndex = 6;
@@ -239,7 +239,7 @@
             this.btnAgendarCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgendarCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendarCitas.ForeColor = System.Drawing.Color.White;
-            this.btnAgendarCitas.Location = new System.Drawing.Point(12, 195);
+            this.btnAgendarCitas.Location = new System.Drawing.Point(12, 246);
             this.btnAgendarCitas.Name = "btnAgendarCitas";
             this.btnAgendarCitas.Size = new System.Drawing.Size(193, 70);
             this.btnAgendarCitas.TabIndex = 8;
@@ -252,7 +252,7 @@
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnUsuarios.Location = new System.Drawing.Point(12, 499);
+            this.btnUsuarios.Location = new System.Drawing.Point(12, 609);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(193, 50);
             this.btnUsuarios.TabIndex = 6;
@@ -265,7 +265,7 @@
             this.btnEspecialidad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEspecialidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEspecialidad.ForeColor = System.Drawing.Color.White;
-            this.btnEspecialidad.Location = new System.Drawing.Point(12, 27);
+            this.btnEspecialidad.Location = new System.Drawing.Point(12, 21);
             this.btnEspecialidad.Name = "btnEspecialidad";
             this.btnEspecialidad.Size = new System.Drawing.Size(193, 50);
             this.btnEspecialidad.TabIndex = 9;
@@ -278,7 +278,7 @@
             this.btnEmitirRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmitirRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmitirRecetas.ForeColor = System.Drawing.Color.White;
-            this.btnEmitirRecetas.Location = new System.Drawing.Point(12, 423);
+            this.btnEmitirRecetas.Location = new System.Drawing.Point(12, 520);
             this.btnEmitirRecetas.Name = "btnEmitirRecetas";
             this.btnEmitirRecetas.Size = new System.Drawing.Size(193, 70);
             this.btnEmitirRecetas.TabIndex = 10;
@@ -291,7 +291,7 @@
             this.btnConsultarRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarRecetas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarRecetas.ForeColor = System.Drawing.Color.White;
-            this.btnConsultarRecetas.Location = new System.Drawing.Point(12, 347);
+            this.btnConsultarRecetas.Location = new System.Drawing.Point(12, 425);
             this.btnConsultarRecetas.Name = "btnConsultarRecetas";
             this.btnConsultarRecetas.Size = new System.Drawing.Size(193, 70);
             this.btnConsultarRecetas.TabIndex = 7;
@@ -304,7 +304,7 @@
             this.btnConsultarCitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultarCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultarCitas.ForeColor = System.Drawing.Color.White;
-            this.btnConsultarCitas.Location = new System.Drawing.Point(12, 271);
+            this.btnConsultarCitas.Location = new System.Drawing.Point(12, 334);
             this.btnConsultarCitas.Name = "btnConsultarCitas";
             this.btnConsultarCitas.Size = new System.Drawing.Size(193, 70);
             this.btnConsultarCitas.TabIndex = 11;
@@ -317,7 +317,7 @@
             this.btnResumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResumen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResumen.ForeColor = System.Drawing.Color.White;
-            this.btnResumen.Location = new System.Drawing.Point(12, 555);
+            this.btnResumen.Location = new System.Drawing.Point(12, 684);
             this.btnResumen.Name = "btnResumen";
             this.btnResumen.Size = new System.Drawing.Size(193, 50);
             this.btnResumen.TabIndex = 12;
@@ -331,7 +331,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(12, 611);
+            this.btnSalir.Location = new System.Drawing.Point(12, 752);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(193, 50);
             this.btnSalir.TabIndex = 13;

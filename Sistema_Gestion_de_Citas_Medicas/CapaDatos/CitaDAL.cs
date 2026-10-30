@@ -8,19 +8,21 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 {
     public class CitaDAL
     {
-        // 1. Validar horarios para evitar duplicidad de citas
-        public bool ExisteChoqueHorario(int idMedico, DateTime fechaHora)
+        // 1. Validar horarios para evitar duplicidad tanto para el médico como para el paciente
+        public bool ExisteChoqueHorario(int idMedico, int idPaciente, DateTime fechaHora)
         {
             using (SqlConnection con = Conexion.ObtenerConexion())
             {
+                // Validamos si el médico ya está ocupado O si el paciente ya tiene otra cita a esa misma hora
                 string query = @"SELECT COUNT(*) FROM Cita 
-                                 WHERE ID_Medico = @ID_Medico 
-                                   AND FechaHora = @FechaHora 
-                                   AND Estado <> 'Cancelada'";
+                         WHERE (ID_Medico = @ID_Medico OR ID_Paciente = @ID_Paciente)
+                           AND FechaHora = @FechaHora 
+                           AND Estado <> 'Cancelada'";
 
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                     cmd.Parameters.AddWithValue("@ID_Medico", idMedico);
+                    cmd.Parameters.AddWithValue("@ID_Paciente", idPaciente);
                     cmd.Parameters.AddWithValue("@FechaHora", fechaHora);
 
                     con.Open();
@@ -33,15 +35,22 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
         // 2. Agendar nueva Cita
         public bool AgendarCita(Cita cita)
         {
-            if (ExisteChoqueHorario(cita.IdMedico, cita.FechaHora))
+            // 1. Validar que la fecha y hora de la cita no sean menores al momento actual (evita fechas pasadas)
+            if (cita.FechaHora < DateTime.Now)
             {
-                throw new Exception("El médico seleccionado ya tiene una cita agendada en la misma fecha y hora.");
+                throw new Exception("No puedes agendar citas con fecha u hora pasada. Selecciona una fecha y hora vigente.");
+            }
+
+            // 2. Validar el cruce de horarios (médico ocupado o paciente con otra cita a la misma hora)
+            if (ExisteChoqueHorario(cita.IdMedico, cita.IdPaciente, cita.FechaHora))
+            {
+                throw new Exception("No puedes agendar esta cita: Ya tienes otra cita programada a esta misma hora (o el médico ya está ocupado).");
             }
 
             using (SqlConnection con = Conexion.ObtenerConexion())
             {
                 string query = @"INSERT INTO Cita (FechaHora, Estado, ID_Paciente, ID_Medico) 
-                                 VALUES (@FechaHora, 'Pendiente', @ID_Paciente, @ID_Medico);";
+                         VALUES (@FechaHora, 'Pendiente', @ID_Paciente, @ID_Medico);";
 
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
@@ -131,6 +140,59 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
                     con.Open();
                     return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+
+        // Métodos para obtener las estadísticas reales del Dashboard / Resumen
+        public int ObtenerConteoPacientes()
+        {
+            using (SqlConnection con = Conexion.ObtenerConexion())
+            {
+                string query = "SELECT COUNT(*) FROM Paciente";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    return Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+        }
+
+        public int ObtenerConteoCitasTotales()
+        {
+            using (SqlConnection con = Conexion.ObtenerConexion())
+            {
+                string query = "SELECT COUNT(*) FROM Cita";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    return Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+        }
+
+        public int ObtenerConteoMedicos()
+        {
+            using (SqlConnection con = Conexion.ObtenerConexion())
+            {
+                string query = "SELECT COUNT(*) FROM Medico";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    return Convert.ToInt32(cmd.ExecuteScalar());
+                }
+            }
+        }
+
+        public int ObtenerConteoRecetas()
+        {
+            using (SqlConnection con = Conexion.ObtenerConexion())
+            {
+                string query = "SELECT COUNT(*) FROM Receta";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    con.Open();
+                    return Convert.ToInt32(cmd.ExecuteScalar());
                 }
             }
         }

@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnDetallesMedicos = new System.Windows.Forms.Button();
@@ -45,24 +48,27 @@
             this.btnDetallesRegistro = new System.Windows.Forms.Button();
             this.lblTotalPacientes = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.chartResumen = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartResumen)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Controls.Add(this.chartResumen);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(415, 123);
+            this.groupBox1.Location = new System.Drawing.Point(356, 85);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(856, 593);
+            this.groupBox1.Size = new System.Drawing.Size(1162, 810);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Resumen del Sistema";
@@ -73,7 +79,7 @@
             this.panel5.Controls.Add(this.btnDetallesMedicos);
             this.panel5.Controls.Add(this.lblMedicos);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Location = new System.Drawing.Point(99, 336);
+            this.panel5.Location = new System.Drawing.Point(243, 587);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(298, 194);
             this.panel5.TabIndex = 10;
@@ -121,7 +127,7 @@
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.lblCitas);
             this.panel4.Controls.Add(this.btnDetallesCitas);
-            this.panel4.Location = new System.Drawing.Point(452, 75);
+            this.panel4.Location = new System.Drawing.Point(659, 372);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(298, 194);
             this.panel4.TabIndex = 10;
@@ -168,7 +174,7 @@
             this.panel6.Controls.Add(this.lblRecetasEmitidas);
             this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.btnDetallesRecetas);
-            this.panel6.Location = new System.Drawing.Point(452, 336);
+            this.panel6.Location = new System.Drawing.Point(659, 587);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(298, 194);
             this.panel6.TabIndex = 10;
@@ -215,7 +221,7 @@
             this.panel3.Controls.Add(this.btnDetallesRegistro);
             this.panel3.Controls.Add(this.lblTotalPacientes);
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(99, 75);
+            this.panel3.Location = new System.Drawing.Point(243, 372);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(298, 194);
             this.panel3.TabIndex = 5;
@@ -256,11 +262,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Pacientes Registrados";
             // 
+            // chartResumen
+            // 
+            this.chartResumen.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            chartArea1.Name = "ChartArea1";
+            this.chartResumen.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartResumen.Legends.Add(legend1);
+            this.chartResumen.Location = new System.Drawing.Point(243, 54);
+            this.chartResumen.Name = "chartResumen";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartResumen.Series.Add(series1);
+            this.chartResumen.Size = new System.Drawing.Size(714, 296);
+            this.chartResumen.TabIndex = 11;
+            this.chartResumen.Text = "chart1";
+            // 
             // FrmResumen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1547, 858);
+            this.ClientSize = new System.Drawing.Size(1575, 933);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmResumen";
             this.Text = "Resumen";
@@ -274,6 +297,7 @@
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartResumen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +321,6 @@
         private System.Windows.Forms.Button btnDetallesMedicos;
         private System.Windows.Forms.Label lblMedicos;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartResumen;
     }
 }

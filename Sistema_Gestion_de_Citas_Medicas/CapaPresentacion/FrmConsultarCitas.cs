@@ -19,23 +19,26 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			InitializeComponent();
 		}
 
-		private void FrmConsultarCitas_Load(object sender, EventArgs e)
+        private bool cargandoInicial = true;
+        private void FrmConsultarCitas_Load(object sender, EventArgs e)
 		{
-			CargarHistorialCitas();
-			txtPacienteMedico.Text = SesionUsuario.Username;
-			txtPacienteMedico.Enabled = false;
+            txtPacienteMedico.Text = SesionUsuario.Username;
+            txtPacienteMedico.Enabled = false;
 
-			if (SesionUsuario.Rol == "Medico")
-			{
-				btnAtenderCita.Visible = true;  // Solo el médico puede ver y usar este botón
-			}
-			else
-			{
-				btnAtenderCita.Visible = false; // Pacienteslo tendrán oculto
-			}
-		}
+            if (SesionUsuario.Rol == "Medico")
+            {
+                btnAtenderCita.Visible = true;
+            }
+            else
+            {
+                btnAtenderCita.Visible = false;
+            }
 
-		private void CargarHistorialCitas()
+            cargandoInicial = false;
+            CargarHistorialCitas(); // Carga todo el historial al abrir la pantalla
+        }
+
+        private void CargarHistorialCitas()
 		{
 			try
 			{

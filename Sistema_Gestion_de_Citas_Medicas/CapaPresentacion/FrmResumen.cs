@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+
+
 
 namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
 {
@@ -20,46 +23,86 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
 
         private void FrmResumen_Load(object sender, EventArgs e)
         {
-            EstadisticasDelSistema();   
+            CargarEstadisticasReales();
+            ConfigurarYGenerarGrafico();
         }
 
-        private void EstadisticasDelSistema()
+        private void CargarEstadisticasReales()
         {
             try
             {
-                // Si ya existen las clases y métodos de la capa lógica, los usamos:
-                /*
-                PacienteBLL pacienteBll = new PacienteBLL();
-                CitaBLL citaBll = new CitaBLL();
-                RecetaBLL recetaBll = new RecetaBLL();
+                CitaDAL datosDal = new CitaDAL();
 
-                lblTotalPacientes.Text = pacienteBll.ObtenerConteoTotal().ToString();
-                lblCitasHoy.Text = citaBll.ObtenerConteoCitasHoy().ToString();
-                lblCitasPendientes.Text = citaBll.ObtenerConteoCitasPendientes().ToString();
-                lblRecetasEmitidas.Text = recetaBll.ObtenerConteoRecetas().ToString();
-                */
+                int totalPacientes = datosDal.ObtenerConteoPacientes();
+                int totalCitas = datosDal.ObtenerConteoCitasTotales();
+                int totalMedicos = datosDal.ObtenerConteoMedicos();
+                int totalRecetas = datosDal.ObtenerConteoRecetas();
 
-                //  Valores estáticos de prueba (Elimina los errores en rojo por completo)
-                // Asegúrate de cambiar "lblTotalPacientes" por el nombre real de tu Label si es diferente.
-                lblTotalPacientes.Text = "24";
-                lblCitas.Text = "5";
-                lblMedicos.Text = "8";
-                lblRecetasEmitidas.Text = "12";
+                lblTotalPacientes.Text = totalPacientes.ToString();
+                lblCitas.Text = totalCitas.ToString();
+                lblMedicos.Text = totalMedicos.ToString();
+                lblRecetasEmitidas.Text = totalRecetas.ToString();
             }
             catch (Exception ex)
             {
-                // Si algo falla, el sistema no se cae, solo muestra el error en consola o un aviso suave
-                Console.WriteLine("Error al cargar estadísticas: " + ex.Message);
+                MessageBox.Show("Error al cargar las estadísticas: " + ex.Message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void ConfigurarYGenerarGrafico()
+        {
+            try
+            {
+                CitaDAL datosDal = new CitaDAL();
+
+                int totalPacientes = datosDal.ObtenerConteoPacientes();
+                int totalCitas = datosDal.ObtenerConteoCitasTotales();
+                int totalMedicos = datosDal.ObtenerConteoMedicos();
+                int totalRecetas = datosDal.ObtenerConteoRecetas();
+
+            
+                chartResumen.Series.Clear();
+                chartResumen.ChartAreas.Clear();
+
+                // Crear área del gráfico
+                ChartArea area = new ChartArea("AreaPrincipal");
+                chartResumen.ChartAreas.Add(area);
+
+                // Crear la serie de datos (Gráfica de Barras)
+                Series serie = new Series("Estadísticas");
+                serie.ChartType = SeriesChartType.Column; // Tipo columna
+                serie.IsValueShownAsLabel = true; // Muestra el número exacto arriba de cada barra
+
+                // colores azules
+                serie.Points.AddXY("Pacientes", totalPacientes);
+                serie.Points.AddXY("Citas", totalCitas);
+                serie.Points.AddXY("Médicos", totalMedicos);
+                serie.Points.AddXY("Recetas", totalRecetas);
+
+                // colores de las barras usando azul intermedio
+                serie.Points[0].Color = Color.FromArgb(41, 112, 190);
+                serie.Points[1].Color = Color.FromArgb(0, 52, 99);
+                serie.Points[2].Color = Color.FromArgb(41, 112, 190);
+                serie.Points[3].Color = Color.FromArgb(0, 52, 99);
+
+                chartResumen.Series.Add(serie);
+
+                // Título del gráfico
+                chartResumen.Titles.Clear();
+                chartResumen.Titles.Add("Distribución General del Sistema");
+            }
+            catch (Exception ex)
+            {
+                // Por si el control Chart aún no está agregado en el diseñador
+                Console.WriteLine("Gráfico no configurado visualmente todavía: " + ex.Message);
             }
         }
 
         private void btnDetallesRegistro_Click(object sender, EventArgs e)
         {
-            // Buscamos el formulario contenedor (el Menú Principal)
             FrmMenuPrincipal menu = (FrmMenuPrincipal)this.TopLevelControl;
             if (menu != null)
             {
-                // Llamamos al método que abre la gestión de pacientes en el panel central
                 menu.AbrirFormularioEnPanel(new FrmGestionPacientes());
             }
         }

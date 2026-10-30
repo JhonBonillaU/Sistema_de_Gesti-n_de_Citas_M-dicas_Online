@@ -26,7 +26,9 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			// Estado predeterminado para una nueva cita
 			txtEstado.Text = "Pendiente";
 			txtEstado.Enabled = false;
-		}
+
+           
+        }
 
 		private void CargarEspecialidades()
 		{
