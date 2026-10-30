@@ -46,7 +46,21 @@ namespace Sistema_Gestion_de_Citas_Medicas
         {
             AplicarPermisos();
 
-            AbrirFormularioEnPanel(new FrmResumen());
+            string rol = SesionUsuario.Rol;
+
+            // Dependiendo del rol, abrimos su pantalla inicial correspondiente por defecto:
+            if (rol == "Administrador")
+            {
+                AbrirFormularioEnPanel(new FrmResumen());
+            }
+            else if (rol == "Medico")
+            {
+                AbrirFormularioEnPanel(new FrmConsultarCitas()); 
+            }
+            else if (rol == "Paciente")
+            {
+                AbrirFormularioEnPanel(new FrmConsultarCitas());
+            }
         }
 
         private void AplicarPermisos()

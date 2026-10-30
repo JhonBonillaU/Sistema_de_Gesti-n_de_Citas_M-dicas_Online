@@ -23,6 +23,12 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
 
         private void FrmResumen_Load(object sender, EventArgs e)
         {
+            if (SesionUsuario.Rol != "Administrador")
+            {
+                MessageBox.Show("No tienes permisos para ver este módulo de resumen.", "Acceso Denegado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Close(); // Cierra la ventana automáticamente si es Paciente o Médico
+                return;
+            }
             CargarEstadisticasReales();
             ConfigurarYGenerarGrafico();
         }
