@@ -150,6 +150,9 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			this.Close();
 		}
 
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
 
-	}
+        }
+    }
 }
