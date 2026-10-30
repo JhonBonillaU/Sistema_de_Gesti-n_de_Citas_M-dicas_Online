@@ -33,7 +33,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnImprimirReceta = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.grpBuscarCita = new System.Windows.Forms.GroupBox();
             this.txtDetalle = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -89,25 +88,12 @@
             this.btnImprimirReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImprimirReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImprimirReceta.ForeColor = System.Drawing.Color.White;
-            this.btnImprimirReceta.Location = new System.Drawing.Point(1027, 520);
+            this.btnImprimirReceta.Location = new System.Drawing.Point(1027, 599);
             this.btnImprimirReceta.Name = "btnImprimirReceta";
             this.btnImprimirReceta.Size = new System.Drawing.Size(201, 87);
             this.btnImprimirReceta.TabIndex = 37;
             this.btnImprimirReceta.Text = "Imprimir Receta";
             this.btnImprimirReceta.UseVisualStyleBackColor = false;
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Silver;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(1027, 627);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(201, 59);
-            this.btnVolver.TabIndex = 36;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
             // 
             // grpBuscarCita
             // 
@@ -223,7 +209,6 @@
             this.ClientSize = new System.Drawing.Size(1264, 714);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnImprimirReceta);
-            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.grpBuscarCita);
             this.Controls.Add(this.grpListaCitas);
             this.Controls.Add(this.panel2);
@@ -246,7 +231,6 @@
 		private System.Windows.Forms.Label lblTitulo;
 		private System.Windows.Forms.PictureBox pictureBox1;
 		private System.Windows.Forms.Button btnImprimirReceta;
-		private System.Windows.Forms.Button btnVolver;
 		private System.Windows.Forms.GroupBox grpBuscarCita;
 		private System.Windows.Forms.RichTextBox txtDetalle;
 		private System.Windows.Forms.Label label1;

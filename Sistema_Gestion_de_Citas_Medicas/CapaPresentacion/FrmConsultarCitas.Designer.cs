@@ -39,7 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAtenderCita = new System.Windows.Forms.Button();
             this.btnCancelarCita = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.grpListaCitas = new System.Windows.Forms.GroupBox();
             this.dgvCitas = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
@@ -166,20 +165,6 @@
             this.btnCancelarCita.UseVisualStyleBackColor = false;
             this.btnCancelarCita.Click += new System.EventHandler(this.btnCancelarCita_Click);
             // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Silver;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(1346, 706);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(209, 50);
-            this.btnVolver.TabIndex = 30;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
             // grpListaCitas
             // 
             this.grpListaCitas.Controls.Add(this.dgvCitas);
@@ -215,7 +200,6 @@
             this.Controls.Add(this.btnAtenderCita);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.grpListaCitas);
-            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnCancelarCita);
             this.Controls.Add(this.grpBuscarCita);
             this.Controls.Add(this.panel2);
@@ -245,7 +229,6 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btnAtenderCita;
 		private System.Windows.Forms.Button btnCancelarCita;
-		private System.Windows.Forms.Button btnVolver;
 		private System.Windows.Forms.GroupBox grpListaCitas;
 		private System.Windows.Forms.DataGridView dgvCitas;
 	}

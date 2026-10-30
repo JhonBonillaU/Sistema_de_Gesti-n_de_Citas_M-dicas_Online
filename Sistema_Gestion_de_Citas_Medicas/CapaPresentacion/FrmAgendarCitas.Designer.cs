@@ -46,7 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnAgendarCita = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -238,7 +237,7 @@
             this.btnAgendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgendarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendarCita.ForeColor = System.Drawing.Color.Transparent;
-            this.btnAgendarCita.Location = new System.Drawing.Point(1185, 352);
+            this.btnAgendarCita.Location = new System.Drawing.Point(1182, 424);
             this.btnAgendarCita.Name = "btnAgendarCita";
             this.btnAgendarCita.Size = new System.Drawing.Size(160, 77);
             this.btnAgendarCita.TabIndex = 26;
@@ -246,27 +245,13 @@
             this.btnAgendarCita.UseVisualStyleBackColor = false;
             this.btnAgendarCita.Click += new System.EventHandler(this.btnAgendarCita_Click);
             // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Silver;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(1185, 519);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(160, 59);
-            this.btnVolver.TabIndex = 28;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
             // btnLimpiar
             // 
             this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLimpiar.Location = new System.Drawing.Point(1185, 448);
+            this.btnLimpiar.Location = new System.Drawing.Point(1182, 522);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(160, 59);
             this.btnLimpiar.TabIndex = 29;
@@ -281,7 +266,6 @@
             this.ClientSize = new System.Drawing.Size(1397, 692);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnAgendarCita);
             this.Controls.Add(this.grpAgendaCita);
             this.Controls.Add(this.panel2);
@@ -316,7 +300,6 @@
 		private System.Windows.Forms.ComboBox cmbMedico;
 		private System.Windows.Forms.ComboBox cmbEspecialidad;
 		private System.Windows.Forms.Button btnAgendarCita;
-		private System.Windows.Forms.Button btnVolver;
 		private System.Windows.Forms.Button btnLimpiar;
 	}
 }

@@ -34,15 +34,14 @@
             this.grpBuscarCita = new System.Windows.Forms.GroupBox();
             this.txtIdCita = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnEmitirReceta = new System.Windows.Forms.Button();
             this.txtDetalle = new System.Windows.Forms.RichTextBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.txtPaciente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.btnEmitirReceta = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
@@ -88,7 +87,6 @@
             this.grpBuscarCita.Controls.Add(this.txtIdCita);
             this.grpBuscarCita.Controls.Add(this.label3);
             this.grpBuscarCita.Controls.Add(this.btnEmitirReceta);
-            this.grpBuscarCita.Controls.Add(this.btnVolver);
             this.grpBuscarCita.Controls.Add(this.txtDetalle);
             this.grpBuscarCita.Controls.Add(this.btnLimpiar);
             this.grpBuscarCita.Controls.Add(this.label1);
@@ -126,6 +124,20 @@
             this.label3.TabIndex = 27;
             this.label3.Text = "ID Cita:";
             // 
+            // btnEmitirReceta
+            // 
+            this.btnEmitirReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
+            this.btnEmitirReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmitirReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmitirReceta.ForeColor = System.Drawing.Color.White;
+            this.btnEmitirReceta.Location = new System.Drawing.Point(690, 266);
+            this.btnEmitirReceta.Name = "btnEmitirReceta";
+            this.btnEmitirReceta.Size = new System.Drawing.Size(161, 79);
+            this.btnEmitirReceta.TabIndex = 32;
+            this.btnEmitirReceta.Text = "Guardar Receta";
+            this.btnEmitirReceta.UseVisualStyleBackColor = false;
+            this.btnEmitirReceta.Click += new System.EventHandler(this.btnEmitirReceta_Click);
+            // 
             // txtDetalle
             // 
             this.txtDetalle.Location = new System.Drawing.Point(24, 197);
@@ -133,6 +145,20 @@
             this.txtDetalle.Size = new System.Drawing.Size(618, 213);
             this.txtDetalle.TabIndex = 26;
             this.txtDetalle.Text = "";
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLimpiar.Location = new System.Drawing.Point(690, 351);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(160, 59);
+            this.btnLimpiar.TabIndex = 30;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // label1
             // 
@@ -186,48 +212,6 @@
             this.label2.Size = new System.Drawing.Size(79, 25);
             this.label2.TabIndex = 14;
             this.label2.Text = "Fecha:";
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLimpiar.Location = new System.Drawing.Point(690, 286);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(160, 59);
-            this.btnLimpiar.TabIndex = 30;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Silver;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.ForeColor = System.Drawing.Color.Black;
-            this.btnVolver.Location = new System.Drawing.Point(690, 357);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(160, 59);
-            this.btnVolver.TabIndex = 31;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // btnEmitirReceta
-            // 
-            this.btnEmitirReceta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
-            this.btnEmitirReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmitirReceta.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmitirReceta.ForeColor = System.Drawing.Color.White;
-            this.btnEmitirReceta.Location = new System.Drawing.Point(689, 192);
-            this.btnEmitirReceta.Name = "btnEmitirReceta";
-            this.btnEmitirReceta.Size = new System.Drawing.Size(161, 79);
-            this.btnEmitirReceta.TabIndex = 32;
-            this.btnEmitirReceta.Text = "Guardar Receta";
-            this.btnEmitirReceta.UseVisualStyleBackColor = false;
-            this.btnEmitirReceta.Click += new System.EventHandler(this.btnEmitirReceta_Click);
             // 
             // panel2
             // 
@@ -297,7 +281,6 @@
 		private System.Windows.Forms.RichTextBox txtDetalle;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Button btnLimpiar;
-		private System.Windows.Forms.Button btnVolver;
 		private System.Windows.Forms.Button btnEmitirReceta;
 		private System.Windows.Forms.TextBox txtIdCita;
 		private System.Windows.Forms.Label label3;
