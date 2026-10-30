@@ -34,6 +34,8 @@ namespace Sistema_Gestion_de_Citas_Medicas
             formularioHijo.FormBorderStyle = FormBorderStyle.None;
             formularioHijo.Dock = DockStyle.Fill;
 
+            formularioHijo.Location = new Point(10, 10);
+
             // 3. Lo agregamos al panel contenedor y lo mostramos
             this.panelContenedor.Controls.Add(formularioHijo);
             this.panelContenedor.Tag = formularioHijo;

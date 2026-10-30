@@ -158,5 +158,10 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
 			txtIdEspecialidad.Clear();
 			txtNombreEspecialidad.Clear();
 		}
-	}
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
 }
