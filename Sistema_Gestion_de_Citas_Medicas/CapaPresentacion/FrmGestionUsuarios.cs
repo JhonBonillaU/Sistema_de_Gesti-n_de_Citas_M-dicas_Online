@@ -156,13 +156,14 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
 				MessageBox.Show("Error al eliminar: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
-		
-		// 
+
+		// Evento que se dispara al hacer clic en el botón "Limpiar"
 		private void btnLimpiarUsuario_Click(object sender, EventArgs e)
 		{
 			LimpiarCampos();
 		}
 
+		// Método para limpiar los campos de texto del formulario
 		private void LimpiarCampos()
 		{
 			txtIdUsuario.Clear();

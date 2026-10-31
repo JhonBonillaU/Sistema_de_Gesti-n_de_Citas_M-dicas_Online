@@ -108,26 +108,10 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			}
         }
 
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnPaciente_Click(object sender, EventArgs e)
         {
             // Abre el formulario de gestión de pacientes dentro del panel
             AbrirFormularioEnPanel(new FrmGestionPacientes());
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblTitulo_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnEspecialidad_Click(object sender, EventArgs e)
@@ -163,11 +147,6 @@ namespace Sistema_Gestion_de_Citas_Medicas
         private void btnConsultarCitas_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new FrmConsultarCitas());
-        }
-
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void btnResumen_Click(object sender, EventArgs e)

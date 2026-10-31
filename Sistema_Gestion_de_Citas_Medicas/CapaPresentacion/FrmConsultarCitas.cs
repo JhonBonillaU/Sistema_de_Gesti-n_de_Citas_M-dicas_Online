@@ -79,6 +79,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 				if (dgvCitas.Columns["IdCita"] != null) dgvCitas.Columns["IdCita"].Visible = false;
 				if (dgvCitas.Columns["IdPaciente"] != null) dgvCitas.Columns["IdPaciente"].Visible = false;
 				if (dgvCitas.Columns["IdMedico"] != null) dgvCitas.Columns["IdMedico"].Visible = false;
+				if (dgvCitas.Columns["DescripcionReceta"] != null) dgvCitas.Columns["DescripcionReceta"].Visible = false;
 			}
 			// Manejo de excepciones para capturar errores al filtrar las citas por fecha
 			catch (Exception ex)
@@ -196,7 +197,6 @@ namespace Sistema_Gestion_de_Citas_Medicas
 		{
 			this.Close(); 
 		}
-
 
 	}
 }

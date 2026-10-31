@@ -18,7 +18,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
 				// Consulta SQL para obtener todas las especialidades
-				string query = "SELECT ID_Especialidad, NombreEspecialidad FROM Especialidad";
+				string query = "SELECT ID_Especialidad, NombreEspecialidad FROM Especialidad ORDER BY ID_Especialidad ASC";
 				SqlCommand cmd = new SqlCommand(query, con);
 				con.Open();
 				// Ejecutar el comando y leer los resultados

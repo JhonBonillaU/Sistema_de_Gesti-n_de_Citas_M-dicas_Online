@@ -15,7 +15,6 @@ namespace Sistema_Gestion_de_Citas_Medicas
 {
     public partial class FrmRegistro : Form
     {
-
         private Form frmLoginOriginal;
 
         public FrmRegistro(Form login)
@@ -47,11 +46,6 @@ namespace Sistema_Gestion_de_Citas_Medicas
         private bool EsCorreoValido(string correo)
         {
             return Regex.IsMatch(correo, @"^[^@\s]+@[^@\s]+\.[^@\s]+$");
-        }
-
-        private void FrmRegistrocs_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
