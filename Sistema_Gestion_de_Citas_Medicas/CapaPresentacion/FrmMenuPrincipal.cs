@@ -83,12 +83,12 @@ namespace Sistema_Gestion_de_Citas_Medicas
             else if (rol == "Medico")
             {
                 btnEmitirRecetas.Visible = true;
-                btnConsultarRecetas.Visible = true;
+                btnConsultarRecetas.Visible = false;
                 btnPacientes.Visible = true;
-                btnAgendarCitas.Visible = true;
+                btnAgendarCitas.Visible = false;
                 btnConsultarCitas.Visible = true;// Ver historial de pacientes
                 btnMedicos.Visible = true;      // No puede administrar médicos
-                btnUsuarios.Visible = true;
+                btnUsuarios.Visible = false;
                 btnEspecialidad.Visible = true;
                 btnResumen.Visible = false;
 				btnSalir.Visible = true;

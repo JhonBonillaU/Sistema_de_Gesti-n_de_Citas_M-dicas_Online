@@ -26,6 +26,18 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
 			CargarGridEspecialidades();
 			// Configuración de campos en modo lectura
 			txtIdEspecialidad.Enabled = false;
+
+			// Validar si el usuario en sesión es Médico
+			if (SesionUsuario.Rol == "Medico")
+			{
+				// Ocultamos los botones de gestión para que no pueda hacer cambios
+				btnGuardarEspecialidad.Visible = false;
+				btnModificarEspecialidad.Visible = false;
+				btnEliminarEspecialidad.Visible = false;
+
+				// Opcional: Bloquear los campos de texto para que la vista sea estrictamente de consulta
+				txtNombreEspecialidad.Enabled = false;
+			}
 		}
 
 		// Método para cargar las especialidades en el DataGridView

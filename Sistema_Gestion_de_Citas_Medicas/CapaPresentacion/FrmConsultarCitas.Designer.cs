@@ -28,192 +28,192 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarCitas));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.grpBuscarCita = new System.Windows.Forms.GroupBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.txtPacienteMedico = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnAtenderCita = new System.Windows.Forms.Button();
-            this.btnCancelarCita = new System.Windows.Forms.Button();
-            this.grpListaCitas = new System.Windows.Forms.GroupBox();
-            this.dgvCitas = new System.Windows.Forms.DataGridView();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.grpBuscarCita.SuspendLayout();
-            this.grpListaCitas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1628, 90);
-            this.panel2.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 67);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
-            this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(291, 146);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(281, 42);
-            this.lblTitulo.TabIndex = 13;
-            this.lblTitulo.Text = "Control de Citas";
-            // 
-            // grpBuscarCita
-            // 
-            this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.grpBuscarCita.Controls.Add(this.dtpFecha);
-            this.grpBuscarCita.Controls.Add(this.txtPacienteMedico);
-            this.grpBuscarCita.Controls.Add(this.label6);
-            this.grpBuscarCita.Controls.Add(this.label2);
-            this.grpBuscarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpBuscarCita.Location = new System.Drawing.Point(298, 216);
-            this.grpBuscarCita.Name = "grpBuscarCita";
-            this.grpBuscarCita.Size = new System.Drawing.Size(813, 136);
-            this.grpBuscarCita.TabIndex = 15;
-            this.grpBuscarCita.TabStop = false;
-            this.grpBuscarCita.Text = "Buscar Cita";
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Location = new System.Drawing.Point(260, 85);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(387, 28);
-            this.dtpFecha.TabIndex = 24;
-            this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
-            // 
-            // txtPacienteMedico
-            // 
-            this.txtPacienteMedico.Enabled = false;
-            this.txtPacienteMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPacienteMedico.Location = new System.Drawing.Point(260, 32);
-            this.txtPacienteMedico.Name = "txtPacienteMedico";
-            this.txtPacienteMedico.Size = new System.Drawing.Size(537, 28);
-            this.txtPacienteMedico.TabIndex = 19;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(21, 36);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(192, 25);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Paciente / Medico:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(21, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 25);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Fecha:";
-            // 
-            // btnAtenderCita
-            // 
-            this.btnAtenderCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
-            this.btnAtenderCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtenderCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtenderCita.ForeColor = System.Drawing.Color.White;
-            this.btnAtenderCita.Location = new System.Drawing.Point(1334, 236);
-            this.btnAtenderCita.Name = "btnAtenderCita";
-            this.btnAtenderCita.Size = new System.Drawing.Size(218, 50);
-            this.btnAtenderCita.TabIndex = 27;
-            this.btnAtenderCita.Text = "Atender Cita";
-            this.btnAtenderCita.UseVisualStyleBackColor = false;
-            this.btnAtenderCita.Click += new System.EventHandler(this.btnAtenderCita_Click);
-            // 
-            // btnCancelarCita
-            // 
-            this.btnCancelarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
-            this.btnCancelarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarCita.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarCita.Location = new System.Drawing.Point(1334, 302);
-            this.btnCancelarCita.Name = "btnCancelarCita";
-            this.btnCancelarCita.Size = new System.Drawing.Size(215, 50);
-            this.btnCancelarCita.TabIndex = 29;
-            this.btnCancelarCita.Text = "Cancelar Cita";
-            this.btnCancelarCita.UseVisualStyleBackColor = false;
-            this.btnCancelarCita.Click += new System.EventHandler(this.btnCancelarCita_Click);
-            // 
-            // grpListaCitas
-            // 
-            this.grpListaCitas.Controls.Add(this.dgvCitas);
-            this.grpListaCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpListaCitas.Location = new System.Drawing.Point(298, 377);
-            this.grpListaCitas.Name = "grpListaCitas";
-            this.grpListaCitas.Size = new System.Drawing.Size(1257, 303);
-            this.grpListaCitas.TabIndex = 31;
-            this.grpListaCitas.TabStop = false;
-            this.grpListaCitas.Text = "Lista de Citas";
-            // 
-            // dgvCitas
-            // 
-            this.dgvCitas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarCitas));
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.lblTitulo = new System.Windows.Forms.Label();
+			this.grpBuscarCita = new System.Windows.Forms.GroupBox();
+			this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+			this.txtPacienteMedico = new System.Windows.Forms.TextBox();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label2 = new System.Windows.Forms.Label();
+			this.btnAtenderCita = new System.Windows.Forms.Button();
+			this.btnCancelarCita = new System.Windows.Forms.Button();
+			this.grpListaCitas = new System.Windows.Forms.GroupBox();
+			this.dgvCitas = new System.Windows.Forms.DataGridView();
+			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.grpBuscarCita.SuspendLayout();
+			this.grpListaCitas.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// panel2
+			// 
+			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+			this.panel2.Controls.Add(this.pictureBox1);
+			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+			this.panel2.Location = new System.Drawing.Point(0, 0);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(1628, 90);
+			this.panel2.TabIndex = 14;
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+			this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(89, 67);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox1.TabIndex = 12;
+			this.pictureBox1.TabStop = false;
+			// 
+			// lblTitulo
+			// 
+			this.lblTitulo.AutoSize = true;
+			this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+			this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTitulo.Location = new System.Drawing.Point(291, 146);
+			this.lblTitulo.Name = "lblTitulo";
+			this.lblTitulo.Size = new System.Drawing.Size(281, 42);
+			this.lblTitulo.TabIndex = 13;
+			this.lblTitulo.Text = "Control de Citas";
+			// 
+			// grpBuscarCita
+			// 
+			this.grpBuscarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.grpBuscarCita.Controls.Add(this.dtpFecha);
+			this.grpBuscarCita.Controls.Add(this.txtPacienteMedico);
+			this.grpBuscarCita.Controls.Add(this.label6);
+			this.grpBuscarCita.Controls.Add(this.label2);
+			this.grpBuscarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.grpBuscarCita.Location = new System.Drawing.Point(298, 216);
+			this.grpBuscarCita.Name = "grpBuscarCita";
+			this.grpBuscarCita.Size = new System.Drawing.Size(813, 136);
+			this.grpBuscarCita.TabIndex = 15;
+			this.grpBuscarCita.TabStop = false;
+			this.grpBuscarCita.Text = "Buscar Cita";
+			// 
+			// dtpFecha
+			// 
+			this.dtpFecha.Location = new System.Drawing.Point(260, 85);
+			this.dtpFecha.Name = "dtpFecha";
+			this.dtpFecha.Size = new System.Drawing.Size(387, 28);
+			this.dtpFecha.TabIndex = 24;
+			this.dtpFecha.ValueChanged += new System.EventHandler(this.dtpFecha_ValueChanged);
+			// 
+			// txtPacienteMedico
+			// 
+			this.txtPacienteMedico.Enabled = false;
+			this.txtPacienteMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPacienteMedico.Location = new System.Drawing.Point(260, 32);
+			this.txtPacienteMedico.Name = "txtPacienteMedico";
+			this.txtPacienteMedico.Size = new System.Drawing.Size(537, 28);
+			this.txtPacienteMedico.TabIndex = 19;
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.BackColor = System.Drawing.Color.Transparent;
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label6.ForeColor = System.Drawing.Color.Black;
+			this.label6.Location = new System.Drawing.Point(21, 36);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(192, 25);
+			this.label6.TabIndex = 17;
+			this.label6.Text = "Paciente / Medico:";
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.BackColor = System.Drawing.Color.Transparent;
+			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.ForeColor = System.Drawing.Color.Black;
+			this.label2.Location = new System.Drawing.Point(21, 85);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(79, 25);
+			this.label2.TabIndex = 14;
+			this.label2.Text = "Fecha:";
+			// 
+			// btnAtenderCita
+			// 
+			this.btnAtenderCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
+			this.btnAtenderCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAtenderCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAtenderCita.ForeColor = System.Drawing.Color.White;
+			this.btnAtenderCita.Location = new System.Drawing.Point(1254, 236);
+			this.btnAtenderCita.Name = "btnAtenderCita";
+			this.btnAtenderCita.Size = new System.Drawing.Size(298, 50);
+			this.btnAtenderCita.TabIndex = 27;
+			this.btnAtenderCita.Text = "Atender Cita";
+			this.btnAtenderCita.UseVisualStyleBackColor = false;
+			this.btnAtenderCita.Click += new System.EventHandler(this.btnAtenderCita_Click);
+			// 
+			// btnCancelarCita
+			// 
+			this.btnCancelarCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
+			this.btnCancelarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancelarCita.ForeColor = System.Drawing.Color.White;
+			this.btnCancelarCita.Location = new System.Drawing.Point(1254, 302);
+			this.btnCancelarCita.Name = "btnCancelarCita";
+			this.btnCancelarCita.Size = new System.Drawing.Size(295, 50);
+			this.btnCancelarCita.TabIndex = 29;
+			this.btnCancelarCita.Text = "Cancelar Cita";
+			this.btnCancelarCita.UseVisualStyleBackColor = false;
+			this.btnCancelarCita.Click += new System.EventHandler(this.btnCancelarCita_Click);
+			// 
+			// grpListaCitas
+			// 
+			this.grpListaCitas.Controls.Add(this.dgvCitas);
+			this.grpListaCitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.grpListaCitas.Location = new System.Drawing.Point(298, 377);
+			this.grpListaCitas.Name = "grpListaCitas";
+			this.grpListaCitas.Size = new System.Drawing.Size(1257, 303);
+			this.grpListaCitas.TabIndex = 31;
+			this.grpListaCitas.TabStop = false;
+			this.grpListaCitas.Text = "Lista de Citas";
+			// 
+			// dgvCitas
+			// 
+			this.dgvCitas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCitas.Location = new System.Drawing.Point(3, 24);
-            this.dgvCitas.Name = "dgvCitas";
-            this.dgvCitas.ReadOnly = true;
-            this.dgvCitas.RowHeadersWidth = 51;
-            this.dgvCitas.RowTemplate.Height = 24;
-            this.dgvCitas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCitas.Size = new System.Drawing.Size(1251, 276);
-            this.dgvCitas.TabIndex = 0;
-            // 
-            // FrmConsultarCitas
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1628, 768);
-            this.Controls.Add(this.btnAtenderCita);
-            this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.grpListaCitas);
-            this.Controls.Add(this.btnCancelarCita);
-            this.Controls.Add(this.grpBuscarCita);
-            this.Controls.Add(this.panel2);
-            this.Name = "FrmConsultarCitas";
-            this.Text = "Control Citas";
-            this.Load += new System.EventHandler(this.FrmConsultarCitas_Load);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.grpBuscarCita.ResumeLayout(false);
-            this.grpBuscarCita.PerformLayout();
-            this.grpListaCitas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+			this.dgvCitas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+			this.dgvCitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dgvCitas.Location = new System.Drawing.Point(3, 24);
+			this.dgvCitas.Name = "dgvCitas";
+			this.dgvCitas.ReadOnly = true;
+			this.dgvCitas.RowHeadersWidth = 51;
+			this.dgvCitas.RowTemplate.Height = 24;
+			this.dgvCitas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.dgvCitas.Size = new System.Drawing.Size(1251, 276);
+			this.dgvCitas.TabIndex = 0;
+			// 
+			// FrmConsultarCitas
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(1628, 768);
+			this.Controls.Add(this.btnAtenderCita);
+			this.Controls.Add(this.lblTitulo);
+			this.Controls.Add(this.grpListaCitas);
+			this.Controls.Add(this.btnCancelarCita);
+			this.Controls.Add(this.grpBuscarCita);
+			this.Controls.Add(this.panel2);
+			this.Name = "FrmConsultarCitas";
+			this.Text = "Control Citas";
+			this.Load += new System.EventHandler(this.FrmConsultarCitas_Load);
+			this.panel2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.grpBuscarCita.ResumeLayout(false);
+			this.grpBuscarCita.PerformLayout();
+			this.grpListaCitas.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dgvCitas)).EndInit();
+			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 

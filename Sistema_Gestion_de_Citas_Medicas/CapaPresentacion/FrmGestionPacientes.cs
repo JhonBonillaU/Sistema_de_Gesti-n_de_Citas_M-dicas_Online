@@ -102,6 +102,22 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			// Deshabilitamos el campo de ID del paciente para que no sea editable por el usuario
 			txtIdPaciente.Enabled = false;
 			dgvPacientes.CellClick += dgvPacientes_CellContentClick; // Vincular el evento CellClick al método
+
+			// Validar si el usuario en sesión es Médico
+			if (SesionUsuario.Rol == "Medico")
+			{
+				// Ocultamos los botones de gestión para impedir cambios
+				btnGuardar.Visible = false;
+				btnModificar.Visible = false;
+				btnEliminar.Visible = false;
+
+				// Opcional: Bloquear los campos de entrada para que la vista sea estrictamente de solo lectura
+				txtNombre.Enabled = false;
+				txtApellido.Enabled = false;
+				txtTelefono.Enabled = false;
+				txtCorreo.Enabled = false;
+				dtpFechaNacimiento.Enabled = false;
+			}
 		}
 
 		// Evento que se dispara al hacer clic en una celda del DataGridView

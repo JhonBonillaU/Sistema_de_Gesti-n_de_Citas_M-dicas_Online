@@ -27,6 +27,22 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			CargarGridMedicos();
 			// Configuración de campos en modo lectura
 			txtIdMedico.Enabled = false;
+
+			// Validar si el usuario en sesión es Médico
+			if (SesionUsuario.Rol == "Medico")
+			{
+				// Ocultamos los botones de gestión para impedir cambios
+				btnGuardarMedico.Visible = false;
+				btnModificarMedico.Visible = false;
+				btnEliminarMedico.Visible = false;
+
+				// Bloquear los campos de texto para que la vista sea de solo lectura
+				txtNombre.Enabled = false;
+				txtApellido.Enabled = false;
+				txtTelefono.Enabled = false;
+				txtCorreo.Enabled = false;
+				cmbEspecialidad.Enabled = false;
+			}
 		}
 
 		// Método para cargar las especialidades en el ComboBox
