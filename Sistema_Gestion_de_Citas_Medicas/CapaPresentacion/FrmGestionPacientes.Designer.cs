@@ -28,312 +28,312 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.components = new System.ComponentModel.Container();
-			this.lblTitulo = new System.Windows.Forms.Label();
-			this.grpDatosPacientes = new System.Windows.Forms.GroupBox();
-			this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-			this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
-			this.txtCorreo = new System.Windows.Forms.TextBox();
-			this.txtApellido = new System.Windows.Forms.TextBox();
-			this.txtNombre = new System.Windows.Forms.TextBox();
-			this.txtIdPaciente = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.btnGuardar = new System.Windows.Forms.Button();
-			this.btnEliminar = new System.Windows.Forms.Button();
-			this.btnModificar = new System.Windows.Forms.Button();
-			this.btnLimpiar = new System.Windows.Forms.Button();
-			this.grpListaPacientes = new System.Windows.Forms.GroupBox();
-			this.dgvPacientes = new System.Windows.Forms.DataGridView();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.errorProviderPacientes = new System.Windows.Forms.ErrorProvider(this.components);
-			this.grpDatosPacientes.SuspendLayout();
-			this.grpListaPacientes.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.errorProviderPacientes)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// lblTitulo
-			// 
-			this.lblTitulo.AutoSize = true;
-			this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
-			this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblTitulo.Location = new System.Drawing.Point(257, 182);
-			this.lblTitulo.Name = "lblTitulo";
-			this.lblTitulo.Size = new System.Drawing.Size(359, 42);
-			this.lblTitulo.TabIndex = 4;
-			this.lblTitulo.Text = "Control de Pacientes";
-			// 
-			// grpDatosPacientes
-			// 
-			this.grpDatosPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.grpDatosPacientes.Controls.Add(this.dtpFechaNacimiento);
-			this.grpDatosPacientes.Controls.Add(this.txtTelefono);
-			this.grpDatosPacientes.Controls.Add(this.txtCorreo);
-			this.grpDatosPacientes.Controls.Add(this.txtApellido);
-			this.grpDatosPacientes.Controls.Add(this.txtNombre);
-			this.grpDatosPacientes.Controls.Add(this.txtIdPaciente);
-			this.grpDatosPacientes.Controls.Add(this.label1);
-			this.grpDatosPacientes.Controls.Add(this.label2);
-			this.grpDatosPacientes.Controls.Add(this.label3);
-			this.grpDatosPacientes.Controls.Add(this.label4);
-			this.grpDatosPacientes.Controls.Add(this.label5);
-			this.grpDatosPacientes.Controls.Add(this.label6);
-			this.grpDatosPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.grpDatosPacientes.Location = new System.Drawing.Point(264, 238);
-			this.grpDatosPacientes.Name = "grpDatosPacientes";
-			this.grpDatosPacientes.Size = new System.Drawing.Size(598, 322);
-			this.grpDatosPacientes.TabIndex = 8;
-			this.grpDatosPacientes.TabStop = false;
-			this.grpDatosPacientes.Text = "Datos del Paciente";
-			// 
-			// dtpFechaNacimiento
-			// 
-			this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpFechaNacimiento.Location = new System.Drawing.Point(265, 95);
-			this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-			this.dtpFechaNacimiento.Size = new System.Drawing.Size(147, 28);
-			this.dtpFechaNacimiento.TabIndex = 24;
-			// 
-			// txtTelefono
-			// 
-			this.txtTelefono.Location = new System.Drawing.Point(180, 229);
-			this.txtTelefono.Mask = "0000-0000";
-			this.txtTelefono.Name = "txtTelefono";
-			this.txtTelefono.Size = new System.Drawing.Size(109, 28);
-			this.txtTelefono.TabIndex = 23;
-			this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
-			// 
-			// txtCorreo
-			// 
-			this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtCorreo.Location = new System.Drawing.Point(180, 270);
-			this.txtCorreo.Name = "txtCorreo";
-			this.txtCorreo.Size = new System.Drawing.Size(383, 28);
-			this.txtCorreo.TabIndex = 22;
-			// 
-			// txtApellido
-			// 
-			this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtApellido.Location = new System.Drawing.Point(180, 189);
-			this.txtApellido.Name = "txtApellido";
-			this.txtApellido.Size = new System.Drawing.Size(383, 28);
-			this.txtApellido.TabIndex = 21;
-			// 
-			// txtNombre
-			// 
-			this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtNombre.Location = new System.Drawing.Point(180, 141);
-			this.txtNombre.Name = "txtNombre";
-			this.txtNombre.Size = new System.Drawing.Size(383, 28);
-			this.txtNombre.TabIndex = 20;
-			// 
-			// txtIdPaciente
-			// 
-			this.txtIdPaciente.Enabled = false;
-			this.txtIdPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtIdPaciente.Location = new System.Drawing.Point(180, 50);
-			this.txtIdPaciente.Name = "txtIdPaciente";
-			this.txtIdPaciente.ReadOnly = true;
-			this.txtIdPaciente.Size = new System.Drawing.Size(148, 28);
-			this.txtIdPaciente.TabIndex = 19;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(25, 51);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(130, 25);
-			this.label1.TabIndex = 17;
-			this.label1.Text = "ID Paciente:";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.BackColor = System.Drawing.Color.Transparent;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.ForeColor = System.Drawing.Color.Black;
-			this.label2.Location = new System.Drawing.Point(26, 141);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(94, 25);
-			this.label2.TabIndex = 16;
-			this.label2.Text = "Nombre:";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.BackColor = System.Drawing.Color.Transparent;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.ForeColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(25, 189);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(97, 25);
-			this.label3.TabIndex = 15;
-			this.label3.Text = "Apellido:";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.BackColor = System.Drawing.Color.Transparent;
-			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(25, 95);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(222, 25);
-			this.label4.TabIndex = 14;
-			this.label4.Text = "Fecha de Nacimiento:";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.BackColor = System.Drawing.Color.Transparent;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(25, 232);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(104, 25);
-			this.label5.TabIndex = 13;
-			this.label5.Text = "Teléfono:";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.BackColor = System.Drawing.Color.Transparent;
-			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(25, 273);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(85, 25);
-			this.label6.TabIndex = 12;
-			this.label6.Text = "Correo:";
-			// 
-			// btnGuardar
-			// 
-			this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
-			this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnGuardar.ForeColor = System.Drawing.Color.White;
-			this.btnGuardar.Location = new System.Drawing.Point(374, 595);
-			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(179, 60);
-			this.btnGuardar.TabIndex = 16;
-			this.btnGuardar.Text = "Guardar";
-			this.btnGuardar.UseVisualStyleBackColor = false;
-			this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-			// 
-			// btnEliminar
-			// 
-			this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-			this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnEliminar.ForeColor = System.Drawing.Color.Black;
-			this.btnEliminar.Location = new System.Drawing.Point(563, 679);
-			this.btnEliminar.Name = "btnEliminar";
-			this.btnEliminar.Size = new System.Drawing.Size(173, 53);
-			this.btnEliminar.TabIndex = 17;
-			this.btnEliminar.Text = "Eliminar";
-			this.btnEliminar.UseVisualStyleBackColor = false;
-			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-			// 
-			// btnModificar
-			// 
-			this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
-			this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnModificar.ForeColor = System.Drawing.Color.White;
-			this.btnModificar.Location = new System.Drawing.Point(563, 595);
-			this.btnModificar.Name = "btnModificar";
-			this.btnModificar.Size = new System.Drawing.Size(173, 60);
-			this.btnModificar.TabIndex = 18;
-			this.btnModificar.Text = "Modificar";
-			this.btnModificar.UseVisualStyleBackColor = false;
-			this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-			// 
-			// btnLimpiar
-			// 
-			this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
-			this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-			this.btnLimpiar.Location = new System.Drawing.Point(374, 679);
-			this.btnLimpiar.Name = "btnLimpiar";
-			this.btnLimpiar.Size = new System.Drawing.Size(179, 53);
-			this.btnLimpiar.TabIndex = 19;
-			this.btnLimpiar.Text = "Limpiar";
-			this.btnLimpiar.UseVisualStyleBackColor = false;
-			this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
-			// 
-			// grpListaPacientes
-			// 
-			this.grpListaPacientes.Controls.Add(this.dgvPacientes);
-			this.grpListaPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.grpListaPacientes.Location = new System.Drawing.Point(895, 214);
-			this.grpListaPacientes.Name = "grpListaPacientes";
-			this.grpListaPacientes.Size = new System.Drawing.Size(965, 519);
-			this.grpListaPacientes.TabIndex = 20;
-			this.grpListaPacientes.TabStop = false;
-			this.grpListaPacientes.Text = "Lista de Paciente";
-			// 
-			// dgvPacientes
-			// 
-			this.dgvPacientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.components = new System.ComponentModel.Container();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.grpDatosPacientes = new System.Windows.Forms.GroupBox();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtIdPaciente = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.grpListaPacientes = new System.Windows.Forms.GroupBox();
+            this.dgvPacientes = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.errorProviderPacientes = new System.Windows.Forms.ErrorProvider(this.components);
+            this.grpDatosPacientes.SuspendLayout();
+            this.grpListaPacientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPacientes)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+            this.lblTitulo.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(257, 182);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(359, 42);
+            this.lblTitulo.TabIndex = 4;
+            this.lblTitulo.Text = "Control de Pacientes";
+            // 
+            // grpDatosPacientes
+            // 
+            this.grpDatosPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.grpDatosPacientes.Controls.Add(this.dtpFechaNacimiento);
+            this.grpDatosPacientes.Controls.Add(this.txtTelefono);
+            this.grpDatosPacientes.Controls.Add(this.txtCorreo);
+            this.grpDatosPacientes.Controls.Add(this.txtApellido);
+            this.grpDatosPacientes.Controls.Add(this.txtNombre);
+            this.grpDatosPacientes.Controls.Add(this.txtIdPaciente);
+            this.grpDatosPacientes.Controls.Add(this.label1);
+            this.grpDatosPacientes.Controls.Add(this.label2);
+            this.grpDatosPacientes.Controls.Add(this.label3);
+            this.grpDatosPacientes.Controls.Add(this.label4);
+            this.grpDatosPacientes.Controls.Add(this.label5);
+            this.grpDatosPacientes.Controls.Add(this.label6);
+            this.grpDatosPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDatosPacientes.Location = new System.Drawing.Point(264, 238);
+            this.grpDatosPacientes.Name = "grpDatosPacientes";
+            this.grpDatosPacientes.Size = new System.Drawing.Size(598, 322);
+            this.grpDatosPacientes.TabIndex = 8;
+            this.grpDatosPacientes.TabStop = false;
+            this.grpDatosPacientes.Text = "Datos del Paciente";
+            // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(265, 95);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(147, 28);
+            this.dtpFechaNacimiento.TabIndex = 24;
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(180, 229);
+            this.txtTelefono.Mask = "0000-0000";
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(109, 28);
+            this.txtTelefono.TabIndex = 23;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(180, 270);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(383, 28);
+            this.txtCorreo.TabIndex = 22;
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Location = new System.Drawing.Point(180, 189);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(383, 28);
+            this.txtApellido.TabIndex = 21;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(180, 141);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(383, 28);
+            this.txtNombre.TabIndex = 20;
+            // 
+            // txtIdPaciente
+            // 
+            this.txtIdPaciente.Enabled = false;
+            this.txtIdPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdPaciente.Location = new System.Drawing.Point(180, 50);
+            this.txtIdPaciente.Name = "txtIdPaciente";
+            this.txtIdPaciente.ReadOnly = true;
+            this.txtIdPaciente.Size = new System.Drawing.Size(148, 28);
+            this.txtIdPaciente.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(25, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 25);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "ID Paciente:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(26, 141);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Nombre:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(25, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 25);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Apellido:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(25, 95);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(222, 25);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Fecha de Nacimiento:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(25, 232);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Teléfono:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(25, 273);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 25);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Correo:";
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(374, 595);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(179, 60);
+            this.btnGuardar.TabIndex = 16;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.btnEliminar.Location = new System.Drawing.Point(563, 679);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(173, 53);
+            this.btnEliminar.TabIndex = 17;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(99)))));
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(563, 595);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(173, 60);
+            this.btnModificar.TabIndex = 18;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(112)))), ((int)(((byte)(190)))));
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(374, 679);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(179, 53);
+            this.btnLimpiar.TabIndex = 19;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // grpListaPacientes
+            // 
+            this.grpListaPacientes.Controls.Add(this.dgvPacientes);
+            this.grpListaPacientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpListaPacientes.Location = new System.Drawing.Point(895, 205);
+            this.grpListaPacientes.Name = "grpListaPacientes";
+            this.grpListaPacientes.Size = new System.Drawing.Size(1017, 528);
+            this.grpListaPacientes.TabIndex = 20;
+            this.grpListaPacientes.TabStop = false;
+            this.grpListaPacientes.Text = "Lista de Paciente";
+            // 
+            // dgvPacientes
+            // 
+            this.dgvPacientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-			this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dgvPacientes.Location = new System.Drawing.Point(3, 24);
-			this.dgvPacientes.Name = "dgvPacientes";
-			this.dgvPacientes.ReadOnly = true;
-			this.dgvPacientes.RowHeadersWidth = 51;
-			this.dgvPacientes.RowTemplate.Height = 24;
-			this.dgvPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgvPacientes.Size = new System.Drawing.Size(1026, 492);
-			this.dgvPacientes.TabIndex = 0;
-			this.dgvPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellContentClick);
-			// 
-			// panel2
-			// 
-			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 0);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(1924, 90);
-			this.panel2.TabIndex = 21;
-			// 
-			// errorProviderPacientes
-			// 
-			this.errorProviderPacientes.ContainerControl = this;
-			// 
-			// FrmGestionPacientes
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1924, 1055);
-			this.Controls.Add(this.grpListaPacientes);
-			this.Controls.Add(this.btnLimpiar);
-			this.Controls.Add(this.btnModificar);
-			this.Controls.Add(this.btnEliminar);
-			this.Controls.Add(this.btnGuardar);
-			this.Controls.Add(this.grpDatosPacientes);
-			this.Controls.Add(this.lblTitulo);
-			this.Controls.Add(this.panel2);
-			this.Name = "FrmGestionPacientes";
-			this.Text = "Gestion Pacientes";
-			this.Load += new System.EventHandler(this.FrmGestionPacientes_Load);
-			this.grpDatosPacientes.ResumeLayout(false);
-			this.grpDatosPacientes.PerformLayout();
-			this.grpListaPacientes.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.errorProviderPacientes)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.dgvPacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPacientes.Location = new System.Drawing.Point(18, 33);
+            this.dgvPacientes.Name = "dgvPacientes";
+            this.dgvPacientes.ReadOnly = true;
+            this.dgvPacientes.RowHeadersWidth = 51;
+            this.dgvPacientes.RowTemplate.Height = 24;
+            this.dgvPacientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPacientes.Size = new System.Drawing.Size(993, 480);
+            this.dgvPacientes.TabIndex = 0;
+            this.dgvPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacientes_CellContentClick);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(243)))), ((int)(((byte)(250)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1924, 90);
+            this.panel2.TabIndex = 21;
+            // 
+            // errorProviderPacientes
+            // 
+            this.errorProviderPacientes.ContainerControl = this;
+            // 
+            // FrmGestionPacientes
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.grpListaPacientes);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.grpDatosPacientes);
+            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.panel2);
+            this.Name = "FrmGestionPacientes";
+            this.Text = "Gestion Pacientes";
+            this.Load += new System.EventHandler(this.FrmGestionPacientes_Load);
+            this.grpDatosPacientes.ResumeLayout(false);
+            this.grpDatosPacientes.PerformLayout();
+            this.grpListaPacientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPacientes)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

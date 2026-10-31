@@ -66,7 +66,6 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
                 int totalMedicos = datosDal.ObtenerConteoMedicos();
                 int totalRecetas = datosDal.ObtenerConteoRecetas();
 
-            
                 chartResumen.Series.Clear();
                 chartResumen.ChartAreas.Clear();
 
@@ -74,18 +73,18 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
                 ChartArea area = new ChartArea("AreaPrincipal");
                 chartResumen.ChartAreas.Add(area);
 
-                // Crear la serie de datos (Gráfica de Barras)
+                // Crear la serie de datos 
                 Series serie = new Series("Estadísticas");
-                serie.ChartType = SeriesChartType.Column; // Tipo columna
-                serie.IsValueShownAsLabel = true; // Muestra el número exacto arriba de cada barra
+                serie.ChartType = SeriesChartType.Column;
+                serie.IsValueShownAsLabel = true;
 
-                // colores azules
+                // Añadir puntos
                 serie.Points.AddXY("Pacientes", totalPacientes);
                 serie.Points.AddXY("Citas", totalCitas);
                 serie.Points.AddXY("Médicos", totalMedicos);
                 serie.Points.AddXY("Recetas", totalRecetas);
 
-                // colores de las barras usando azul intermedio
+                // Asignar colores intermedios
                 serie.Points[0].Color = Color.FromArgb(41, 112, 190);
                 serie.Points[1].Color = Color.FromArgb(0, 52, 99);
                 serie.Points[2].Color = Color.FromArgb(41, 112, 190);
@@ -96,14 +95,16 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
                 // Título del gráfico
                 chartResumen.Titles.Clear();
                 chartResumen.Titles.Add("Distribución General del Sistema");
+
+                
+                chartResumen.Invalidate();
+                chartResumen.Update();
             }
             catch (Exception ex)
             {
-                // Por si el control Chart aún no está agregado en el diseñador
-                Console.WriteLine("Gráfico no configurado visualmente todavía: " + ex.Message);
+                MessageBox.Show("Error en gráfico: " + ex.Message, "Error Gráfico", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void btnDetallesRegistro_Click(object sender, EventArgs e)
         {
             FrmMenuPrincipal menu = (FrmMenuPrincipal)this.TopLevelControl;
@@ -146,6 +147,11 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaPresentacion
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
