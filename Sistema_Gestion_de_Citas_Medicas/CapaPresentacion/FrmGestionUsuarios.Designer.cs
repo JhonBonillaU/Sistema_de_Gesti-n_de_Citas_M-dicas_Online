@@ -152,6 +152,7 @@
 			// 
 			// cmbRol
 			// 
+			this.cmbRol.Enabled = false;
 			this.cmbRol.FormattingEnabled = true;
 			this.cmbRol.Location = new System.Drawing.Point(258, 222);
 			this.cmbRol.Name = "cmbRol";
