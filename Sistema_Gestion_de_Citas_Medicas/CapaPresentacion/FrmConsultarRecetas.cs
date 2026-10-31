@@ -25,11 +25,10 @@ namespace Sistema_Gestion_de_Citas_Medicas
 		}
 
 		// Evento que se dispara al cargar el formulario
-		private void FrmConsultarRecetas_Load(object sender, EventArgs e)
+		private void FrmConsultarRecetas_Load_1(object sender, EventArgs e)
 		{
 			CargarCitasConReceta();
 			// Configuración de campos en modo lectura
-			txtIdCita.ReadOnly = true;
 			txtPaciente.ReadOnly = true;
 			dtpFecha.Enabled = true;
 			txtDetalle.ReadOnly = true;
@@ -97,7 +96,6 @@ namespace Sistema_Gestion_de_Citas_Medicas
 
 				if (c != null)
 				{
-					txtIdCita.Text = c.IdCita.ToString();
 					txtPaciente.Text = c.NombrePaciente;
 					txtDetalle.Text = string.IsNullOrEmpty(c.DescripcionReceta)
 						? "Esta cita aún no tiene receta emitida."
@@ -140,7 +138,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 					{
 						// Estructura formal del documento
 						string contenidoReceta =
-    "=====================================================\t\n" +
+	"=====================================================\t\n" +
 	"            SISTEMA DE GESTIÓN DE CITAS MÉDICAS\r\n" +
 	"                     RECETA MÉDICA\r\n" +
 	"=====================================================\t\n" +
@@ -179,6 +177,5 @@ namespace Sistema_Gestion_de_Citas_Medicas
 		{
 			this.Close();
 		}
-
 	}
 }
