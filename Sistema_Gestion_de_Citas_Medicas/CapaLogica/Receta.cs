@@ -8,7 +8,8 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 {
     public class Receta
     {
-        protected int idReceta;
+		// Atributos privados y protegidos
+		protected int idReceta;
         protected string descripcion;
         protected int idCita;
 
@@ -17,9 +18,11 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public int IdCita { get => idCita; set => idCita = value; }
 
+        // Constructores
         public Receta() { }
 
-        public Receta(int idReceta, string descripcion, int idCita)
+		// Constructor con parámetros
+		public Receta(int idReceta, string descripcion, int idCita)
         {
             this.idReceta = idReceta;
             this.descripcion = descripcion;

@@ -9,8 +9,8 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
     // Heredamos
     public class Paciente : Usuario
     {
-        //agregamos los atributos de la clase Paciente
-        private DateTime fechaNacimiento;
+		// Atributos privados
+		private DateTime fechaNacimiento;
 
         public int IdPaciente { get => idPaciente; set => idPaciente = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }

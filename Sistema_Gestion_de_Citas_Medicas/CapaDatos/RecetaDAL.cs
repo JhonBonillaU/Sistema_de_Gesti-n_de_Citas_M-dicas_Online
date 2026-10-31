@@ -12,9 +12,10 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		public List<Cita> ListarCitasPendientesParaReceta()
 		{
 			List<Cita> lista = new List<Cita>();
-
+			// Usamos la conexión a la base de datos para obtener las citas pendientes
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para obtener las citas pendientes junto con la información del paciente, médico, especialidad y receta (si existe)
 				string query = @"SELECT c.ID_Cita, c.FechaHora, c.Estado, c.ID_Paciente, c.ID_Medico,
                                         p.Nombre + ' ' + p.Apellido AS PacienteNombre,
                                         m.Nombre + ' ' + m.Apellido AS MedicoNombre,
@@ -30,9 +31,11 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
+					// Abrimos la conexión y ejecutamos la consulta
 					con.Open();
 					using (SqlDataReader reader = cmd.ExecuteReader())
 					{
+						// Leer cada registro y crear objetos Cita con la información obtenida
 						while (reader.Read())
 						{
 							Cita c = new Cita
@@ -52,6 +55,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 					}
 				}
 			}
+			// Retornamos la lista de citas obtenida de la base de datos, incluyendo la descripción de la receta si ya existe
 			return lista;
 		}
 
@@ -60,9 +64,10 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Abrimos la conexión y comenzamos una transacción para asegurar que todas las operaciones se realicen correctamente
 				con.Open();
 				SqlTransaction tx = con.BeginTransaction();
-
+				// Intentamos ejecutar la inserción o actualización de la receta dentro de la transacción
 				try
 				{
 					// Verificar si ya existe una receta para esta cita
@@ -104,10 +109,11 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 						cmdC.Parameters.AddWithValue("@ID_Cita", receta.IdCita);
 						cmdC.ExecuteNonQuery();
 					}
-
+					// Si todo se ejecutó correctamente, confirmamos la transacción
 					tx.Commit();
 					return true;
 				}
+				// Manejo de excepciones para capturar errores de SQL y revertir la transacción en caso de fallo
 				catch (SqlException ex)
 				{
 					tx.Rollback();
@@ -116,19 +122,22 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 			}
 		}
 
-		// Obtener la receta específica asociada a una cita
+		// 3. Obtener la receta específica asociada a una cita
 		public Receta ObtenerRecetaPorCita(int idCita)
 		{
+			// Inicializamos la variable de receta como nula, ya que puede que no exista una receta para la cita dada
 			Receta r = null;
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
 				string query = "SELECT ID_Receta, Descripcion, ID_Cita FROM Receta WHERE ID_Cita = @ID_Cita";
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
+					// Agregamos el parámetro de la cita para la consulta
 					cmd.Parameters.AddWithValue("@ID_Cita", idCita);
 					con.Open();
 					using (SqlDataReader reader = cmd.ExecuteReader())
 					{
+						// Si se encuentra una receta para la cita, creamos un objeto Receta con los datos obtenidos
 						if (reader.Read())
 						{
 							r = new Receta
@@ -141,6 +150,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 					}
 				}
 			}
+			// Retornamos la receta obtenida de la base de datos, o null si no existe
 			return r;
 		}
 	}

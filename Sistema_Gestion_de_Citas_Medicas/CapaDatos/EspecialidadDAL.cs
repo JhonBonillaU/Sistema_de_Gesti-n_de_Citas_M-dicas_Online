@@ -17,12 +17,14 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para obtener todas las especialidades
 				string query = "SELECT ID_Especialidad, NombreEspecialidad FROM Especialidad";
 				SqlCommand cmd = new SqlCommand(query, con);
 				con.Open();
-
+				// Ejecutar el comando y leer los resultados
 				using (SqlDataReader reader = cmd.ExecuteReader())
 				{
+					// Leer cada registro y crear objetos Especialidad
 					while (reader.Read())
 					{
 						Especialidad e = new Especialidad
@@ -34,6 +36,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 					}
 				}
 			}
+			// Retornamos la lista de especialidades obtenida de la base de datos
 			return lista;
 		}
 
@@ -42,6 +45,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para insertar una nueva especialidad
 				string query = "INSERT INTO Especialidad (NombreEspecialidad) VALUES (@NombreEspecialidad)";
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
@@ -57,6 +61,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para actualizar una especialidad existente
 				string query = "UPDATE Especialidad SET NombreEspecialidad = @NombreEspecialidad WHERE ID_Especialidad = @ID_Especialidad";
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
@@ -73,6 +78,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para eliminar una especialidad por su ID
 				string query = "DELETE FROM Especialidad WHERE ID_Especialidad = @ID_Especialidad";
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{

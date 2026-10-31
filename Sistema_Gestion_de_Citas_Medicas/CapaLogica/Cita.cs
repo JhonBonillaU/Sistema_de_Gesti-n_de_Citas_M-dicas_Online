@@ -28,24 +28,20 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
         public int IdPaciente { get => idPaciente; set => idPaciente = value; }
         public int IdMedico { get => idMedico; set => idMedico = value; }
 
-        public Cita()
+		// Constructores
+		public Cita()
         {
             estado = "Pendiente";
         }
 
-        public Cita(int idCita, DateTime fechaHora, string estado, int idPaciente, int idMedico)
+		// Constructor con parámetros
+		public Cita(int idCita, DateTime fechaHora, string estado, int idPaciente, int idMedico)
         {
             this.idCita = idCita;
             this.fechaHora = fechaHora;
             this.estado = estado;
             this.idPaciente = idPaciente;
             this.idMedico = idMedico;
-        }
-
-        // Sobrescritura de System.Object.ToString() 
-        public override string ToString()
-        {
-            return $"Cita #{idCita} - {fechaHora.ToString("dd/MM/yyyy HH:mm")} [{estado}]";
         }
     }
 }

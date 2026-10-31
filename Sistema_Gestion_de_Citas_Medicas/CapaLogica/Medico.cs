@@ -8,18 +8,20 @@ using Sistema_Gestion_de_Citas_Medicas.CapaDatos;
 
 namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 {
-    //Heredamos 
+    // Heredamos 
     public class Medico : Usuario
     {
-        //agregamos atributos propios de la clase Medico
-        private int idEspecialidad;
+		// Atributos privados
+		private int idEspecialidad;
         private string nombreEspecialidad;
 
-        public int IdMedico { get => idMedico; set => idMedico = value; }
+		// Encapsulamiento
+		public int IdMedico { get => idMedico; set => idMedico = value; }
         public int IdEspecialidad { get => idEspecialidad; set => idEspecialidad = value; }
         public string NombreEspecialidad { get => nombreEspecialidad; set => nombreEspecialidad = value; }
 
-        public Medico() : base() { }
+		// Constructores
+		public Medico() : base() { }
 
         public Medico(int idMedico, int idEspecialidad, string nombreEspecialidad, int idUsuario, string username, string password, string nombre, string apellido, string telefono, string correo)
             : base(idUsuario, username, password, "Medico", nombre, apellido, telefono, correo)
@@ -35,7 +37,8 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
             return $"MÉDICO: Dr. {nombre} {apellido} | Especialidad: {nombreEspecialidad}";
         }
 
-        public override string ToString()
+		// Sobrescritura de System.Object.ToString()
+		public override string ToString()
         {
             return $"Dr. {nombre} {apellido} ({nombreEspecialidad})";
         }

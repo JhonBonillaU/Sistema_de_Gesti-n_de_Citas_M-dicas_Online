@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_Gestion_de_Citas_Medicas.CapaLogica
 {
-    //Clase Base con miembros protected y propiedades públicas
+    // Clase Base con miembros protected y propiedades públicas
     public class Usuario
     {
         // Campos "protected" visibles para clases derivadas (Paciente/Medico), invisibles afuera

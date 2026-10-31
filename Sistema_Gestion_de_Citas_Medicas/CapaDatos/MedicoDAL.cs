@@ -8,13 +8,15 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 {
     public class MedicoDAL
     {
-        public List<Medico> ListarMedicos()
+		// 1. Método para listar todos los médicos con sus especialidades
+		public List<Medico> ListarMedicos()
         {
             List<Medico> lista = new List<Medico>();
 
-            using (SqlConnection con = Conexion.ObtenerConexion())
+			using (SqlConnection con = Conexion.ObtenerConexion())
             {
-                string query = @"SELECT m.ID_Medico, m.Nombre, m.Apellido, m.Telefono, m.Correo, 
+				// Consulta SQL para obtener los médicos junto con sus especialidades
+				string query = @"SELECT m.ID_Medico, m.Nombre, m.Apellido, m.Telefono, m.Correo, 
                                         m.ID_Especialidad, e.NombreEspecialidad 
                                  FROM Medico m
                                  INNER JOIN Especialidad e ON m.ID_Especialidad = e.ID_Especialidad";
@@ -22,7 +24,8 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
 
-                using (SqlDataReader reader = cmd.ExecuteReader())
+				// Ejecutar el comando y leer los resultados
+				using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
@@ -40,17 +43,19 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
                     }
                 }
             }
+			// Retornamos la lista de médicos obtenida de la base de datos
             return lista;
         }
 
-		// Registrar Médico con Transacción SQL
+		// 2. Registrar Médico con Transacción SQL
 		public bool RegistrarMedico(Medico medico, string username, string password)
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Abrimos la conexión y comenzamos una transacción para asegurar que ambas inserciones (Medico y Usuario) se realicen correctamente
 				con.Open();
 				SqlTransaction tx = con.BeginTransaction();
-
+				// Intentamos ejecutar ambas inserciones dentro de la transacción
 				try
 				{
 					string queryMedico = @"INSERT INTO Medico (Nombre, Apellido, Telefono, Correo, ID_Especialidad) 
@@ -84,6 +89,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 					tx.Commit();
 					return true;
 				}
+				// Manejo de excepciones para capturar errores de SQL y revertir la transacción en caso de fallo
 				catch (SqlException ex)
 				{
 					tx.Rollback();
@@ -92,11 +98,12 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 			}
 		}
 
-		// Actualizar Médico
+		// 3. Actualizar Médico
 		public bool ActualizarMedico(Medico medico)
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para actualizar los datos del médico
 				string query = @"UPDATE Medico 
                          SET Nombre = @Nombre, 
                              Apellido = @Apellido, 
@@ -120,14 +127,15 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 			}
 		}
 
-		// Eliminar Médico y su Usuario asociado
+		// 4. Eliminar Médico y su Usuario asociado
 		public bool EliminarMedico(int idMedico)
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Abrimos la conexión y comenzamos una transacción para asegurar que ambas eliminaciones (Medico y Usuario) se realicen correctamente
 				con.Open();
 				SqlTransaction tx = con.BeginTransaction();
-
+				// Intentamos ejecutar ambas eliminaciones dentro de la transacción
 				try
 				{
 					string queryUsuario = "DELETE FROM Usuario WHERE ID_Medico = @ID_Medico";
@@ -147,6 +155,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 					tx.Commit();
 					return true;
 				}
+				// Manejo de excepciones para capturar errores de SQL y revertir la transacción en caso de fallo
 				catch (SqlException ex)
 				{
 					tx.Rollback();

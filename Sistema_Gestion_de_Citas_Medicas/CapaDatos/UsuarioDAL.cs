@@ -10,14 +10,16 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		// 1. Método Login existente
 		public Usuario ValidarLogin(string username, string password)
 		{
+			// Inicializamos la variable de usuario como nula, ya que puede que no exista un usuario con las credenciales dadas
 			Usuario usuario = null;
-
+			
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para validar el login y obtener los datos del usuario
 				string query = @"SELECT ID_Usuario, Username, Password, Rol, ID_Paciente, ID_Medico 
                                  FROM Usuario 
                                  WHERE Username = @Username AND Password = @Password";
-
+				// Usamos parámetros para evitar inyección SQL
 				SqlCommand cmd = new SqlCommand(query, con);
 				cmd.Parameters.AddWithValue("@Username", username);
 				cmd.Parameters.AddWithValue("@Password", password);
@@ -26,11 +28,12 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
 				using (SqlDataReader reader = cmd.ExecuteReader())
 				{
+					// Si se encuentra un usuario con las credenciales dadas, creamos el objeto Usuario correspondiente según su rol
 					if (reader.Read())
 					{
 						string rol = reader["Rol"].ToString();
-
-						if (rol == "Paciente")
+						// Dependiendo del rol, creamos un objeto Paciente, Medico o Usuario genérico
+						if (rol == "Paciente") // Si el rol es "Paciente", creamos un objeto Paciente con los datos obtenidos
 						{
 							Paciente p = new Paciente
 							{
@@ -41,7 +44,8 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 							};
 							usuario = p;
 						}
-						else if (rol == "Medico")
+						// Si el rol es "Medico", creamos un objeto Medico con los datos obtenidos
+						else if (rol == "Medico") // Si el rol es "Medico", creamos un objeto Medico con los datos obtenidos
 						{
 							Medico m = new Medico
 							{
@@ -52,6 +56,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 							};
 							usuario = m;
 						}
+						// Si el rol es otro (por ejemplo, "Administrador"), creamos un objeto Usuario genérico
 						else // Administrador u otros roles
 						{
 							usuario = new Usuario
@@ -74,12 +79,14 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para obtener todos los usuarios
 				string query = "SELECT ID_Usuario, Username, Password, Rol FROM Usuario";
 				SqlCommand cmd = new SqlCommand(query, con);
 				con.Open();
 
 				using (SqlDataReader reader = cmd.ExecuteReader())
 				{
+					// Leemos cada registro y creamos objetos Usuario con los datos obtenidos
 					while (reader.Read())
 					{
 						Usuario u = new Usuario
@@ -93,6 +100,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 					}
 				}
 			}
+			// Retornamos la lista de usuarios obtenida de la base de datos
 			return lista;
 		}
 
@@ -101,17 +109,19 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para insertar un nuevo usuario en la base de datos
 				string query = @"INSERT INTO Usuario (Username, Password, Rol, ID_Paciente, ID_Medico) 
                                  VALUES (@Username, @Password, @Rol, NULL, NULL)";
 
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
+					// Usamos parámetros para evitar inyección SQL y asignamos los valores del objeto Usuario
 					cmd.Parameters.AddWithValue("@Username", usuario.Username);
 					cmd.Parameters.AddWithValue("@Password", usuario.Password);
 					cmd.Parameters.AddWithValue("@Rol", usuario.Rol);
 
 					con.Open();
-					return cmd.ExecuteNonQuery() > 0;
+					return cmd.ExecuteNonQuery() > 0; // Retornamos true si la inserción fue exitosa, false en caso contrario
 				}
 			}
 		}
@@ -121,6 +131,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para actualizar los datos de un usuario existente en la base de datos
 				string query = @"UPDATE Usuario 
                                  SET Username = @Username, 
                                      Password = @Password, 
@@ -129,13 +140,14 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
+					// Usamos parámetros para evitar inyección SQL y asignamos los valores del objeto Usuario
 					cmd.Parameters.AddWithValue("@Username", usuario.Username);
 					cmd.Parameters.AddWithValue("@Password", usuario.Password);
 					cmd.Parameters.AddWithValue("@Rol", usuario.Rol);
 					cmd.Parameters.AddWithValue("@ID_Usuario", usuario.IdUsuario);
 
 					con.Open();
-					return cmd.ExecuteNonQuery() > 0;
+					return cmd.ExecuteNonQuery() > 0; // Retornamos true si la actualización fue exitosa, false en caso contrario
 				}
 			}
 		}
@@ -145,6 +157,7 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 		{
 			using (SqlConnection con = Conexion.ObtenerConexion())
 			{
+				// Consulta SQL para eliminar un usuario de la base de datos por su ID
 				string query = "DELETE FROM Usuario WHERE ID_Usuario = @ID_Usuario";
 				using (SqlCommand cmd = new SqlCommand(query, con))
 				{
@@ -154,7 +167,5 @@ namespace Sistema_Gestion_de_Citas_Medicas.CapaDatos
 				}
 			}
 		}
-
-
 	}
 }

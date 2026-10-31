@@ -14,18 +14,21 @@ namespace Sistema_Gestion_de_Citas_Medicas
 {
 	public partial class FrmConsultarCitas : Form
 	{
+		// Constructor
 		public FrmConsultarCitas()
 		{
 			InitializeComponent();
 		}
 
-        private bool cargandoInicial = true;
+		// Variable para evitar que el evento ValueChanged del DateTimePicker se dispare al cargar el formulario
+		private bool cargandoInicial = true;
         private void FrmConsultarCitas_Load(object sender, EventArgs e)
 		{
-            txtPacienteMedico.Text = SesionUsuario.Username;
+			// Mostrar el nombre del usuario logueado en el campo/etiqueta de Paciente o Médico
+			txtPacienteMedico.Text = SesionUsuario.Username;
             txtPacienteMedico.Enabled = false;
-
-            if (SesionUsuario.Rol == "Medico")
+			// Mostrar u ocultar el botón "Atender Cita" según el rol del usuario
+			if (SesionUsuario.Rol == "Medico")
             {
                 btnAtenderCita.Visible = true;
             }
@@ -33,13 +36,15 @@ namespace Sistema_Gestion_de_Citas_Medicas
             {
                 btnAtenderCita.Visible = false;
             }
-
-            cargandoInicial = false;
+			// Mostrar u ocultar el botón "Cancelar Cita" según el rol del usuario
+			cargandoInicial = false;
             CargarHistorialCitas(); // Carga todo el historial al abrir la pantalla
         }
 
-        private void CargarHistorialCitas()
+		// Método para cargar el historial de citas según el rol del usuario y la fecha seleccionada
+		private void CargarHistorialCitas()
 		{
+			// Evitamos que se ejecute al cargar el formulario por primera vez
 			try
 			{
 				CitaDAL citaDal = new CitaDAL();
@@ -47,7 +52,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 
 				string rol = SesionUsuario.Rol;
 
-				// 1. Obtener la lista base según el rol del usuario en sesión
+				// Obtener la lista base según el rol del usuario en sesión
 				if (rol == "Paciente")
 				{
 					int idPaciente = SesionUsuario.IdPaciente ?? 0;
@@ -63,11 +68,11 @@ namespace Sistema_Gestion_de_Citas_Medicas
 					listaCitas = citaDal.ListarCitas();
 				}
 
-				// 2. Filtrar la lista en memoria por la fecha seleccionada en el DateTimePicker (solo la parte del día, mes y año)
+				// Filtrar la lista en memoria por la fecha seleccionada en el DateTimePicker (solo la parte del día, mes y año)
 				DateTime fechaFiltro = dtpFecha.Value.Date;
 				var listaFiltrada = listaCitas.Where(c => c.FechaHora.Date == fechaFiltro).ToList();
 
-				// 3. Asignar la lista filtrada al DataGridView
+				// Asignar la lista filtrada al DataGridView
 				dgvCitas.DataSource = listaFiltrada;
 
 				// Ocultar columnas internas innecesarias
@@ -75,15 +80,20 @@ namespace Sistema_Gestion_de_Citas_Medicas
 				if (dgvCitas.Columns["IdPaciente"] != null) dgvCitas.Columns["IdPaciente"].Visible = false;
 				if (dgvCitas.Columns["IdMedico"] != null) dgvCitas.Columns["IdMedico"].Visible = false;
 			}
+			// Manejo de excepciones para capturar errores al filtrar las citas por fecha
 			catch (Exception ex)
 			{
 				MessageBox.Show("Error al filtrar las citas por fecha: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
+
+		// Evento que se dispara al cambiar la fecha en el DateTimePicker
 		private void dtpFecha_ValueChanged(object sender, EventArgs e)
 		{
 			CargarHistorialCitas();
 		}
+
+		// Evento que se dispara al hacer clic en el botón "Atender Cita"
 		private void btnAtenderCita_Click(object sender, EventArgs e)
 		{
 			try
@@ -95,6 +105,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 					int idCita = Convert.ToInt32(dgvCitas.SelectedRows[0].Cells["IdCita"].Value);
 					string estadoActual = dgvCitas.SelectedRows[0].Cells["Estado"].Value.ToString();
 
+					// Validar que la cita no esté ya atendida o cancelada antes de permitir marcarla como atendida
 					if (estadoActual == "Atendida")
 					{
 						MessageBox.Show("Esta cita ya fue marcada como atendida.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -122,6 +133,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 						}
 					}
 				}
+				// Manejo de excepciones para capturar errores al cambiar el estado de la cita
 				else
 				{
 					MessageBox.Show("Por favor, selecciona una cita de la lista.", "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -132,6 +144,8 @@ namespace Sistema_Gestion_de_Citas_Medicas
 				MessageBox.Show("Error al actualizar el estado de la cita: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
+
+		// Evento que se dispara al hacer clic en el botón "Cancelar Cita"
 		private void btnCancelarCita_Click(object sender, EventArgs e)
 		{
 			try
@@ -143,6 +157,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 					int idCita = Convert.ToInt32(dgvCitas.SelectedRows[0].Cells["IdCita"].Value);
 					string estadoActual = dgvCitas.SelectedRows[0].Cells["Estado"].Value.ToString();
 
+					// Validar que la cita no esté ya cancelada antes de permitir cancelarla
 					if (estadoActual == "Cancelada")
 					{
 						MessageBox.Show("Esta cita ya se encuentra cancelada.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -151,6 +166,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 
 					DialogResult confirmacion = MessageBox.Show("¿Estás seguro de que deseas cancelar esta cita?", "Confirmar cancelación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+					// Si el usuario confirma, se procede a cambiar el estado de la cita a "Cancelada"
 					if (confirmacion == DialogResult.Yes)
 					{
 						CitaDAL citaDal = new CitaDAL();
@@ -163,6 +179,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 						}
 					}
 				}
+				// Manejo de excepciones para capturar errores al cancelar la cita
 				else
 				{
 					MessageBox.Show("Por favor, selecciona una cita de la lista.", "Selección requerida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -174,6 +191,7 @@ namespace Sistema_Gestion_de_Citas_Medicas
 			}
 		}
 
+		// Evento que se dispara al hacer clic en el botón "Volver"
 		private void btnVolver_Click(object sender, EventArgs e)
 		{
 			this.Close(); 

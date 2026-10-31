@@ -56,6 +56,9 @@ C:\Users\bonil\OneDrive\Proyecto_de_Catedra_POO\Sistema_de_Gesti-n_de_Citas_M-di
 C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.CapaPresentacion.FrmGestionEspecialidades.resources
 C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.CapaPresentacion.FrmGestionUsuarios.resources
 C:\Users\anape\source\repos\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.CapaPresentacion.FrmResumen.resources
+C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.exe.config
+C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.exe
+C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.pdb
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.AssemblyReference.cache
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.CapaPresentacion.FrmGestionEspecialidades.resources
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.CapaPresentacion.FrmGestionUsuarios.resources
@@ -72,8 +75,5 @@ C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_C
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.Properties.Resources.resources
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.GenerateResource.cache
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.csproj.CoreCompileInputs.cache
-C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.exe.config
-C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.exe
-C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\bin\Debug\Sistema_Gestion_de_Citas_Medicas.pdb
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.exe
 C:\Users\CarEM\Desktop\UDB\CICLO 02 2026\POO104\PROYECTO\Sistema_de_Gesti-n_de_Citas_M-dicas_Online\Sistema_Gestion_de_Citas_Medicas\obj\Debug\Sistema_Gestion_de_Citas_Medicas.pdb
